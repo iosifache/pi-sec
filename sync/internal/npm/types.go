@@ -14,6 +14,13 @@ type SearchObject struct {
 	Package   RawPackage `json:"package"`
 }
 
+type DownloadPointResponse struct {
+	Downloads int    `json:"downloads"`
+	Start     string `json:"start"`
+	End       string `json:"end"`
+	Package   string `json:"package"`
+}
+
 type Downloads struct {
 	Monthly int `json:"monthly"`
 	Weekly  int `json:"weekly"`

@@ -2,34 +2,20 @@ package npm
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
 	"net/http"
 	"time"
 )
 
 func FetchAndExtractPackages(ctx context.Context, client *http.Client, now time.Time) ([]PackageRecord, string, error) {
-	data, cacheFile, err := LoadOrFetchRawJSON(ctx, client, now)
-	if err != nil {
-		return nil, cacheFile, err
-	}
-
-	records, err := ExtractPackages(data)
-	if err != nil {
-		return nil, cacheFile, err
-	}
-
-	return records, cacheFile, nil
+	return LoadOrFetchPackages(ctx, client, now)
 }
 
-func ExtractPackages(data []byte) ([]PackageRecord, error) {
-	var resp SearchResponse
-	if err := json.Unmarshal(data, &resp); err != nil {
-		return nil, fmt.Errorf("unmarshal npm response: %w", err)
-	}
-
+func ExtractPackages(ctx context.Context, client *http.Client, resp SearchResponse) ([]PackageRecord, error) {
 	records := make([]PackageRecord, 0, len(resp.Objects))
-	for _, obj := range resp.Objects {
+	pacer := &requestPacer{}
+
+	for i, obj := range resp.Objects {
 		updatedAt, err := parseTime(obj.Updated)
 		if err != nil {
 			return nil, fmt.Errorf("parse updated timestamp for %s: %w", obj.Package.Name, err)
@@ -40,13 +26,23 @@ func ExtractPackages(data []byte) ([]PackageRecord, error) {
 			return nil, fmt.Errorf("parse package date for %s: %w", obj.Package.Name, err)
 		}
 
+		monthly, err := fetchDownloadCount(ctx, client, pacer, "last-month", obj.Package.Name, i+1, len(resp.Objects))
+		if err != nil {
+			return nil, err
+		}
+
+		weekly, err := fetchDownloadCount(ctx, client, pacer, "last-week", obj.Package.Name, i+1, len(resp.Objects))
+		if err != nil {
+			return nil, err
+		}
+
 		records = append(records, PackageRecord{
 			Name:             obj.Package.Name,
 			Version:          obj.Package.Version,
 			Description:      obj.Package.Description,
 			License:          obj.Package.License,
-			DownloadsMonthly: obj.Downloads.Monthly,
-			DownloadsWeekly:  obj.Downloads.Weekly,
+			DownloadsMonthly: monthly,
+			DownloadsWeekly:  weekly,
 			UpdatedAt:        updatedAt,
 			CreatedAt:        createdAt,
 			Maintainers:      append([]Maintainer(nil), obj.Package.Maintainers...),

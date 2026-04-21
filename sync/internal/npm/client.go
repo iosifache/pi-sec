@@ -2,59 +2,237 @@ package npm
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
+	"net/url"
 	"os"
 	"path/filepath"
+	"strconv"
 	"time"
+
+	"sync/internal/paths"
 )
 
-const SearchURL = "https://registry.npmjs.org/-/v1/search?text=keywords:pi-package&size=250&from=1000"
+const (
+	searchBaseURL         = "https://registry.npmjs.org/-/v1/search?text=keywords:pi-package"
+	downloadsAPIBaseURL   = "https://api.npmjs.org/downloads/point"
+	searchPageSize        = 250
+	searchLimit           = 500
+	requestsDelay         = time.Second
+	defaultRequestTimeout = 30 * time.Second
+)
 
 func cachePath(now time.Time) string {
-	return filepath.Join("data", "npm-data", now.Format("2006-01-02")+".json")
+	return filepath.Join(paths.NPMDataDir(), now.Format("2006-01-02")+".json")
 }
 
-func LoadOrFetchRawJSON(ctx context.Context, client *http.Client, now time.Time) ([]byte, string, error) {
+func LoadOrFetchPackages(ctx context.Context, client *http.Client, now time.Time) ([]PackageRecord, string, error) {
 	path := cachePath(now)
-	if data, err := os.ReadFile(path); err == nil {
-		return data, path, nil
-	} else if !os.IsNotExist(err) {
-		return nil, path, fmt.Errorf("read cache %s: %w", path, err)
-	}
 
-	if client == nil {
-		client = &http.Client{Timeout: 30 * time.Second}
-	}
-
-	req, err := http.NewRequestWithContext(ctx, http.MethodGet, SearchURL, nil)
+	packages, found, err := loadCachedPackages(path)
 	if err != nil {
-		return nil, path, fmt.Errorf("create request: %w", err)
+		return nil, path, err
+	}
+	if found {
+		return packages, path, nil
+	}
+
+	packages, err = fetchPackages(ctx, client)
+	if err != nil {
+		return nil, path, err
+	}
+
+	if err := writePackagesCache(path, packages); err != nil {
+		return nil, path, err
+	}
+
+	return packages, path, nil
+}
+
+func loadCachedPackages(path string) ([]PackageRecord, bool, error) {
+	data, err := os.ReadFile(path)
+	if err != nil {
+		if os.IsNotExist(err) {
+			return nil, false, nil
+		}
+		return nil, false, fmt.Errorf("read cache %s: %w", path, err)
+	}
+
+	var packages []PackageRecord
+	if err := json.Unmarshal(data, &packages); err == nil {
+		return packages, true, nil
+	}
+
+	fmt.Fprintf(os.Stderr, "ignoring legacy npm cache %s and refreshing with dedicated downloads api\n", path)
+	return nil, false, nil
+}
+
+func writePackagesCache(path string, packages []PackageRecord) error {
+	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {
+		return fmt.Errorf("create cache dir: %w", err)
+	}
+
+	data, err := json.MarshalIndent(packages, "", "  ")
+	if err != nil {
+		return fmt.Errorf("marshal npm package cache: %w", err)
+	}
+
+	if err := os.WriteFile(path, data, 0o644); err != nil {
+		return fmt.Errorf("write cache %s: %w", path, err)
+	}
+
+	return nil
+}
+
+func fetchPackages(ctx context.Context, client *http.Client) ([]PackageRecord, error) {
+	if client == nil {
+		client = &http.Client{Timeout: defaultRequestTimeout}
+	}
+
+	searchResponse, err := fetchSearchResponse(ctx, client)
+	if err != nil {
+		return nil, err
+	}
+
+	return ExtractPackages(ctx, client, searchResponse)
+}
+
+func fetchSearchResponse(ctx context.Context, client *http.Client) (SearchResponse, error) {
+	combined := SearchResponse{
+		Objects: make([]SearchObject, 0, searchLimit),
+	}
+
+	for offset := 0; offset < searchLimit; offset += searchPageSize {
+		pageNumber := offset/searchPageSize + 1
+		fmt.Fprintf(os.Stderr, "npm search: fetching page %d (offset %d)\n", pageNumber, offset)
+
+		page, err := fetchSearchPage(ctx, client, offset)
+		if err != nil {
+			return SearchResponse{}, err
+		}
+
+		combined.Total = page.Total
+		combined.Time = page.Time
+		combined.Objects = append(combined.Objects, page.Objects...)
+
+		if len(page.Objects) < searchPageSize || len(combined.Objects) >= searchLimit || len(combined.Objects) >= page.Total {
+			break
+		}
+	}
+
+	if len(combined.Objects) > searchLimit {
+		combined.Objects = combined.Objects[:searchLimit]
+	}
+
+	return combined, nil
+}
+
+func fetchSearchPage(ctx context.Context, client *http.Client, offset int) (SearchResponse, error) {
+	requestURL, err := buildSearchURL(offset)
+	if err != nil {
+		return SearchResponse{}, err
+	}
+
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, requestURL, nil)
+	if err != nil {
+		return SearchResponse{}, fmt.Errorf("create search request: %w", err)
 	}
 
 	resp, err := client.Do(req)
 	if err != nil {
-		return nil, path, fmt.Errorf("fetch npm data: %w", err)
+		return SearchResponse{}, fmt.Errorf("fetch npm search page at offset %d: %w", offset, err)
 	}
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusOK {
 		body, _ := io.ReadAll(io.LimitReader(resp.Body, 4096))
-		return nil, path, fmt.Errorf("unexpected status %d: %s", resp.StatusCode, string(body))
+		return SearchResponse{}, fmt.Errorf("unexpected npm search status %d for offset %d: %s", resp.StatusCode, offset, string(body))
 	}
 
 	data, err := io.ReadAll(resp.Body)
 	if err != nil {
-		return nil, path, fmt.Errorf("read response body: %w", err)
+		return SearchResponse{}, fmt.Errorf("read npm search response body for offset %d: %w", offset, err)
 	}
 
-	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {
-		return nil, path, fmt.Errorf("create cache dir: %w", err)
-	}
-	if err := os.WriteFile(path, data, 0o644); err != nil {
-		return nil, path, fmt.Errorf("write cache %s: %w", path, err)
+	var page SearchResponse
+	if err := json.Unmarshal(data, &page); err != nil {
+		return SearchResponse{}, fmt.Errorf("unmarshal npm search response for offset %d: %w", offset, err)
 	}
 
-	return data, path, nil
+	return page, nil
+}
+
+func fetchDownloadCount(ctx context.Context, client *http.Client, pacer *requestPacer, period, packageName string, index, total int) (int, error) {
+	if err := pacer.Wait(ctx); err != nil {
+		return 0, err
+	}
+
+	fmt.Fprintf(os.Stderr, "npm downloads: package %d/%d %s (%s)\n", index, total, packageName, period)
+
+	requestURL := fmt.Sprintf("%s/%s/%s", downloadsAPIBaseURL, period, url.PathEscape(packageName))
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, requestURL, nil)
+	if err != nil {
+		return 0, fmt.Errorf("create downloads request for %s (%s): %w", packageName, period, err)
+	}
+
+	resp, err := client.Do(req)
+	if err != nil {
+		return 0, fmt.Errorf("fetch downloads for %s (%s): %w", packageName, period, err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		body, _ := io.ReadAll(io.LimitReader(resp.Body, 4096))
+		return 0, fmt.Errorf("unexpected downloads status %d for %s (%s): %s", resp.StatusCode, packageName, period, string(body))
+	}
+
+	var point DownloadPointResponse
+	if err := json.NewDecoder(resp.Body).Decode(&point); err != nil {
+		return 0, fmt.Errorf("decode downloads response for %s (%s): %w", packageName, period, err)
+	}
+
+	return point.Downloads, nil
+}
+
+func buildSearchURL(offset int) (string, error) {
+	parsed, err := url.Parse(searchBaseURL)
+	if err != nil {
+		return "", fmt.Errorf("parse npm search url: %w", err)
+	}
+
+	query := parsed.Query()
+	query.Set("size", strconv.Itoa(searchPageSize))
+	query.Set("from", strconv.Itoa(offset))
+	parsed.RawQuery = query.Encode()
+	return parsed.String(), nil
+}
+
+type requestPacer struct {
+	started bool
+	last    time.Time
+}
+
+func (p *requestPacer) Wait(ctx context.Context) error {
+	if !p.started {
+		p.started = true
+		p.last = time.Now()
+		return nil
+	}
+
+	wait := requestsDelay - time.Since(p.last)
+	if wait > 0 {
+		timer := time.NewTimer(wait)
+		defer timer.Stop()
+
+		select {
+		case <-ctx.Done():
+			return ctx.Err()
+		case <-timer.C:
+		}
+	}
+
+	p.last = time.Now()
+	return nil
 }

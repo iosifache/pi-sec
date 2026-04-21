@@ -16,12 +16,13 @@ import (
 
 	"sync/internal/config"
 	"sync/internal/npm"
+	"sync/internal/paths"
 )
 
 const githubTokenEnv = "GITHUB_PAT"
 
 func cachePath(now time.Time) string {
-	return filepath.Join("data", "github", now.Format("2006-01-02")+".json")
+	return filepath.Join(paths.GitHubDataDir(), now.Format("2006-01-02")+".json")
 }
 
 func FetchRepositoryMetadata(ctx context.Context, fullName string, now time.Time) (RepositoryMetadata, string, error) {

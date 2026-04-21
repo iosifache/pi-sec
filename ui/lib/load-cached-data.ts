@@ -1,0 +1,250 @@
+import "server-only"
+
+import { promises as fs } from "node:fs"
+import path from "node:path"
+
+import type {
+  PackageTableRow,
+  PackagesDashboardData,
+  RawAlertsFile,
+  RawGitHubCache,
+  RawGitHubRepositoryMetadata,
+  RawNpmLegacyCache,
+  RawNpmLegacyObject,
+  RawNpmPackageRecord,
+} from "@/lib/types"
+
+const DATA_ROOT = resolveDataRoot()
+const NPM_DATA_DIR = path.join(DATA_ROOT, "npm-data")
+const GITHUB_DATA_DIR = path.join(DATA_ROOT, "github")
+const ALERTS_FILE = path.join(DATA_ROOT, "alerts.json")
+
+export async function loadPackagesDashboardData(): Promise<PackagesDashboardData> {
+  const npmCacheFile = await findLatestJsonFile(NPM_DATA_DIR)
+  const githubCacheFile = await findLatestJsonFile(GITHUB_DATA_DIR).catch(() => null)
+  const alertsFile = await fs.access(ALERTS_FILE).then(() => ALERTS_FILE).catch(() => null)
+
+  const npmCache = normalizeNpmCache(JSON.parse(await fs.readFile(npmCacheFile, "utf8")) as RawNpmLegacyCache | RawNpmPackageRecord[])
+
+  const githubCache = githubCacheFile
+    ? ((JSON.parse(await fs.readFile(githubCacheFile, "utf8")) as RawGitHubCache) ?? null)
+    : null
+
+  const alertsCache = alertsFile
+    ? ((JSON.parse(await fs.readFile(alertsFile, "utf8")) as RawAlertsFile) ?? null)
+    : null
+
+  const rows = npmCache.map((entry, index) => toPackageTableRow(entry, index, githubCache?.repositories ?? {}, alertsCache))
+
+  return {
+    npmCacheFile,
+    githubCacheFile,
+    alertsFile,
+    rowCount: rows.length,
+    githubRepoCount: githubCache ? Object.keys(githubCache.repositories).length : 0,
+    rows,
+  }
+}
+
+function resolveDataRoot(): string {
+  const cwd = process.cwd()
+  return path.basename(cwd) === "ui" ? path.resolve(cwd, "../data") : path.resolve(cwd, "data")
+}
+
+async function findLatestJsonFile(dir: string): Promise<string> {
+  const entries = await fs.readdir(dir, { withFileTypes: true })
+  const filenames = entries
+    .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
+    .map((entry) => entry.name)
+    .sort()
+
+  const latest = filenames.at(-1)
+  if (!latest) {
+    throw new Error(`No JSON cache files found in ${dir}`)
+  }
+
+  return path.join(dir, latest)
+}
+
+function normalizeNpmCache(raw: RawNpmLegacyCache | RawNpmPackageRecord[]): RawNpmPackageRecord[] {
+  if (Array.isArray(raw)) {
+    return raw
+  }
+
+  return (raw.objects ?? []).map((entry) => legacyObjectToPackageRecord(entry))
+}
+
+function legacyObjectToPackageRecord(entry: RawNpmLegacyObject): RawNpmPackageRecord {
+  const pkg = entry.package ?? {}
+  const links = pkg.links ?? {}
+
+  return {
+    name: pkg.name,
+    version: pkg.version,
+    description: pkg.description,
+    license: pkg.license,
+    downloads_monthly: entry.downloads?.monthly,
+    downloads_weekly: entry.downloads?.weekly,
+    updated_at: entry.updated,
+    created_at: pkg.date,
+    maintainers: pkg.maintainers,
+    links: {
+      homepage: links.homepage,
+      repo: links.repository,
+      bugs: links.bugs,
+      npm: links.npm,
+    },
+  }
+}
+
+function toPackageTableRow(
+  entry: RawNpmPackageRecord,
+  index: number,
+  repositories: Record<string, RawGitHubRepositoryMetadata>,
+  alertsCache: RawAlertsFile | null
+): PackageTableRow {
+  const links = entry.links ?? {}
+  const repoUrl = links.repo ?? ""
+  const githubFullName = normalizeGitHubRepository(repoUrl)
+  const github = githubFullName ? repositories[githubFullName] : undefined
+  const maintainers = (entry.maintainers ?? []).map((maintainer) => ({
+    username: maintainer.username?.trim() ?? "",
+    email: maintainer.email?.trim() ?? "",
+  }))
+  const maintainersText = maintainers
+    .map((maintainer) => {
+      if (maintainer.username && maintainer.email) return `${maintainer.username} <${maintainer.email}>`
+      return maintainer.username || maintainer.email
+    })
+    .filter(Boolean)
+    .join(", ")
+
+  const row: PackageTableRow = {
+    id: `${entry.name ?? "package"}-${index}`,
+    packageName: entry.name ?? "",
+    version: entry.version ?? "",
+    description: entry.description ?? "",
+    license: entry.license ?? "",
+    downloadsMonthly: entry.downloads_monthly ?? null,
+    downloadsWeekly: entry.downloads_weekly ?? null,
+    npmUpdatedAt: entry.updated_at ?? "",
+    npmCreatedAt: entry.created_at ?? "",
+    maintainers,
+    maintainersText,
+    homepageUrl: links.homepage ?? "",
+    repoUrl,
+    bugsUrl: links.bugs ?? "",
+    npmUrl: links.npm ?? "",
+    githubFullName: github?.full_name ?? githubFullName,
+    githubStars: github?.stars ?? null,
+    githubForks: github?.forks ?? null,
+    githubWatches: github?.watches ?? null,
+    githubReleasesCount: github?.releases_count ?? null,
+    githubCommitsCount: github?.commits_count ?? null,
+    githubRepoAgeDays: github?.age_days ?? null,
+    githubOwnerLogin: github?.owner_metadata.login ?? "",
+    githubOwnerType: github?.owner_metadata.type ?? "",
+    githubOwnerFollowers: github?.owner_metadata.followers ?? null,
+    githubOwnerAgeDays: github?.owner_metadata.age_days ?? null,
+    githubOwnerTotalRepos: github?.owner_metadata.total_repos ?? null,
+    hasGithubData: Boolean(github),
+    alerts: buildPackageAlerts(entry.name ?? "", alertsCache),
+    searchText: "",
+  }
+
+  row.searchText = buildSearchText(row)
+  return row
+}
+
+function buildSearchText(row: PackageTableRow): string {
+  return [
+    row.packageName,
+    row.version,
+    row.description,
+    row.license,
+    row.maintainersText,
+    row.homepageUrl,
+    row.repoUrl,
+    row.bugsUrl,
+    row.npmUrl,
+    row.githubFullName,
+    row.githubOwnerLogin,
+    row.githubOwnerType,
+    stringifyNullable(row.downloadsMonthly),
+    stringifyNullable(row.downloadsWeekly),
+    stringifyNullable(row.githubStars),
+    stringifyNullable(row.githubForks),
+    stringifyNullable(row.githubWatches),
+    stringifyNullable(row.githubReleasesCount),
+    stringifyNullable(row.githubCommitsCount),
+    stringifyNullable(row.githubRepoAgeDays),
+    stringifyNullable(row.githubOwnerFollowers),
+    stringifyNullable(row.githubOwnerAgeDays),
+    stringifyNullable(row.githubOwnerTotalRepos),
+    row.npmUpdatedAt,
+    row.npmCreatedAt,
+    ...row.alerts.flatMap((alert) => [alert.name, alert.description, alert.severity]),
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase()
+}
+
+function stringifyNullable(value: number | null): string {
+  return value == null ? "" : String(value)
+}
+
+function buildPackageAlerts(packageName: string, alertsCache: RawAlertsFile | null) {
+  if (!packageName || !alertsCache) return []
+
+  const alertIds = alertsCache.packages[packageName]?.alert_ids ?? []
+  return alertIds
+    .map((alertId) => {
+      const definition = alertsCache.definitions[alertId]
+      if (!definition) return null
+      return {
+        id: definition.id,
+        name: definition.name,
+        description: definition.description,
+        severity: definition.severity,
+      }
+    })
+    .filter((alert): alert is NonNullable<typeof alert> => Boolean(alert))
+}
+
+function normalizeGitHubRepository(value: string): string {
+  const trimmed = value.trim()
+  if (!trimmed) return ""
+
+  let normalized = trimmed.replace(/^git\+/, "").replace(/\.git$/, "").replace(/\/$/, "")
+
+  if (normalized.startsWith("git@github.com:")) {
+    normalized = normalized.replace("git@github.com:", "")
+    return cleanRepositoryPath(normalized)
+  }
+
+  if (normalized.startsWith("github:")) {
+    normalized = normalized.replace("github:", "")
+    return cleanRepositoryPath(normalized)
+  }
+
+  if (!normalized.includes("://")) {
+    return cleanRepositoryPath(normalized)
+  }
+
+  try {
+    const parsed = new URL(normalized)
+    if (parsed.hostname.toLowerCase() !== "github.com") {
+      return ""
+    }
+    return cleanRepositoryPath(parsed.pathname)
+  } catch {
+    return ""
+  }
+}
+
+function cleanRepositoryPath(value: string): string {
+  const parts = value.replace(/^\//, "").split("/").filter(Boolean)
+  if (parts.length < 2) return ""
+  return `${parts[0]}/${parts[1]}`
+}

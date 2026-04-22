@@ -461,48 +461,51 @@ export function PackagesTable({ data }: { data: PackagesDashboardData }) {
 
         <main className="flex min-h-0 flex-1 flex-col p-4 pb-6">
           <div className="min-h-0 flex-1 overflow-hidden border bg-background">
-            <ScrollArea className="h-full w-full">
-              <Table>
-                <TableHeader className="sticky top-0 z-10 bg-background">
-                  {table.getHeaderGroups().map((headerGroup) => (
-                    <TableRow key={headerGroup.id}>
-                      {headerGroup.headers.map((header) => (
-                        <TableHead key={header.id}>
-                          {header.isPlaceholder
-                            ? null
-                            : flexRender(header.column.columnDef.header, header.getContext())}
-                        </TableHead>
-                      ))}
-                    </TableRow>
-                  ))}
-                </TableHeader>
-                <TableBody>
-                  {table.getRowModel().rows.length ? (
-                    table.getRowModel().rows.map((row) => (
-                      <TableRow
-                        key={row.id}
-                        className="cursor-pointer"
-                        onClick={() => setActiveRow(row.original)}
-                      >
-                        {row.getVisibleCells().map((cell) => (
-                          <TableCell key={cell.id}>
-                            {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                          </TableCell>
+            <div className="flex h-full flex-col">
+              <ScrollArea className="min-h-0 flex-1">
+                <Table>
+                  <TableHeader className="sticky top-0 z-10 bg-background">
+                    {table.getHeaderGroups().map((headerGroup) => (
+                      <TableRow key={headerGroup.id}>
+                        {headerGroup.headers.map((header) => (
+                          <TableHead key={header.id}>
+                            {header.isPlaceholder
+                              ? null
+                              : flexRender(header.column.columnDef.header, header.getContext())}
+                          </TableHead>
                         ))}
                       </TableRow>
-                    ))
-                  ) : (
-                    <TableRow>
-                      <TableCell colSpan={columns.length} className="h-24 text-center font-sans text-muted-foreground">
-                        No packages match your search. Try a package name, maintainer, repo, owner, or license.
-                      </TableCell>
-                    </TableRow>
-                  )}
-                </TableBody>
-              </Table>
-              <div className="flex items-center justify-between border-t px-4 py-3">
+                    ))}
+                  </TableHeader>
+                  <TableBody>
+                    {table.getRowModel().rows.length ? (
+                      table.getRowModel().rows.map((row) => (
+                        <TableRow
+                          key={row.id}
+                          className="cursor-pointer"
+                          onClick={() => setActiveRow(row.original)}
+                        >
+                          {row.getVisibleCells().map((cell) => (
+                            <TableCell key={cell.id}>
+                              {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                            </TableCell>
+                          ))}
+                        </TableRow>
+                      ))
+                    ) : (
+                      <TableRow>
+                        <TableCell colSpan={columns.length} className="h-24 text-center font-sans text-muted-foreground">
+                          No packages match your search. Try a package name, maintainer, repo, owner, or license.
+                        </TableCell>
+                      </TableRow>
+                    )}
+                  </TableBody>
+                </Table>
+              </ScrollArea>
+
+              <div className="flex shrink-0 items-center justify-between border-t bg-background px-4 py-3">
                 <div className="flex items-center gap-2">
-                  <span className="font-sans text-xs text-muted-foreground">Rows per page</span>
+                  <span className="font-sans text-xs text-muted-foreground">Packages per page</span>
                   <Select
                     value={String(pageSize)}
                     onValueChange={(value) => {
@@ -535,7 +538,7 @@ export function PackagesTable({ data }: { data: PackagesDashboardData }) {
                   />
                 </div>
               </div>
-            </ScrollArea>
+            </div>
           </div>
         </main>
       </div>

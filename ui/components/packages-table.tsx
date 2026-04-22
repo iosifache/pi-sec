@@ -7,6 +7,7 @@ import {
   flexRender,
   getCoreRowModel,
   getFilteredRowModel,
+  getPaginationRowModel,
   getSortedRowModel,
   useReactTable,
   type ColumnDef,
@@ -53,6 +54,14 @@ import {
 } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
+import { Pagination } from "@/components/ui/pagination"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 import {
   Table,
   TableBody,
@@ -199,6 +208,8 @@ export function PackagesTable({ data }: { data: PackagesDashboardData }) {
   const [globalFilter, setGlobalFilter] = React.useState("")
   const [activeRow, setActiveRow] = React.useState<PackageTableRow | null>(null)
   const [hiddenConcernFilters, setHiddenConcernFilters] = React.useState<ConcernFilterId[]>([])
+  const [page, setPage] = React.useState(1)
+  const [pageSize, setPageSize] = React.useState(20)
 
   const matchedGithubCount = React.useMemo(
     () => data.rows.filter((row) => row.hasGithubData).length,
@@ -344,19 +355,15 @@ export function PackagesTable({ data }: { data: PackagesDashboardData }) {
   const table = useReactTable({
     data: filteredSourceRows,
     columns,
-    state: { sorting, globalFilter },
+    state: { sorting, globalFilter, pagination: { pageIndex: page - 1, pageSize } },
     onSortingChange: setSorting,
     onGlobalFilterChange: setGlobalFilter,
     globalFilterFn: globalRowFilter,
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     getSortedRowModel: getSortedRowModel(),
+    getPaginationRowModel: getPaginationRowModel(),
   })
-
-  const visibleRows = table.getRowModel().rows
-  const githubCoverage = data.rowCount ? Math.round((matchedGithubCount / data.rowCount) * 100) : 0
-  const npmFreshness = formatCacheFileAge(data.npmCacheFile)
-  const githubFreshness = data.githubCacheFile ? formatCacheFileAge(data.githubCacheFile) : "Unavailable"
 
   function toggleConcernFilter(filterId: ConcernFilterId) {
     setHiddenConcernFilters((current) =>
@@ -414,7 +421,10 @@ export function PackagesTable({ data }: { data: PackagesDashboardData }) {
                 </div>
 
                 <div>
-                  {data.rowCount} total <span aria-hidden="true">·</span> {visibleRows.length} shown <span aria-hidden="true">·</span> {githubCoverage}% GitHub coverage <span aria-hidden="true">·</span> {githubFreshness} GitHub cache <span aria-hidden="true">·</span> {npmFreshness} npm cache
+                  {data.rowCount} total <span aria-hidden="true">·</span>{" "}
+                  {table.getFilteredRowModel().rows.length} match{" "}
+                  <span aria-hidden="true">·</span>{" "}
+                  Page {page} of {table.getPageCount() || 1}
                 </div>
               </div>
             </div>
@@ -467,8 +477,8 @@ export function PackagesTable({ data }: { data: PackagesDashboardData }) {
                   ))}
                 </TableHeader>
                 <TableBody>
-                  {visibleRows.length ? (
-                    visibleRows.map((row) => (
+                  {table.getRowModel().rows.length ? (
+                    table.getRowModel().rows.map((row) => (
                       <TableRow
                         key={row.id}
                         className="cursor-pointer"
@@ -490,6 +500,41 @@ export function PackagesTable({ data }: { data: PackagesDashboardData }) {
                   )}
                 </TableBody>
               </Table>
+              <div className="flex items-center justify-between border-t px-4 py-3">
+                <div className="flex items-center gap-2">
+                  <span className="font-sans text-xs text-muted-foreground">Rows per page</span>
+                  <Select
+                    value={String(pageSize)}
+                    onValueChange={(value) => {
+                      setPageSize(Number(value))
+                      setPage(1)
+                    }}
+                  >
+                    <SelectTrigger className="h-7 w-auto">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {[5, 10, 20, 50, 100, 500].map((size) => (
+                        <SelectItem key={size} value={String(size)}>
+                          {size}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div className="flex items-center gap-4">
+                  <span className="font-sans text-xs text-muted-foreground">
+                    {Math.min((page - 1) * pageSize + 1, table.getFilteredRowModel().rows.length)}–
+                    {Math.min(page * pageSize, table.getFilteredRowModel().rows.length)} of{" "}
+                    {table.getFilteredRowModel().rows.length}
+                  </span>
+                  <Pagination
+                    page={page}
+                    pageCount={table.getPageCount() || 1}
+                    onPageChange={setPage}
+                  />
+                </div>
+              </div>
             </ScrollArea>
           </div>
         </main>

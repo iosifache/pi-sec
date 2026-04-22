@@ -249,8 +249,8 @@ export function PackagesTable({ data }: { data: PackagesDashboardData }) {
         },
       },
       {
-        id: "concerns",
-        header: "Concerns",
+        id: "security-concerns",
+        header: "Security concerns",
         enableSorting: false,
         cell: ({ row }) => {
           const packageRow = row.original
@@ -272,7 +272,7 @@ export function PackagesTable({ data }: { data: PackagesDashboardData }) {
                 })
               ) : (
                 <InlineStatusIcon
-                  label="No concerns found"
+                  label="No security concerns found"
                   icon={CircleCheck}
                   className="text-emerald-600 hover:text-emerald-700 focus-visible:text-emerald-700 dark:text-emerald-400 dark:hover:text-emerald-300 dark:focus-visible:text-emerald-300"
                 />
@@ -411,7 +411,7 @@ export function PackagesTable({ data }: { data: PackagesDashboardData }) {
           <div className="px-4 pb-4">
             <div className="overflow-x-scroll border bg-background px-4 py-3">
               <div className="flex min-w-max items-center gap-5">
-                <span className="font-sans text-xs font-semibold text-muted-foreground">Concerns filters</span>
+                <span className="font-sans text-xs font-semibold text-muted-foreground">Security concerns filters</span>
                 {alertLegendItems.map((item) => {
                   const Icon = item.icon
                   const hidden = hiddenConcernFilters.includes(item.id)

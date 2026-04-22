@@ -95,7 +95,10 @@ func FetchRepositoriesFromPackages(ctx context.Context, packages []npm.PackageRe
 	sort.Strings(fullNames)
 
 	fetched := make([]RepositoryMetadata, 0, len(fullNames))
-	for _, fullName := range fullNames {
+	total := len(fullNames)
+	fmt.Fprintf(os.Stderr, "github: fetching metadata for %d repositories\n", total)
+	for i, fullName := range fullNames {
+		fmt.Fprintf(os.Stderr, "github: repo %d/%d %s\n", i+1, total, fullName)
 		if cached, ok := cache.Repositories[fullName]; ok {
 			fetched = append(fetched, cached)
 			continue

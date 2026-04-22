@@ -16,12 +16,9 @@ import (
 )
 
 const (
-	searchBaseURL         = "https://registry.npmjs.org/-/v1/search?text=keywords:pi-package"
-	downloadsAPIBaseURL   = "https://api.npmjs.org/downloads/point"
-	searchPageSize        = 250
-	searchLimit           = 500
-	requestsDelay         = time.Second
-	defaultRequestTimeout = 30 * time.Second
+	searchBaseURL  = "https://registry.npmjs.org/-/v1/search"
+	searchPageSize = 250
+	searchLimit    = 500
 )
 
 func cachePath(now time.Time) string {
@@ -65,7 +62,7 @@ func loadCachedPackages(path string) ([]PackageRecord, bool, error) {
 		return packages, true, nil
 	}
 
-	fmt.Fprintf(os.Stderr, "ignoring legacy npm cache %s and refreshing with dedicated downloads api\n", path)
+	fmt.Fprintf(os.Stderr, "ignoring legacy npm cache %s and refreshing\n", path)
 	return nil, false, nil
 }
 
@@ -88,7 +85,7 @@ func writePackagesCache(path string, packages []PackageRecord) error {
 
 func fetchPackages(ctx context.Context, client *http.Client) ([]PackageRecord, error) {
 	if client == nil {
-		client = &http.Client{Timeout: defaultRequestTimeout}
+		client = &http.Client{Timeout: 30 * time.Second}
 	}
 
 	searchResponse, err := fetchSearchResponse(ctx, client)
@@ -96,7 +93,7 @@ func fetchPackages(ctx context.Context, client *http.Client) ([]PackageRecord, e
 		return nil, err
 	}
 
-	return ExtractPackages(ctx, client, searchResponse)
+	return ExtractPackages(ctx, searchResponse)
 }
 
 func fetchSearchResponse(ctx context.Context, client *http.Client) (SearchResponse, error) {
@@ -164,38 +161,6 @@ func fetchSearchPage(ctx context.Context, client *http.Client, offset int) (Sear
 	return page, nil
 }
 
-func fetchDownloadCount(ctx context.Context, client *http.Client, pacer *requestPacer, period, packageName string, index, total int) (int, error) {
-	if err := pacer.Wait(ctx); err != nil {
-		return 0, err
-	}
-
-	fmt.Fprintf(os.Stderr, "npm downloads: package %d/%d %s (%s)\n", index, total, packageName, period)
-
-	requestURL := fmt.Sprintf("%s/%s/%s", downloadsAPIBaseURL, period, url.PathEscape(packageName))
-	req, err := http.NewRequestWithContext(ctx, http.MethodGet, requestURL, nil)
-	if err != nil {
-		return 0, fmt.Errorf("create downloads request for %s (%s): %w", packageName, period, err)
-	}
-
-	resp, err := client.Do(req)
-	if err != nil {
-		return 0, fmt.Errorf("fetch downloads for %s (%s): %w", packageName, period, err)
-	}
-	defer resp.Body.Close()
-
-	if resp.StatusCode != http.StatusOK {
-		body, _ := io.ReadAll(io.LimitReader(resp.Body, 4096))
-		return 0, fmt.Errorf("unexpected downloads status %d for %s (%s): %s", resp.StatusCode, packageName, period, string(body))
-	}
-
-	var point DownloadPointResponse
-	if err := json.NewDecoder(resp.Body).Decode(&point); err != nil {
-		return 0, fmt.Errorf("decode downloads response for %s (%s): %w", packageName, period, err)
-	}
-
-	return point.Downloads, nil
-}
-
 func buildSearchURL(offset int) (string, error) {
 	parsed, err := url.Parse(searchBaseURL)
 	if err != nil {
@@ -203,36 +168,9 @@ func buildSearchURL(offset int) (string, error) {
 	}
 
 	query := parsed.Query()
+	query.Set("text", "keywords:pi-package")
 	query.Set("size", strconv.Itoa(searchPageSize))
 	query.Set("from", strconv.Itoa(offset))
 	parsed.RawQuery = query.Encode()
 	return parsed.String(), nil
-}
-
-type requestPacer struct {
-	started bool
-	last    time.Time
-}
-
-func (p *requestPacer) Wait(ctx context.Context) error {
-	if !p.started {
-		p.started = true
-		p.last = time.Now()
-		return nil
-	}
-
-	wait := requestsDelay - time.Since(p.last)
-	if wait > 0 {
-		timer := time.NewTimer(wait)
-		defer timer.Stop()
-
-		select {
-		case <-ctx.Done():
-			return ctx.Err()
-		case <-timer.C:
-		}
-	}
-
-	p.last = time.Now()
-	return nil
 }

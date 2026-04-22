@@ -19,46 +19,19 @@ import (
 
 func main() {
 	var githubRepo string
-	var githubAllFromNPM bool
-	var buildAlerts bool
 	flag.StringVar(&githubRepo, "github-repo", "", "repository to fetch in owner/name format")
-	flag.BoolVar(&githubAllFromNPM, "github-all-from-npm", false, "fetch GitHub metadata for all repositories referenced by fetched npm packages")
-	flag.BoolVar(&buildAlerts, "build-alerts", false, "build data/alerts.json from npm package data and the latest cached GitHub metadata")
 	flag.Parse()
 
 	ctx := context.Background()
 	now := time.Now()
 
-	switch {
-	case githubRepo != "":
+	if githubRepo != "" {
 		metadata, cacheFile, err := githubdata.FetchRepositoryMetadata(ctx, githubRepo, now)
 		if err != nil {
 			log.Fatalf("sync github repository: %v", err)
 		}
 		writeJSON(metadata)
 		fmt.Fprintf(os.Stderr, "fetched github metadata for %s using cache file %s\n", githubRepo, cacheFile)
-		return
-
-	case githubAllFromNPM:
-		packages, npmCacheFile, err := npm.FetchAndExtractPackages(ctx, nil, now)
-		if err != nil {
-			log.Fatalf("load npm packages: %v", err)
-		}
-		result, err := githubdata.FetchRepositoriesFromPackages(ctx, packages, now)
-		if err != nil {
-			log.Fatalf("sync github repositories from npm packages: %v", err)
-		}
-		writeJSON(result)
-		fmt.Fprintf(os.Stderr, "processed %d npm packages from %s and cached %d GitHub repositories in %s\n", result.Requested, npmCacheFile, len(result.Fetched), result.CacheFile)
-		return
-
-	case buildAlerts:
-		alertsFile, packages, npmCacheFile, githubCacheFile, alertsPath, err := buildAlertsFile(ctx, now)
-		if err != nil {
-			log.Fatalf("build alerts: %v", err)
-		}
-		writeJSON(alertsFile)
-		fmt.Fprintf(os.Stderr, "built alerts for %d packages using npm cache %s and github cache %s, wrote %s\n", len(packages), npmCacheFile, githubCacheFile, alertsPath)
 		return
 	}
 
@@ -78,7 +51,7 @@ type DailySyncResult struct {
 	GitHub               githubdata.BulkFetchResult `json:"github"`
 	AlertsPath           string                     `json:"alerts_path"`
 	AlertedPackageCount  int                        `json:"alerted_package_count"`
-	AlertDefinitionCount int                        `json:"alert_definition_count"`
+	AlertDefinitionCount  int                        `json:"alert_definition_count"`
 }
 
 func runDailySync(ctx context.Context, now time.Time) (DailySyncResult, error) {
@@ -113,13 +86,13 @@ func runDailySync(ctx context.Context, now time.Time) (DailySyncResult, error) {
 	githubResult.CacheFile = githubCacheFile
 
 	return DailySyncResult{
-		Date:                 now.Format("2006-01-02"),
-		Backups:              backups,
-		NPMCacheFile:         npmCacheFile,
-		NPMPackageCount:      len(packages),
-		GitHub:               githubResult,
-		AlertsPath:           alertsPath,
-		AlertedPackageCount:  len(alertsFile.Packages),
+		Date:                now.Format("2006-01-02"),
+		Backups:             backups,
+		NPMCacheFile:        npmCacheFile,
+		NPMPackageCount:     len(packages),
+		GitHub:              githubResult,
+		AlertsPath:          alertsPath,
+		AlertedPackageCount: len(alertsFile.Packages),
 		AlertDefinitionCount: len(alertsFile.Definitions),
 	}, nil
 }

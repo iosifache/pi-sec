@@ -249,6 +249,18 @@ export function PackagesTable({ data }: { data: PackagesDashboardData }) {
         },
       },
       {
+        accessorKey: "securityScore",
+        header: ({ column }) => sortableHeader(column, "Security score"),
+        cell: ({ row }) => {
+          const score = computeSecurityScore(row.original.alerts)
+          return (
+            <div className="min-w-16 font-mono text-sm tabular-nums">
+              {score}
+            </div>
+          )
+        },
+      },
+      {
         id: "security-concerns",
         header: "Security concerns",
         enableSorting: false,
@@ -644,7 +656,8 @@ function AlertsSection({ row }: { row: PackageTableRow }) {
       </div>
 
       {row.alerts.length ? (
-        <Table>
+        <>
+          <Table>
           <TableHeader>
             <TableRow>
               <TableHead>Name</TableHead>
@@ -666,6 +679,16 @@ function AlertsSection({ row }: { row: PackageTableRow }) {
             ))}
           </TableBody>
         </Table>
+        <div className="mt-3 flex items-center justify-between border border-t-0 px-4 py-2.5">
+          <span className="font-sans text-xs text-muted-foreground">Total security score</span>
+          <span className="flex items-center gap-2">
+            <span className="font-mono text-sm font-semibold tabular-nums">
+              {computeSecurityScore(row.alerts)}
+            </span>
+            <span className="text-[10px] uppercase tracking-wider text-muted-foreground">pts</span>
+          </span>
+        </div>
+        </>
       ) : (
         <div className="border border-dashed p-4 font-sans text-sm text-muted-foreground">
           This package did not trigger any stored risk alerts.
@@ -768,6 +791,24 @@ function severityRank(severity: AlertSeverity) {
     default:
       return 1
   }
+}
+
+function severityScoreWeight(severity: AlertSeverity): number {
+  switch (severity) {
+    case "critical":
+      return 8
+    case "high":
+      return 4
+    case "medium":
+      return 2
+    case "low":
+    default:
+      return 1
+  }
+}
+
+function computeSecurityScore(alerts: PackageAlert[]): number {
+  return alerts.reduce((score, alert) => score + severityScoreWeight(alert.severity), 0)
 }
 
 function severityIconClass(severity: AlertSeverity) {

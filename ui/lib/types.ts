@@ -140,6 +140,7 @@ export type PackageTableRow = {
   githubOwnerTotalRepos: number | null
   hasGithubData: boolean
   alerts: PackageAlert[]
+  securityScore: number
   searchText: string
 }
 

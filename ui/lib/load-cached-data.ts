@@ -149,6 +149,7 @@ function toPackageTableRow(
     githubOwnerTotalRepos: github?.owner_metadata.total_repos ?? null,
     hasGithubData: Boolean(github),
     alerts: buildPackageAlerts(entry.name ?? "", alertsCache),
+    securityScore: computeSecurityScore(buildPackageAlerts(entry.name ?? "", alertsCache)),
     searchText: "",
   }
 
@@ -194,7 +195,7 @@ function stringifyNullable(value: number | null): string {
   return value == null ? "" : String(value)
 }
 
-function buildPackageAlerts(packageName: string, alertsCache: RawAlertsFile | null) {
+function buildPackageAlerts(packageName: string, alertsCache: RawAlertsFile | null): PackageTableRow["alerts"] {
   if (!packageName || !alertsCache) return []
 
   const alertIds = alertsCache.packages[packageName]?.alert_ids ?? []
@@ -210,6 +211,24 @@ function buildPackageAlerts(packageName: string, alertsCache: RawAlertsFile | nu
       }
     })
     .filter((alert): alert is NonNullable<typeof alert> => Boolean(alert))
+}
+
+function severityScoreWeight(severity: PackageTableRow["alerts"][number]["severity"]): number {
+  switch (severity) {
+    case "critical":
+      return 8
+    case "high":
+      return 4
+    case "medium":
+      return 2
+    case "low":
+    default:
+      return 1
+  }
+}
+
+function computeSecurityScore(alerts: PackageTableRow["alerts"]): number {
+  return alerts.reduce((score, alert) => score + severityScoreWeight(alert.severity), 0)
 }
 
 function normalizeGitHubRepository(value: string): string {

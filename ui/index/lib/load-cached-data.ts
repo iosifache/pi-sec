@@ -48,7 +48,14 @@ export async function loadPackagesDashboardData(): Promise<PackagesDashboardData
 
 function resolveDataRoot(): string {
   const cwd = process.cwd()
-  return path.basename(cwd) === "ui" ? path.resolve(cwd, "../data") : path.resolve(cwd, "data")
+  const basename = path.basename(cwd)
+  if (basename === "index") {
+    return path.resolve(cwd, "../../data")
+  }
+  if (basename === "ui") {
+    return path.resolve(cwd, "../data")
+  }
+  return path.resolve(cwd, "data")
 }
 
 async function findLatestJsonFile(dir: string): Promise<string> {

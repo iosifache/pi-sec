@@ -72,7 +72,7 @@ import {
 } from "@/components/ui/table"
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
 import { cn } from "@/lib/utils"
-import type { AlertSeverity, PackageTableRow, PackagesDashboardData } from "@/lib/types"
+import type { AlertSeverity, PackageAlert, PackageTableRow, PackagesDashboardData } from "@/lib/types"
 
 const globalRowFilter: FilterFn<PackageTableRow> = (row, _columnId, value) => {
   const query = String(value ?? "").trim().toLowerCase()
@@ -390,7 +390,7 @@ export function PackagesTable({ data }: { data: PackagesDashboardData }) {
                     priority
                   />
                   <p className="font-sans text-sm text-muted-foreground">
-                    Discover and assess <a href="https://pi.dev/" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-foreground">Pi Agent</a> packages.
+                    There are multiple indexes of <a href="https://pi.dev/" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-foreground">pi</a> packages, but this one is ..
                   </p>
                 </div>
 
@@ -417,6 +417,15 @@ export function PackagesTable({ data }: { data: PackagesDashboardData }) {
                     className="underline underline-offset-4 hover:text-foreground"
                   >
                     Source code
+                  </Link>{" "}
+                  <span aria-hidden="true">·</span>{" "}
+                  <Link
+                    href="https://github.com/iosifache/pi-sec/blob/main/README.md"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline underline-offset-4 hover:text-foreground"
+                  >
+                    README
                   </Link>
                 </div>
 
@@ -706,36 +715,36 @@ function AlertsSection({ row }: { row: PackageTableRow }) {
       {row.alerts.length ? (
         <>
           <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead>Name</TableHead>
-              <TableHead>Description</TableHead>
-              <TableHead>Severity</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {row.alerts.map((alert) => (
-              <TableRow key={alert.id}>
-                <TableCell className="align-top font-medium whitespace-normal">{alert.name}</TableCell>
-                <TableCell className="max-w-0 align-top whitespace-normal font-sans leading-6 text-muted-foreground">
-                  {alert.description}
-                </TableCell>
-                <TableCell className="align-top">
-                  <SeverityBadge severity={alert.severity} />
-                </TableCell>
+            <TableHeader>
+              <TableRow>
+                <TableHead>Name</TableHead>
+                <TableHead>Description</TableHead>
+                <TableHead>Severity</TableHead>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-        <div className="mt-3 flex items-center justify-between border border-t-0 px-4 py-2.5">
-          <span className="font-sans text-xs text-muted-foreground">Total security score</span>
-          <span className="flex items-center gap-2">
-            <span className="font-mono text-sm font-semibold tabular-nums">
-              {computeSecurityScore(row.alerts)}
+            </TableHeader>
+            <TableBody>
+              {row.alerts.map((alert) => (
+                <TableRow key={alert.id}>
+                  <TableCell className="align-top font-medium whitespace-normal">{alert.name}</TableCell>
+                  <TableCell className="max-w-0 align-top whitespace-normal font-sans leading-6 text-muted-foreground">
+                    {alert.description}
+                  </TableCell>
+                  <TableCell className="align-top">
+                    <SeverityBadge severity={alert.severity} />
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+          <div className="mt-3 flex items-center justify-between border border-t-0 px-4 py-2.5">
+            <span className="font-sans text-xs text-muted-foreground">Total security score</span>
+            <span className="flex items-center gap-2">
+              <span className="font-mono text-sm font-semibold tabular-nums">
+                {computeSecurityScore(row.alerts)}
+              </span>
+              <span className="text-[10px] uppercase tracking-wider text-muted-foreground">pts</span>
             </span>
-            <span className="text-[10px] uppercase tracking-wider text-muted-foreground">pts</span>
-          </span>
-        </div>
+          </div>
         </>
       ) : (
         <div className="border border-dashed p-4 font-sans text-sm text-muted-foreground">

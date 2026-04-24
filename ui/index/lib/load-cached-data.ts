@@ -1,6 +1,6 @@
 import "server-only"
 
-import { promises as fs } from "node:fs"
+import { existsSync, promises as fs, statSync } from "node:fs"
 import path from "node:path"
 
 import type {
@@ -49,12 +49,23 @@ export async function loadPackagesDashboardData(): Promise<PackagesDashboardData
 function resolveDataRoot(): string {
   const cwd = process.cwd()
   const basename = path.basename(cwd)
+
   if (basename === "index") {
+    const publicData = path.resolve(cwd, "public", "data")
+    if (existsSync(publicData) && statSync(publicData).isDirectory()) {
+      return publicData
+    }
     return path.resolve(cwd, "../../data")
   }
+
   if (basename === "ui") {
+    const publicData = path.resolve(cwd, "public", "data")
+    if (existsSync(publicData) && statSync(publicData).isDirectory()) {
+      return publicData
+    }
     return path.resolve(cwd, "../data")
   }
+
   return path.resolve(cwd, "data")
 }
 

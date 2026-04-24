@@ -1,0 +1,22 @@
+name: Sync Data
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight UTC
+  workflow_dispatch:      # Manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: sync/go.mod
+
+      - name: Run Sync
+        run: go run ./sync/cmd/sync
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}

@@ -17,7 +17,8 @@ jobs:
           go-version-file: sync/go.mod
 
       - name: Run Sync
-        run: go run ./sync/cmd/sync
+        run: go run ./cmd/sync
+        working-directory: sync
         env:
           GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 

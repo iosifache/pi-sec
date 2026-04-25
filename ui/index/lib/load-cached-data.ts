@@ -17,28 +17,22 @@ import type {
 const DATA_ROOT = path.join(process.cwd(), "public", "data")
 const MANIFEST_FILE = path.join(DATA_ROOT, "manifest.json")
 
-export async function loadPackagesDashboardData(baseUrl?: string): Promise<PackagesDashboardData> {
-  const manifest = await readJsonFile<DataManifest>("/data/manifest.json", MANIFEST_FILE, baseUrl)
-  const npmCacheMeta = await resolveDataFile(manifest.npm_cache_file, "npm-data", baseUrl)
+export async function loadPackagesDashboardData(): Promise<PackagesDashboardData> {
+  const manifest = (JSON.parse(await fs.readFile(MANIFEST_FILE, "utf8")) as DataManifest)
+  const npmCacheMeta = await resolveDataFile(manifest.npm_cache_file, "npm-data")
   const githubCacheMeta = manifest.github_cache_file
-    ? await resolveDataFile(manifest.github_cache_file, "github", baseUrl)
+    ? await resolveDataFile(manifest.github_cache_file, "github")
     : null
-  const alertsMeta = manifest.alerts_file ? await resolveDataFile(manifest.alerts_file, null, baseUrl) : null
+  const alertsMeta = manifest.alerts_file ? await resolveDataFile(manifest.alerts_file, null) : null
 
-  const npmCache = normalizeNpmCache(
-    await readJsonFile<RawNpmLegacyCache | RawNpmPackageRecord[]>(
-      npmCacheMeta.assetPath,
-      npmCacheMeta.filePath,
-      baseUrl,
-    ),
-  )
+  const npmCache = normalizeNpmCache(JSON.parse(await fs.readFile(npmCacheMeta.filePath, "utf8")) as RawNpmLegacyCache | RawNpmPackageRecord[])
 
   const githubCache = githubCacheMeta
-    ? ((await readJsonFile<RawGitHubCache>(githubCacheMeta.assetPath, githubCacheMeta.filePath, baseUrl)) ?? null)
+    ? ((JSON.parse(await fs.readFile(githubCacheMeta.filePath, "utf8")) as RawGitHubCache) ?? null)
     : null
 
   const alertsCache = alertsMeta
-    ? ((await readJsonFile<RawAlertsFile>(alertsMeta.assetPath, alertsMeta.filePath, baseUrl)) ?? null)
+    ? ((JSON.parse(await fs.readFile(alertsMeta.filePath, "utf8")) as RawAlertsFile) ?? null)
     : null
 
   const rows = npmCache.map((entry, index) => toPackageTableRow(entry, index, githubCache?.repositories ?? {}, alertsCache))
@@ -65,18 +59,14 @@ type ResolvedDataFile = {
   filePath: string
 }
 
-async function resolveDataFile(
-  assetPath: string,
-  fallbackDir: string | null,
-  baseUrl?: string,
-): Promise<ResolvedDataFile> {
+async function resolveDataFile(assetPath: string, fallbackDir: string | null): Promise<ResolvedDataFile> {
   const directPath = toFilePath(assetPath)
   if (await fileExists(directPath)) {
     return { assetPath, filePath: directPath }
   }
 
   if (fallbackDir) {
-    const latestAssetPath = await findLatestAssetPath(fallbackDir, baseUrl)
+    const latestAssetPath = await findLatestAssetPath(fallbackDir)
     return {
       assetPath: latestAssetPath,
       filePath: toFilePath(latestAssetPath),
@@ -99,52 +89,20 @@ async function fileExists(filePath: string): Promise<boolean> {
   }
 }
 
-async function readJsonFile<T>(assetPath: string, filePath: string, baseUrl?: string): Promise<T> {
-  if (await fileExists(filePath)) {
-    return JSON.parse(await fs.readFile(filePath, "utf8")) as T
-  }
-
-  if (!baseUrl) {
-    throw new Error(`Could not load data asset ${assetPath} without a base URL`)
-  }
-
-  const response = await fetch(new URL(assetPath, baseUrl).toString(), {
-    cache: "no-store",
-  })
-
-  if (!response.ok) {
-    throw new Error(`Failed to fetch data asset ${assetPath}: ${response.status} ${response.statusText}`)
-  }
-
-  return (await response.json()) as T
-}
-
-async function findLatestAssetPath(dir: string, baseUrl?: string): Promise<string> {
+async function findLatestAssetPath(dir: string): Promise<string> {
   const absoluteDir = path.join(DATA_ROOT, dir)
+  const entries = await fs.readdir(absoluteDir, { withFileTypes: true })
+  const filenames = entries
+    .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
+    .map((entry) => entry.name)
+    .sort()
 
-  if (await fileExists(absoluteDir)) {
-    const entries = await fs.readdir(absoluteDir, { withFileTypes: true })
-    const filenames = entries
-      .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
-      .map((entry) => entry.name)
-      .sort()
-
-    const latest = filenames.at(-1)
-    if (!latest) {
-      throw new Error(`No JSON cache files found in ${absoluteDir}`)
-    }
-
-    return `/data/${dir}/${latest}`
-  }
-
-  const manifest = await readJsonFile<DataManifest>("/data/manifest.json", MANIFEST_FILE, baseUrl)
-  const latest = dir === "npm-data" ? manifest.npm_cache_file : manifest.github_cache_file
-
+  const latest = filenames.at(-1)
   if (!latest) {
-    throw new Error(`No JSON cache files found in ${dir}`)
+    throw new Error(`No JSON cache files found in ${absoluteDir}`)
   }
 
-  return latest
+  return `/data/${dir}/${latest}`
 }
 
 function normalizeNpmCache(raw: RawNpmLegacyCache | RawNpmPackageRecord[]): RawNpmPackageRecord[] {

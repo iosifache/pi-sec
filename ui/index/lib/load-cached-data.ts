@@ -3,6 +3,8 @@ import "server-only"
 import { promises as fs } from "node:fs"
 import path from "node:path"
 
+import { headers } from "next/headers"
+
 import type {
   PackageTableRow,
   PackagesDashboardData,
@@ -18,22 +20,18 @@ const DATA_ROOT = path.join(process.cwd(), "public", "data")
 const MANIFEST_FILE = path.join(DATA_ROOT, "manifest.json")
 
 export async function loadPackagesDashboardData(): Promise<PackagesDashboardData> {
-  const manifest = (JSON.parse(await fs.readFile(MANIFEST_FILE, "utf8")) as DataManifest)
+  const manifest = await readJson<DataManifest>("/data/manifest.json")
   const npmCacheMeta = await resolveDataFile(manifest.npm_cache_file, "npm-data")
   const githubCacheMeta = manifest.github_cache_file
     ? await resolveDataFile(manifest.github_cache_file, "github")
     : null
   const alertsMeta = manifest.alerts_file ? await resolveDataFile(manifest.alerts_file, null) : null
 
-  const npmCache = normalizeNpmCache(JSON.parse(await fs.readFile(npmCacheMeta.filePath, "utf8")) as RawNpmLegacyCache | RawNpmPackageRecord[])
+  const npmCache = normalizeNpmCache(await readJson<RawNpmLegacyCache | RawNpmPackageRecord[]>(npmCacheMeta.assetPath))
 
-  const githubCache = githubCacheMeta
-    ? ((JSON.parse(await fs.readFile(githubCacheMeta.filePath, "utf8")) as RawGitHubCache) ?? null)
-    : null
+  const githubCache = githubCacheMeta ? ((await readJson<RawGitHubCache>(githubCacheMeta.assetPath)) ?? null) : null
 
-  const alertsCache = alertsMeta
-    ? ((JSON.parse(await fs.readFile(alertsMeta.filePath, "utf8")) as RawAlertsFile) ?? null)
-    : null
+  const alertsCache = alertsMeta ? ((await readJson<RawAlertsFile>(alertsMeta.assetPath)) ?? null) : null
 
   const rows = npmCache.map((entry, index) => toPackageTableRow(entry, index, githubCache?.repositories ?? {}, alertsCache))
 
@@ -56,21 +54,16 @@ type DataManifest = {
 
 type ResolvedDataFile = {
   assetPath: string
-  filePath: string
 }
 
 async function resolveDataFile(assetPath: string, fallbackDir: string | null): Promise<ResolvedDataFile> {
-  const directPath = toFilePath(assetPath)
-  if (await fileExists(directPath)) {
-    return { assetPath, filePath: directPath }
+  if (await assetExists(assetPath)) {
+    return { assetPath }
   }
 
   if (fallbackDir) {
     const latestAssetPath = await findLatestAssetPath(fallbackDir)
-    return {
-      assetPath: latestAssetPath,
-      filePath: toFilePath(latestAssetPath),
-    }
+    return { assetPath: latestAssetPath }
   }
 
   throw new Error(`Data file not found: ${assetPath}`)
@@ -78,6 +71,52 @@ async function resolveDataFile(assetPath: string, fallbackDir: string | null): P
 
 function toFilePath(assetPath: string): string {
   return path.join(DATA_ROOT, assetPath.replace(/^\/data\/?/, ""))
+}
+
+async function readJson<T>(assetPath: string): Promise<T> {
+  const filePath = toFilePath(assetPath)
+  if (await fileExists(filePath)) {
+    return JSON.parse(await fs.readFile(filePath, "utf8")) as T
+  }
+
+  const response = await fetch(await toAbsoluteAssetUrl(assetPath), {
+    cache: "no-store",
+  })
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch data asset ${assetPath}: ${response.status} ${response.statusText}`)
+  }
+
+  return (await response.json()) as T
+}
+
+async function assetExists(assetPath: string): Promise<boolean> {
+  const filePath = toFilePath(assetPath)
+  if (await fileExists(filePath)) {
+    return true
+  }
+
+  try {
+    const response = await fetch(await toAbsoluteAssetUrl(assetPath), {
+      method: "HEAD",
+      cache: "no-store",
+    })
+    return response.ok
+  } catch {
+    return false
+  }
+}
+
+async function toAbsoluteAssetUrl(assetPath: string): Promise<string> {
+  const requestHeaders = await headers()
+  const protocol = requestHeaders.get("x-forwarded-proto") ?? (process.env.NODE_ENV === "development" ? "http" : "https")
+  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host")
+
+  if (!host) {
+    throw new Error(`Cannot resolve absolute asset URL for ${assetPath}: missing host header`)
+  }
+
+  return new URL(assetPath, `${protocol}://${host}`).toString()
 }
 
 async function fileExists(filePath: string): Promise<boolean> {

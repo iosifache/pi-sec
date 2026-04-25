@@ -1,7 +1,7 @@
 <p align="center">
   <img src="ui/index/public/logo.png" width="200px"/>
 </p>
-<h2 align="center">A security-focused index for <a href="https://pi.dev">pi</a> packages</h2>
+<h2 align="center">Security-focused index for <a href="https://pi.dev">pi</a> packages</h2>
 
 [`index.pisec.dev`](https://index.pisec.dev) is a community index of the top 1,000 most popular [pi](https://pi.dev) packages, updated daily. By correlating public data from npm and GitHub, the index calculates a security score and highlights potential concerns. This helps pi users evaluate the risks before installing a package.
 

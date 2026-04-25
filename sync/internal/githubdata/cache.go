@@ -17,8 +17,19 @@ func LoadLatestDailyCache(dir string) (DailyCache, string, error) {
 		return DailyCache{Repositories: map[string]RepositoryMetadata{}}, "", nil
 	}
 
-	sort.Strings(matches)
-	path := matches[len(matches)-1]
+	filtered := make([]string, 0, len(matches))
+	for _, match := range matches {
+		if filepath.Base(match) == "latest.json" {
+			continue
+		}
+		filtered = append(filtered, match)
+	}
+	if len(filtered) == 0 {
+		return DailyCache{Repositories: map[string]RepositoryMetadata{}}, "", nil
+	}
+
+	sort.Strings(filtered)
+	path := filtered[len(filtered)-1]
 	data, err := os.ReadFile(path)
 	if err != nil {
 		return DailyCache{}, path, fmt.Errorf("read github cache %s: %w", path, err)

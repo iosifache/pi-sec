@@ -50,16 +50,8 @@ type DailySyncResult struct {
 	NPMPackageCount      int                        `json:"npm_package_count"`
 	GitHub               githubdata.BulkFetchResult `json:"github"`
 	AlertsPath           string                     `json:"alerts_path"`
-	ManifestPath         string                     `json:"manifest_path"`
 	AlertedPackageCount  int                        `json:"alerted_package_count"`
 	AlertDefinitionCount int                        `json:"alert_definition_count"`
-}
-
-type DataManifest struct {
-	GeneratedAt     string `json:"generated_at"`
-	NPMCacheFile    string `json:"npm_cache_file"`
-	GitHubCacheFile string `json:"github_cache_file,omitempty"`
-	AlertsFile      string `json:"alerts_file,omitempty"`
 }
 
 func runDailySync(ctx context.Context, now time.Time) (DailySyncResult, error) {
@@ -81,10 +73,16 @@ func runDailySync(ctx context.Context, now time.Time) (DailySyncResult, error) {
 	if err != nil {
 		return DailySyncResult{}, fmt.Errorf("refresh npm packages: %w", err)
 	}
+	if err := syncLatestCopy(npmCacheFile); err != nil {
+		return DailySyncResult{}, fmt.Errorf("sync latest npm cache: %w", err)
+	}
 
 	githubResult, err := githubdata.FetchRepositoriesFromPackages(ctx, packages, now)
 	if err != nil {
 		return DailySyncResult{}, fmt.Errorf("refresh github repositories from npm packages: %w", err)
+	}
+	if err := syncLatestCopy(githubResult.CacheFile); err != nil {
+		return DailySyncResult{}, fmt.Errorf("sync latest github cache: %w", err)
 	}
 
 	alertsFile, _, _, githubCacheFile, alertsPath, err := buildAlertsFile(ctx, now)
@@ -93,11 +91,6 @@ func runDailySync(ctx context.Context, now time.Time) (DailySyncResult, error) {
 	}
 	githubResult.CacheFile = githubCacheFile
 
-	manifestPath, err := writeManifest(now, npmCacheFile, githubCacheFile, alertsPath)
-	if err != nil {
-		return DailySyncResult{}, fmt.Errorf("write data manifest: %w", err)
-	}
-
 	return DailySyncResult{
 		Date:                 now.Format("2006-01-02"),
 		Backups:              backups,
@@ -105,7 +98,6 @@ func runDailySync(ctx context.Context, now time.Time) (DailySyncResult, error) {
 		NPMPackageCount:      len(packages),
 		GitHub:               githubResult,
 		AlertsPath:           alertsPath,
-		ManifestPath:         manifestPath,
 		AlertedPackageCount:  len(alertsFile.Packages),
 		AlertDefinitionCount: len(alertsFile.Definitions),
 	}, nil
@@ -121,13 +113,18 @@ func buildAlertsFile(ctx context.Context, now time.Time) (alerts.AlertsFile, []n
 		return alerts.AlertsFile{}, nil, "", "", "", fmt.Errorf("load cached github metadata for alerts: %w", err)
 	}
 	alertsFile := alerts.Build(packages, githubCache.Repositories, now)
-	alertsPath := paths.AlertsFile()
-	if err := os.Remove(alertsPath); err != nil && !os.IsNotExist(err) {
-		return alerts.AlertsFile{}, nil, "", "", "", fmt.Errorf("remove existing alerts file %s: %w", alertsPath, err)
+	alertsPath := paths.AlertsFile(now.Format("2006-01-02"))
+	backupPath, err := backupAndRemove(alertsPath, now)
+	if err != nil {
+		return alerts.AlertsFile{}, nil, "", "", "", fmt.Errorf("backup existing alerts file: %w", err)
 	}
 	if err := alerts.WriteFile(alertsPath, alertsFile); err != nil {
 		return alerts.AlertsFile{}, nil, "", "", "", fmt.Errorf("write alerts file: %w", err)
 	}
+	if err := syncLatestCopy(alertsPath); err != nil {
+		return alerts.AlertsFile{}, nil, "", "", "", fmt.Errorf("sync latest alerts file: %w", err)
+	}
+	_ = backupPath
 	return alertsFile, packages, npmCacheFile, githubCacheFile, alertsPath, nil
 }
 
@@ -156,43 +153,18 @@ func backupAndRemove(path string, now time.Time) (string, error) {
 	return backupPath, nil
 }
 
-func writeManifest(now time.Time, npmCacheFile string, githubCacheFile string, alertsPath string) (string, error) {
-	manifestPath := filepath.Join(paths.DataDir(), "manifest.json")
-	manifest := DataManifest{
-		GeneratedAt:     now.UTC().Format(time.RFC3339),
-		NPMCacheFile:    publicDataPath(npmCacheFile),
-		GitHubCacheFile: publicDataPath(githubCacheFile),
-		AlertsFile:      publicDataPath(alertsPath),
-	}
-
-	if err := os.MkdirAll(filepath.Dir(manifestPath), 0o755); err != nil {
-		return "", fmt.Errorf("create manifest dir: %w", err)
-	}
-
-	data, err := json.MarshalIndent(manifest, "", "  ")
+func syncLatestCopy(path string) error {
+	data, err := os.ReadFile(path)
 	if err != nil {
-		return "", fmt.Errorf("marshal manifest: %w", err)
+		return fmt.Errorf("read file for latest copy %s: %w", path, err)
 	}
 
-	if err := os.WriteFile(manifestPath, data, 0o644); err != nil {
-		return "", fmt.Errorf("write manifest %s: %w", manifestPath, err)
+	latestPath := filepath.Join(filepath.Dir(path), "latest.json")
+	if err := os.WriteFile(latestPath, data, 0o644); err != nil {
+		return fmt.Errorf("write latest copy %s: %w", latestPath, err)
 	}
 
-	return manifestPath, nil
-}
-
-func publicDataPath(path string) string {
-	if path == "" {
-		return ""
-	}
-
-	cleaned := filepath.Clean(path)
-	dataDir := filepath.Clean(paths.DataDir())
-	if rel, err := filepath.Rel(dataDir, cleaned); err == nil && !strings.HasPrefix(rel, "..") {
-		return "/data/" + filepath.ToSlash(rel)
-	}
-
-	return filepath.ToSlash(cleaned)
+	return nil
 }
 
 func writeJSON(v any) {

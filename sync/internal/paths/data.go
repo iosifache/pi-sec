@@ -30,6 +30,10 @@ func GitHubDataDir() string {
 	return filepath.Join(DataDir(), "github")
 }
 
-func AlertsFile() string {
-	return filepath.Join(DataDir(), "alerts.json")
+func AlertsDir() string {
+	return filepath.Join(DataDir(), "alerts")
+}
+
+func AlertsFile(date string) string {
+	return filepath.Join(AlertsDir(), date+".json")
 }

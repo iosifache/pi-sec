@@ -1,9 +1,8 @@
 import "server-only"
 
-import { promises as fs } from "node:fs"
-import path from "node:path"
-
-import { headers } from "next/headers"
+import alertsCache from "@/public/data/alerts/latest.json"
+import githubCache from "@/public/data/github/latest.json"
+import npmCacheRaw from "@/public/data/npm-data/latest.json"
 
 import type {
   PackageTableRow,
@@ -16,132 +15,23 @@ import type {
   RawNpmPackageRecord,
 } from "@/lib/types"
 
-const DATA_ROOT = path.join(process.cwd(), "public", "data")
-const MANIFEST_FILE = path.join(DATA_ROOT, "manifest.json")
+const NPM_CACHE = normalizeNpmCache(npmCacheRaw as RawNpmLegacyCache | RawNpmPackageRecord[])
+const GITHUB_CACHE = githubCache as RawGitHubCache
+const ALERTS_CACHE = alertsCache as RawAlertsFile
 
 export async function loadPackagesDashboardData(): Promise<PackagesDashboardData> {
-  const manifest = await readJson<DataManifest>("/data/manifest.json")
-  const npmCacheMeta = await resolveDataFile(manifest.npm_cache_file, "npm-data")
-  const githubCacheMeta = manifest.github_cache_file
-    ? await resolveDataFile(manifest.github_cache_file, "github")
-    : null
-  const alertsMeta = manifest.alerts_file ? await resolveDataFile(manifest.alerts_file, null) : null
-
-  const npmCache = normalizeNpmCache(await readJson<RawNpmLegacyCache | RawNpmPackageRecord[]>(npmCacheMeta.assetPath))
-
-  const githubCache = githubCacheMeta ? ((await readJson<RawGitHubCache>(githubCacheMeta.assetPath)) ?? null) : null
-
-  const alertsCache = alertsMeta ? ((await readJson<RawAlertsFile>(alertsMeta.assetPath)) ?? null) : null
-
-  const rows = npmCache.map((entry, index) => toPackageTableRow(entry, index, githubCache?.repositories ?? {}, alertsCache))
+  const rows = NPM_CACHE.map((entry, index) =>
+    toPackageTableRow(entry, index, GITHUB_CACHE.repositories ?? {}, ALERTS_CACHE)
+  )
 
   return {
-    npmCacheFile: npmCacheMeta.assetPath,
-    githubCacheFile: githubCacheMeta?.assetPath ?? null,
-    alertsFile: alertsMeta?.assetPath ?? null,
+    npmCacheFile: "/data/npm-data/latest.json",
+    githubCacheFile: "/data/github/latest.json",
+    alertsFile: "/data/alerts/latest.json",
     rowCount: rows.length,
-    githubRepoCount: githubCache ? Object.keys(githubCache.repositories).length : 0,
+    githubRepoCount: Object.keys(GITHUB_CACHE.repositories ?? {}).length,
     rows,
   }
-}
-
-type DataManifest = {
-  generated_at: string
-  npm_cache_file: string
-  github_cache_file?: string
-  alerts_file?: string
-}
-
-type ResolvedDataFile = {
-  assetPath: string
-}
-
-async function resolveDataFile(assetPath: string, fallbackDir: string | null): Promise<ResolvedDataFile> {
-  if (await assetExists(assetPath)) {
-    return { assetPath }
-  }
-
-  if (fallbackDir) {
-    const latestAssetPath = await findLatestAssetPath(fallbackDir)
-    return { assetPath: latestAssetPath }
-  }
-
-  throw new Error(`Data file not found: ${assetPath}`)
-}
-
-function toFilePath(assetPath: string): string {
-  return path.join(DATA_ROOT, assetPath.replace(/^\/data\/?/, ""))
-}
-
-async function readJson<T>(assetPath: string): Promise<T> {
-  const filePath = toFilePath(assetPath)
-  if (await fileExists(filePath)) {
-    return JSON.parse(await fs.readFile(filePath, "utf8")) as T
-  }
-
-  const response = await fetch(await toAbsoluteAssetUrl(assetPath), {
-    cache: "no-store",
-  })
-
-  if (!response.ok) {
-    throw new Error(`Failed to fetch data asset ${assetPath}: ${response.status} ${response.statusText}`)
-  }
-
-  return (await response.json()) as T
-}
-
-async function assetExists(assetPath: string): Promise<boolean> {
-  const filePath = toFilePath(assetPath)
-  if (await fileExists(filePath)) {
-    return true
-  }
-
-  try {
-    const response = await fetch(await toAbsoluteAssetUrl(assetPath), {
-      method: "HEAD",
-      cache: "no-store",
-    })
-    return response.ok
-  } catch {
-    return false
-  }
-}
-
-async function toAbsoluteAssetUrl(assetPath: string): Promise<string> {
-  const requestHeaders = await headers()
-  const protocol = requestHeaders.get("x-forwarded-proto") ?? (process.env.NODE_ENV === "development" ? "http" : "https")
-  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host")
-
-  if (!host) {
-    throw new Error(`Cannot resolve absolute asset URL for ${assetPath}: missing host header`)
-  }
-
-  return new URL(assetPath, `${protocol}://${host}`).toString()
-}
-
-async function fileExists(filePath: string): Promise<boolean> {
-  try {
-    await fs.access(filePath)
-    return true
-  } catch {
-    return false
-  }
-}
-
-async function findLatestAssetPath(dir: string): Promise<string> {
-  const absoluteDir = path.join(DATA_ROOT, dir)
-  const entries = await fs.readdir(absoluteDir, { withFileTypes: true })
-  const filenames = entries
-    .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
-    .map((entry) => entry.name)
-    .sort()
-
-  const latest = filenames.at(-1)
-  if (!latest) {
-    throw new Error(`No JSON cache files found in ${absoluteDir}`)
-  }
-
-  return `/data/${dir}/${latest}`
 }
 
 function normalizeNpmCache(raw: RawNpmLegacyCache | RawNpmPackageRecord[]): RawNpmPackageRecord[] {

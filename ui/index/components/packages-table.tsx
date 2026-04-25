@@ -390,7 +390,7 @@ export function PackagesTable({ data }: { data: PackagesDashboardData }) {
                     priority
                   />
                   <p className="font-sans text-sm text-muted-foreground">
-                    There are multiple indexes of <a href="https://pi.dev/" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-foreground">pi</a> packages, but this one is ..
+                    Fast, security-focused index of <a href="https://pi.dev/" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-foreground">pi</a> packages
                   </p>
                 </div>
 

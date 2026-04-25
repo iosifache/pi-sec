@@ -50,8 +50,16 @@ type DailySyncResult struct {
 	NPMPackageCount      int                        `json:"npm_package_count"`
 	GitHub               githubdata.BulkFetchResult `json:"github"`
 	AlertsPath           string                     `json:"alerts_path"`
+	ManifestPath         string                     `json:"manifest_path"`
 	AlertedPackageCount  int                        `json:"alerted_package_count"`
-	AlertDefinitionCount  int                        `json:"alert_definition_count"`
+	AlertDefinitionCount int                        `json:"alert_definition_count"`
+}
+
+type DataManifest struct {
+	GeneratedAt     string `json:"generated_at"`
+	NPMCacheFile    string `json:"npm_cache_file"`
+	GitHubCacheFile string `json:"github_cache_file,omitempty"`
+	AlertsFile      string `json:"alerts_file,omitempty"`
 }
 
 func runDailySync(ctx context.Context, now time.Time) (DailySyncResult, error) {
@@ -85,14 +93,20 @@ func runDailySync(ctx context.Context, now time.Time) (DailySyncResult, error) {
 	}
 	githubResult.CacheFile = githubCacheFile
 
+	manifestPath, err := writeManifest(now, npmCacheFile, githubCacheFile, alertsPath)
+	if err != nil {
+		return DailySyncResult{}, fmt.Errorf("write data manifest: %w", err)
+	}
+
 	return DailySyncResult{
-		Date:                now.Format("2006-01-02"),
-		Backups:             backups,
-		NPMCacheFile:        npmCacheFile,
-		NPMPackageCount:     len(packages),
-		GitHub:              githubResult,
-		AlertsPath:          alertsPath,
-		AlertedPackageCount: len(alertsFile.Packages),
+		Date:                 now.Format("2006-01-02"),
+		Backups:              backups,
+		NPMCacheFile:         npmCacheFile,
+		NPMPackageCount:      len(packages),
+		GitHub:               githubResult,
+		AlertsPath:           alertsPath,
+		ManifestPath:         manifestPath,
+		AlertedPackageCount:  len(alertsFile.Packages),
 		AlertDefinitionCount: len(alertsFile.Definitions),
 	}, nil
 }
@@ -140,6 +154,45 @@ func backupAndRemove(path string, now time.Time) (string, error) {
 		return "", fmt.Errorf("remove original file %s after backup: %w", path, err)
 	}
 	return backupPath, nil
+}
+
+func writeManifest(now time.Time, npmCacheFile string, githubCacheFile string, alertsPath string) (string, error) {
+	manifestPath := filepath.Join(paths.DataDir(), "manifest.json")
+	manifest := DataManifest{
+		GeneratedAt:     now.UTC().Format(time.RFC3339),
+		NPMCacheFile:    publicDataPath(npmCacheFile),
+		GitHubCacheFile: publicDataPath(githubCacheFile),
+		AlertsFile:      publicDataPath(alertsPath),
+	}
+
+	if err := os.MkdirAll(filepath.Dir(manifestPath), 0o755); err != nil {
+		return "", fmt.Errorf("create manifest dir: %w", err)
+	}
+
+	data, err := json.MarshalIndent(manifest, "", "  ")
+	if err != nil {
+		return "", fmt.Errorf("marshal manifest: %w", err)
+	}
+
+	if err := os.WriteFile(manifestPath, data, 0o644); err != nil {
+		return "", fmt.Errorf("write manifest %s: %w", manifestPath, err)
+	}
+
+	return manifestPath, nil
+}
+
+func publicDataPath(path string) string {
+	if path == "" {
+		return ""
+	}
+
+	cleaned := filepath.Clean(path)
+	dataDir := filepath.Clean(paths.DataDir())
+	if rel, err := filepath.Rel(dataDir, cleaned); err == nil && !strings.HasPrefix(rel, "..") {
+		return "/data/" + filepath.ToSlash(rel)
+	}
+
+	return filepath.ToSlash(cleaned)
 }
 
 func writeJSON(v any) {

@@ -1,5 +1,2 @@
 .DS_Store
 
-# Data folder is being created during Next.hs builds.
-# We already have it in /, therefore there's no need to track it twice.
-ui/index/public/data

@@ -1,6 +1,6 @@
 import "server-only"
 
-import { existsSync, promises as fs, statSync } from "node:fs"
+import { promises as fs } from "node:fs"
 import path from "node:path"
 
 import type {
@@ -14,63 +14,84 @@ import type {
   RawNpmPackageRecord,
 } from "@/lib/types"
 
-const DATA_ROOT = resolveDataRoot()
-const NPM_DATA_DIR = path.join(DATA_ROOT, "npm-data")
-const GITHUB_DATA_DIR = path.join(DATA_ROOT, "github")
-const ALERTS_FILE = path.join(DATA_ROOT, "alerts.json")
+const DATA_ROOT = path.join(process.cwd(), "public", "data")
+const MANIFEST_FILE = path.join(DATA_ROOT, "manifest.json")
 
 export async function loadPackagesDashboardData(): Promise<PackagesDashboardData> {
-  const npmCacheFile = await findLatestJsonFile(NPM_DATA_DIR)
-  const githubCacheFile = await findLatestJsonFile(GITHUB_DATA_DIR).catch(() => null)
-  const alertsFile = await fs.access(ALERTS_FILE).then(() => ALERTS_FILE).catch(() => null)
+  const manifest = (JSON.parse(await fs.readFile(MANIFEST_FILE, "utf8")) as DataManifest)
+  const npmCacheMeta = await resolveDataFile(manifest.npm_cache_file, "npm-data")
+  const githubCacheMeta = manifest.github_cache_file
+    ? await resolveDataFile(manifest.github_cache_file, "github")
+    : null
+  const alertsMeta = manifest.alerts_file ? await resolveDataFile(manifest.alerts_file, null) : null
 
-  const npmCache = normalizeNpmCache(JSON.parse(await fs.readFile(npmCacheFile, "utf8")) as RawNpmLegacyCache | RawNpmPackageRecord[])
+  const npmCache = normalizeNpmCache(JSON.parse(await fs.readFile(npmCacheMeta.filePath, "utf8")) as RawNpmLegacyCache | RawNpmPackageRecord[])
 
-  const githubCache = githubCacheFile
-    ? ((JSON.parse(await fs.readFile(githubCacheFile, "utf8")) as RawGitHubCache) ?? null)
+  const githubCache = githubCacheMeta
+    ? ((JSON.parse(await fs.readFile(githubCacheMeta.filePath, "utf8")) as RawGitHubCache) ?? null)
     : null
 
-  const alertsCache = alertsFile
-    ? ((JSON.parse(await fs.readFile(alertsFile, "utf8")) as RawAlertsFile) ?? null)
+  const alertsCache = alertsMeta
+    ? ((JSON.parse(await fs.readFile(alertsMeta.filePath, "utf8")) as RawAlertsFile) ?? null)
     : null
 
   const rows = npmCache.map((entry, index) => toPackageTableRow(entry, index, githubCache?.repositories ?? {}, alertsCache))
 
   return {
-    npmCacheFile,
-    githubCacheFile,
-    alertsFile,
+    npmCacheFile: npmCacheMeta.assetPath,
+    githubCacheFile: githubCacheMeta?.assetPath ?? null,
+    alertsFile: alertsMeta?.assetPath ?? null,
     rowCount: rows.length,
     githubRepoCount: githubCache ? Object.keys(githubCache.repositories).length : 0,
     rows,
   }
 }
 
-function resolveDataRoot(): string {
-  const cwd = process.cwd()
-  const basename = path.basename(cwd)
-
-  if (basename === "index") {
-    const publicData = path.resolve(cwd, "public", "data")
-    if (existsSync(publicData) && statSync(publicData).isDirectory()) {
-      return publicData
-    }
-    return path.resolve(cwd, "../../data")
-  }
-
-  if (basename === "ui") {
-    const publicData = path.resolve(cwd, "public", "data")
-    if (existsSync(publicData) && statSync(publicData).isDirectory()) {
-      return publicData
-    }
-    return path.resolve(cwd, "../data")
-  }
-
-  return path.resolve(cwd, "data")
+type DataManifest = {
+  generated_at: string
+  npm_cache_file: string
+  github_cache_file?: string
+  alerts_file?: string
 }
 
-async function findLatestJsonFile(dir: string): Promise<string> {
-  const entries = await fs.readdir(dir, { withFileTypes: true })
+type ResolvedDataFile = {
+  assetPath: string
+  filePath: string
+}
+
+async function resolveDataFile(assetPath: string, fallbackDir: string | null): Promise<ResolvedDataFile> {
+  const directPath = toFilePath(assetPath)
+  if (await fileExists(directPath)) {
+    return { assetPath, filePath: directPath }
+  }
+
+  if (fallbackDir) {
+    const latestAssetPath = await findLatestAssetPath(fallbackDir)
+    return {
+      assetPath: latestAssetPath,
+      filePath: toFilePath(latestAssetPath),
+    }
+  }
+
+  throw new Error(`Data file not found: ${assetPath}`)
+}
+
+function toFilePath(assetPath: string): string {
+  return path.join(DATA_ROOT, assetPath.replace(/^\/data\/?/, ""))
+}
+
+async function fileExists(filePath: string): Promise<boolean> {
+  try {
+    await fs.access(filePath)
+    return true
+  } catch {
+    return false
+  }
+}
+
+async function findLatestAssetPath(dir: string): Promise<string> {
+  const absoluteDir = path.join(DATA_ROOT, dir)
+  const entries = await fs.readdir(absoluteDir, { withFileTypes: true })
   const filenames = entries
     .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
     .map((entry) => entry.name)
@@ -78,10 +99,10 @@ async function findLatestJsonFile(dir: string): Promise<string> {
 
   const latest = filenames.at(-1)
   if (!latest) {
-    throw new Error(`No JSON cache files found in ${dir}`)
+    throw new Error(`No JSON cache files found in ${absoluteDir}`)
   }
 
-  return path.join(dir, latest)
+  return `/data/${dir}/${latest}`
 }
 
 function normalizeNpmCache(raw: RawNpmLegacyCache | RawNpmPackageRecord[]): RawNpmPackageRecord[] {

@@ -1,0 +1,5 @@
+name = "pi-sec"
+compatibility_date = "2026-04-26"
+
+[assets]
+directory = "out"

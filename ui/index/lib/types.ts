@@ -99,6 +99,7 @@ export type RawPackageAlerts = {
 
 export type RawAlertsFile = {
   date: string
+  updated_at?: string
   definitions: Record<string, RawAlertDefinition>
   packages: Record<string, RawPackageAlerts>
 }
@@ -148,6 +149,7 @@ export type PackagesDashboardData = {
   npmCacheFile: string
   githubCacheFile: string | null
   alertsFile: string | null
+  lastUpdatedAt: string | null
   rowCount: number
   githubRepoCount: number
   rows: PackageTableRow[]

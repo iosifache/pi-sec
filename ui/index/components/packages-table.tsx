@@ -103,6 +103,22 @@ type ConcernLegendItem = {
   matches: (alertId: string) => boolean
 }
 
+function formatUpdatedAgo(value: string | null): string | null {
+  if (!value) return null
+
+  const updatedAt = new Date(value).getTime()
+  if (Number.isNaN(updatedAt)) return null
+
+  const diffMs = Date.now() - updatedAt
+  const hours = Math.floor(diffMs / (1000 * 60 * 60))
+
+  if (hours < 23) {
+    return `${Math.max(1, hours)}h ago`
+  }
+
+  return `${Math.max(1, Math.floor(hours / 24))}d ago`
+}
+
 const alertLegendItems: ConcernLegendItem[] = [
   {
     id: "missingGithub",
@@ -434,6 +450,12 @@ export function PackagesTable({ data }: { data: PackagesDashboardData }) {
                   {table.getFilteredRowModel().rows.length} match{" "}
                   <span aria-hidden="true">·</span>{" "}
                   Page {page} of {table.getPageCount() || 1}
+                  {formatUpdatedAgo(data.lastUpdatedAt) ? (
+                    <>
+                      <span aria-hidden="true">·</span>{" "}
+                      Updated {formatUpdatedAgo(data.lastUpdatedAt)}
+                    </>
+                  ) : null}
                 </div>
               </div>
             </div>

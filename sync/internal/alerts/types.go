@@ -57,6 +57,7 @@ type PackageAlerts struct {
 
 type AlertsFile struct {
 	Date        string                     `json:"date"`
+	UpdatedAt   time.Time                  `json:"updated_at"`
 	Definitions map[string]AlertDefinition `json:"definitions"`
 	Packages    map[string]PackageAlerts   `json:"packages"`
 }

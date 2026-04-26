@@ -28,6 +28,7 @@ export async function loadPackagesDashboardData(): Promise<PackagesDashboardData
     npmCacheFile: "/data/npm-data/latest.json",
     githubCacheFile: "/data/github/latest.json",
     alertsFile: "/data/alerts/latest.json",
+    lastUpdatedAt: ALERTS_CACHE?.updated_at ?? null,
     rowCount: rows.length,
     githubRepoCount: Object.keys(GITHUB_CACHE.repositories ?? {}).length,
     rows,

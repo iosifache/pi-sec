@@ -41,6 +41,7 @@ func Build(packages []npm.PackageRecord, repositories map[string]githubdata.Repo
 
 	return AlertsFile{
 		Date:        now.Format("2006-01-02"),
+		UpdatedAt:   now.UTC(),
 		Definitions: definitions,
 		Packages:    packagesMap,
 	}

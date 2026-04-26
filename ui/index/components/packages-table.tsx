@@ -261,7 +261,7 @@ export function PackagesTable({ data }: { data: PackagesDashboardData }) {
       },
       {
         accessorKey: "securityScore",
-        header: ({ column }) => sortableHeader(column, "Security score"),
+        header: ({ column }) => sortableHeader(column, "Risk score"),
         cell: ({ row }) => {
           const score = computeSecurityScore(row.original.alerts)
           return (
@@ -737,7 +737,7 @@ function AlertsSection({ row }: { row: PackageTableRow }) {
             </TableBody>
           </Table>
           <div className="mt-3 flex items-center justify-between border border-t-0 px-4 py-2.5">
-            <span className="font-sans text-xs text-muted-foreground">Total security score</span>
+            <span className="font-sans text-xs text-muted-foreground">Total risk score</span>
             <span className="flex items-center gap-2">
               <span className="font-mono text-sm font-semibold tabular-nums">
                 {computeSecurityScore(row.alerts)}

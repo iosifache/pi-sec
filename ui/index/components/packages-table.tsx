@@ -449,7 +449,7 @@ export function PackagesTable({ data }: { data: PackagesDashboardData }) {
                   {data.rowCount} total <span aria-hidden="true">·</span>{" "}
                   {table.getFilteredRowModel().rows.length} match{" "}
                   <span aria-hidden="true">·</span>{" "}
-                  Page {page} of {table.getPageCount() || 1}
+                  Page {page} of {table.getPageCount() || 1}{" "}
                   {formatUpdatedAgo(data.lastUpdatedAt) ? (
                     <>
                       <span aria-hidden="true">·</span>{" "}

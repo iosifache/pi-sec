@@ -22,7 +22,7 @@
         "public_repos": 21,
         "total_repos": 21
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "0xKobold/pi-kobold": {
       "full_name": "0xKobold/pi-kobold",
@@ -45,7 +45,7 @@
         "public_repos": 21,
         "total_repos": 21
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "0xKobold/pi-learn": {
       "full_name": "0xKobold/pi-learn",
@@ -68,7 +68,7 @@
         "public_repos": 21,
         "total_repos": 21
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "0xKobold/pi-ollama": {
       "full_name": "0xKobold/pi-ollama",
@@ -91,7 +91,7 @@
         "public_repos": 21,
         "total_repos": 21
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "0xKobold/pi-orchestration": {
       "full_name": "0xKobold/pi-orchestration",
@@ -114,7 +114,7 @@
         "public_repos": 21,
         "total_repos": 21
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ArtemisAI/pi-loop": {
       "full_name": "ArtemisAI/pi-loop",
@@ -137,7 +137,7 @@
         "public_repos": 21,
         "total_repos": 21
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ArtemisAI/pi-mem": {
       "full_name": "ArtemisAI/pi-mem",
@@ -160,7 +160,7 @@
         "public_repos": 21,
         "total_repos": 21
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Auda29/pi-mempalace-extension": {
       "full_name": "Auda29/pi-mempalace-extension",
@@ -172,7 +172,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 28,
-      "age_days": 6,
+      "age_days": 5,
       "created_at": "2026-04-20T09:19:20Z",
       "owner_metadata": {
         "login": "Auda29",
@@ -183,7 +183,7 @@
         "public_repos": 15,
         "total_repos": 15
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Banon-Labs/pi-inline-format": {
       "full_name": "Banon-Labs/pi-inline-format",
@@ -201,12 +201,12 @@
         "login": "Banon-Labs",
         "type": "organization",
         "followers": 0,
-        "age_days": 48,
+        "age_days": 47,
         "created_at": "2026-03-09T00:51:53Z",
         "public_repos": 20,
         "total_repos": 20
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Banon-Labs/pi-inline-format-extensions": {
       "full_name": "Banon-Labs/pi-inline-format-extensions",
@@ -224,12 +224,12 @@
         "login": "Banon-Labs",
         "type": "organization",
         "followers": 0,
-        "age_days": 48,
+        "age_days": 47,
         "created_at": "2026-03-09T00:51:53Z",
         "public_repos": 20,
         "total_repos": 20
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "BlackBeltTechnology/pi-agent-dashboard": {
       "full_name": "BlackBeltTechnology/pi-agent-dashboard",
@@ -241,7 +241,7 @@
       "watches": 0,
       "releases_count": 4,
       "commits_count": 290,
-      "age_days": 34,
+      "age_days": 33,
       "created_at": "2026-03-23T05:08:48Z",
       "owner_metadata": {
         "login": "BlackBeltTechnology",
@@ -252,7 +252,7 @@
         "public_repos": 136,
         "total_repos": 136
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "CallumVass/forgeflow": {
       "full_name": "CallumVass/forgeflow",
@@ -275,7 +275,7 @@
         "public_repos": 6,
         "total_repos": 6
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Crokily/pi-discord-gateway": {
       "full_name": "Crokily/pi-discord-gateway",
@@ -293,12 +293,12 @@
         "login": "Crokily",
         "type": "user",
         "followers": 23,
-        "age_days": 4404,
+        "age_days": 4403,
         "created_at": "2014-04-05T09:10:02Z",
         "public_repos": 33,
         "total_repos": 33
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "DaviRain-Su/agent-arena": {
       "full_name": "DaviRain-Su/agent-arena",
@@ -310,7 +310,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 215,
-      "age_days": 30,
+      "age_days": 29,
       "created_at": "2026-03-27T01:30:39Z",
       "owner_metadata": {
         "login": "DaviRain-Su",
@@ -321,7 +321,7 @@
         "public_repos": 95,
         "total_repos": 95
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "EtienneChollet/ontomics": {
       "full_name": "EtienneChollet/ontomics",
@@ -344,7 +344,7 @@
         "public_repos": 16,
         "total_repos": 16
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "FammasMaz/pi-cc-tools": {
       "full_name": "FammasMaz/pi-cc-tools",
@@ -367,7 +367,7 @@
         "public_repos": 44,
         "total_repos": 44
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Gurpartap/pi-mermaid": {
       "full_name": "Gurpartap/pi-mermaid",
@@ -379,7 +379,7 @@
       "watches": 0,
       "releases_count": 4,
       "commits_count": 12,
-      "age_days": 80,
+      "age_days": 79,
       "created_at": "2026-02-05T05:20:06Z",
       "owner_metadata": {
         "login": "Gurpartap",
@@ -390,7 +390,7 @@
         "public_repos": 124,
         "total_repos": 124
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "HazAT/glimpse": {
       "full_name": "HazAT/glimpse",
@@ -407,25 +407,25 @@
       "owner_metadata": {
         "login": "HazAT",
         "type": "user",
-        "followers": 378,
+        "followers": 377,
         "age_days": 5734,
         "created_at": "2010-08-13T19:50:10Z",
         "public_repos": 65,
         "total_repos": 65
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "HenryLach/taskplane": {
       "full_name": "HenryLach/taskplane",
       "owner": "HenryLach",
       "name": "taskplane",
       "source_url": "git+https://github.com/HenryLach/taskplane.git",
-      "stars": 133,
+      "stars": 132,
       "forks": 5,
       "watches": 1,
       "releases_count": 135,
       "commits_count": 1526,
-      "age_days": 45,
+      "age_days": 44,
       "created_at": "2026-03-12T01:42:43Z",
       "owner_metadata": {
         "login": "HenryLach",
@@ -436,7 +436,7 @@
         "public_repos": 4,
         "total_repos": 4
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "IgorWarzocha/pi-codex-conversion": {
       "full_name": "IgorWarzocha/pi-codex-conversion",
@@ -459,7 +459,7 @@
         "public_repos": 82,
         "total_repos": 82
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Jabbslad/pi-mempalace": {
       "full_name": "Jabbslad/pi-mempalace",
@@ -482,7 +482,7 @@
         "public_repos": 152,
         "total_repos": 152
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "JerryAZR/pi-sanity": {
       "full_name": "JerryAZR/pi-sanity",
@@ -505,7 +505,7 @@
         "public_repos": 54,
         "total_repos": 54
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Jonghakseo/pi-extension": {
       "full_name": "Jonghakseo/pi-extension",
@@ -517,18 +517,18 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 42,
-      "age_days": 16,
+      "age_days": 15,
       "created_at": "2026-04-10T02:38:44Z",
       "owner_metadata": {
         "login": "Jonghakseo",
         "type": "user",
         "followers": 239,
-        "age_days": 2461,
+        "age_days": 2460,
         "created_at": "2019-07-31T01:42:53Z",
         "public_repos": 55,
         "total_repos": 55
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "JoshMock/the-agency": {
       "full_name": "JoshMock/the-agency",
@@ -546,12 +546,12 @@
         "login": "JoshMock",
         "type": "user",
         "followers": 94,
-        "age_days": 5990,
+        "age_days": 5989,
         "created_at": "2009-12-01T01:21:12Z",
         "public_repos": 43,
         "total_repos": 43
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Kahtaf/OpenCandle": {
       "full_name": "Kahtaf/OpenCandle",
@@ -563,7 +563,7 @@
       "watches": 0,
       "releases_count": 2,
       "commits_count": 81,
-      "age_days": 28,
+      "age_days": 27,
       "created_at": "2026-03-29T04:14:53Z",
       "owner_metadata": {
         "login": "Kahtaf",
@@ -574,7 +574,7 @@
         "public_repos": 30,
         "total_repos": 30
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Kmiyh/pi-skills-menu": {
       "full_name": "Kmiyh/pi-skills-menu",
@@ -592,12 +592,12 @@
         "login": "Kmiyh",
         "type": "user",
         "followers": 0,
-        "age_days": 2408,
+        "age_days": 2407,
         "created_at": "2019-09-22T08:59:56Z",
         "public_repos": 6,
         "total_repos": 6
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Leechael/pi-provider-kimi-code": {
       "full_name": "Leechael/pi-provider-kimi-code",
@@ -609,7 +609,7 @@
       "watches": 0,
       "releases_count": 13,
       "commits_count": 55,
-      "age_days": 80,
+      "age_days": 79,
       "created_at": "2026-02-05T06:52:06Z",
       "owner_metadata": {
         "login": "Leechael",
@@ -620,7 +620,7 @@
         "public_repos": 196,
         "total_repos": 196
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "LinYS77/pi-agentteam": {
       "full_name": "LinYS77/pi-agentteam",
@@ -630,27 +630,27 @@
       "stars": 7,
       "forks": 1,
       "watches": 0,
-      "releases_count": 3,
-      "commits_count": 10,
-      "age_days": 16,
+      "releases_count": 2,
+      "commits_count": 9,
+      "age_days": 15,
       "created_at": "2026-04-10T01:56:58Z",
       "owner_metadata": {
         "login": "LinYS77",
         "type": "user",
         "followers": 3,
-        "age_days": 261,
+        "age_days": 260,
         "created_at": "2025-08-08T03:33:11Z",
         "public_repos": 2,
         "total_repos": 2
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Lincoln504/pi-research": {
       "full_name": "Lincoln504/pi-research",
       "owner": "Lincoln504",
       "name": "pi-research",
       "source_url": "git+https://github.com/Lincoln504/pi-research.git",
-      "stars": 8,
+      "stars": 7,
       "forks": 0,
       "watches": 0,
       "releases_count": 0,
@@ -666,7 +666,7 @@
         "public_repos": 1,
         "total_repos": 1
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "M64GitHub/pi-browser-tools": {
       "full_name": "M64GitHub/pi-browser-tools",
@@ -689,7 +689,7 @@
         "public_repos": 61,
         "total_repos": 61
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "M64GitHub/pi-screenshot-tools": {
       "full_name": "M64GitHub/pi-screenshot-tools",
@@ -712,7 +712,7 @@
         "public_repos": 61,
         "total_repos": 61
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MaliNamNam/pi-phone": {
       "full_name": "MaliNamNam/pi-phone",
@@ -735,7 +735,7 @@
         "public_repos": 2,
         "total_repos": 2
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MasuRii/pi-hide-messages": {
       "full_name": "MasuRii/pi-hide-messages",
@@ -747,7 +747,7 @@
       "watches": 1,
       "releases_count": 3,
       "commits_count": 22,
-      "age_days": 25,
+      "age_days": 24,
       "created_at": "2026-04-01T02:25:45Z",
       "owner_metadata": {
         "login": "MasuRii",
@@ -758,7 +758,7 @@
         "public_repos": 52,
         "total_repos": 52
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MasuRii/pi-image-tools": {
       "full_name": "MasuRii/pi-image-tools",
@@ -770,7 +770,7 @@
       "watches": 1,
       "releases_count": 6,
       "commits_count": 22,
-      "age_days": 55,
+      "age_days": 54,
       "created_at": "2026-03-02T07:20:26Z",
       "owner_metadata": {
         "login": "MasuRii",
@@ -781,7 +781,7 @@
         "public_repos": 52,
         "total_repos": 52
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MasuRii/pi-multi-auth": {
       "full_name": "MasuRii/pi-multi-auth",
@@ -804,7 +804,7 @@
         "public_repos": 52,
         "total_repos": 52
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MasuRii/pi-must-have-extension": {
       "full_name": "MasuRii/pi-must-have-extension",
@@ -827,7 +827,7 @@
         "public_repos": 52,
         "total_repos": 52
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MasuRii/pi-permission-system": {
       "full_name": "MasuRii/pi-permission-system",
@@ -835,11 +835,11 @@
       "name": "pi-permission-system",
       "source_url": "git+https://github.com/MasuRii/pi-permission-system.git",
       "stars": 26,
-      "forks": 7,
+      "forks": 6,
       "watches": 1,
       "releases_count": 10,
       "commits_count": 53,
-      "age_days": 55,
+      "age_days": 54,
       "created_at": "2026-03-02T07:22:21Z",
       "owner_metadata": {
         "login": "MasuRii",
@@ -850,7 +850,7 @@
         "public_repos": 52,
         "total_repos": 52
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MasuRii/pi-rtk-optimizer": {
       "full_name": "MasuRii/pi-rtk-optimizer",
@@ -873,7 +873,7 @@
         "public_repos": 52,
         "total_repos": 52
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MasuRii/pi-smart-voice-notify": {
       "full_name": "MasuRii/pi-smart-voice-notify",
@@ -885,7 +885,7 @@
       "watches": 1,
       "releases_count": 7,
       "commits_count": 25,
-      "age_days": 55,
+      "age_days": 54,
       "created_at": "2026-03-02T07:23:40Z",
       "owner_metadata": {
         "login": "MasuRii",
@@ -896,7 +896,7 @@
         "public_repos": 52,
         "total_repos": 52
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MasuRii/pi-startup-redraw-fix": {
       "full_name": "MasuRii/pi-startup-redraw-fix",
@@ -908,7 +908,7 @@
       "watches": 1,
       "releases_count": 6,
       "commits_count": 20,
-      "age_days": 55,
+      "age_days": 54,
       "created_at": "2026-03-02T07:21:21Z",
       "owner_metadata": {
         "login": "MasuRii",
@@ -919,7 +919,7 @@
         "public_repos": 52,
         "total_repos": 52
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MasuRii/pi-tool-display": {
       "full_name": "MasuRii/pi-tool-display",
@@ -942,15 +942,15 @@
         "public_repos": 52,
         "total_repos": 52
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MattDevy/pi-extensions": {
       "full_name": "MattDevy/pi-extensions",
       "owner": "MattDevy",
       "name": "pi-extensions",
       "source_url": "git+https://github.com/MattDevy/pi-extensions.git",
-      "stars": 30,
-      "forks": 2,
+      "stars": 29,
+      "forks": 1,
       "watches": 0,
       "releases_count": 22,
       "commits_count": 157,
@@ -960,24 +960,24 @@
         "login": "MattDevy",
         "type": "user",
         "followers": 5,
-        "age_days": 3116,
+        "age_days": 3115,
         "created_at": "2017-10-14T09:34:15Z",
         "public_repos": 23,
         "total_repos": 23
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Michaelliv/dripline": {
       "full_name": "Michaelliv/dripline",
       "owner": "Michaelliv",
       "name": "dripline",
       "source_url": "git+https://github.com/Michaelliv/dripline.git",
-      "stars": 85,
+      "stars": 84,
       "forks": 6,
       "watches": 1,
       "releases_count": 24,
       "commits_count": 137,
-      "age_days": 37,
+      "age_days": 36,
       "created_at": "2026-03-20T09:03:32Z",
       "owner_metadata": {
         "login": "Michaelliv",
@@ -988,7 +988,7 @@
         "public_repos": 69,
         "total_repos": 69
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Michaelliv/runline": {
       "full_name": "Michaelliv/runline",
@@ -998,8 +998,8 @@
       "stars": 112,
       "forks": 5,
       "watches": 0,
-      "releases_count": 10,
-      "commits_count": 192,
+      "releases_count": 9,
+      "commits_count": 189,
       "age_days": 12,
       "created_at": "2026-04-13T14:21:15Z",
       "owner_metadata": {
@@ -1011,7 +1011,7 @@
         "public_repos": 69,
         "total_repos": 69
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MonsieurBarti/GH-PI": {
       "full_name": "MonsieurBarti/GH-PI",
@@ -1034,7 +1034,7 @@
         "public_repos": 36,
         "total_repos": 36
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MonsieurBarti/Lightpanda-PI": {
       "full_name": "MonsieurBarti/Lightpanda-PI",
@@ -1046,7 +1046,7 @@
       "watches": 0,
       "releases_count": 6,
       "commits_count": 23,
-      "age_days": 17,
+      "age_days": 16,
       "created_at": "2026-04-09T08:52:18Z",
       "owner_metadata": {
         "login": "MonsieurBarti",
@@ -1057,7 +1057,7 @@
         "public_repos": 36,
         "total_repos": 36
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MonsieurBarti/camoufox-pi": {
       "full_name": "MonsieurBarti/camoufox-pi",
@@ -1080,7 +1080,7 @@
         "public_repos": 36,
         "total_repos": 36
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MonsieurBarti/fff-pi": {
       "full_name": "MonsieurBarti/fff-pi",
@@ -1103,7 +1103,7 @@
         "public_repos": 36,
         "total_repos": 36
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MonsieurBarti/gitnexus-pi": {
       "full_name": "MonsieurBarti/gitnexus-pi",
@@ -1126,7 +1126,7 @@
         "public_repos": 36,
         "total_repos": 36
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MonsieurBarti/hippo-memory-pi": {
       "full_name": "MonsieurBarti/hippo-memory-pi",
@@ -1149,7 +1149,7 @@
         "public_repos": 36,
         "total_repos": 36
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MonsieurBarti/sub-agents-pi": {
       "full_name": "MonsieurBarti/sub-agents-pi",
@@ -1172,7 +1172,7 @@
         "public_repos": 36,
         "total_repos": 36
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MonsieurBarti/ultra-compress-pi": {
       "full_name": "MonsieurBarti/ultra-compress-pi",
@@ -1195,7 +1195,7 @@
         "public_repos": 36,
         "total_repos": 36
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "MonsieurBarti/visual-explainer-pi": {
       "full_name": "MonsieurBarti/visual-explainer-pi",
@@ -1218,7 +1218,7 @@
         "public_repos": 36,
         "total_repos": 36
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "NicoAvanzDev/pi-permissions": {
       "full_name": "NicoAvanzDev/pi-permissions",
@@ -1230,7 +1230,7 @@
       "watches": 0,
       "releases_count": 5,
       "commits_count": 13,
-      "age_days": 33,
+      "age_days": 32,
       "created_at": "2026-03-24T08:06:13Z",
       "owner_metadata": {
         "login": "NicoAvanzDev",
@@ -1241,7 +1241,7 @@
         "public_repos": 18,
         "total_repos": 18
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "NicoAvanzDev/pi-web-extension": {
       "full_name": "NicoAvanzDev/pi-web-extension",
@@ -1264,7 +1264,7 @@
         "public_repos": 18,
         "total_repos": 18
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "OutlitAI/outlit-sdk": {
       "full_name": "OutlitAI/outlit-sdk",
@@ -1287,7 +1287,7 @@
         "public_repos": 3,
         "total_repos": 3
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Panzenbaby/pi-secure-extension": {
       "full_name": "Panzenbaby/pi-secure-extension",
@@ -1310,7 +1310,7 @@
         "public_repos": 16,
         "total_repos": 16
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "RaphaCastelloes/whatsapp-pi": {
       "full_name": "RaphaCastelloes/whatsapp-pi",
@@ -1322,7 +1322,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 98,
-      "age_days": 16,
+      "age_days": 15,
       "created_at": "2026-04-10T04:22:56Z",
       "owner_metadata": {
         "login": "RaphaCastelloes",
@@ -1333,7 +1333,7 @@
         "public_repos": 22,
         "total_repos": 22
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "RielJ/pi-image-preview": {
       "full_name": "RielJ/pi-image-preview",
@@ -1356,7 +1356,7 @@
         "public_repos": 60,
         "total_repos": 60
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "RimuruW/pi-hashline-edit": {
       "full_name": "RimuruW/pi-hashline-edit",
@@ -1379,30 +1379,30 @@
         "public_repos": 33,
         "total_repos": 33
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Runfusion/Fusion": {
       "full_name": "Runfusion/Fusion",
       "owner": "Runfusion",
       "name": "Fusion",
       "source_url": "git+https://github.com/Runfusion/Fusion.git",
-      "stars": 44,
+      "stars": 41,
       "forks": 1,
       "watches": 0,
       "releases_count": 0,
-      "commits_count": 2959,
-      "age_days": 13,
+      "commits_count": 2936,
+      "age_days": 12,
       "created_at": "2026-04-13T01:43:26Z",
       "owner_metadata": {
         "login": "Runfusion",
         "type": "organization",
         "followers": 0,
-        "age_days": 13,
+        "age_days": 12,
         "created_at": "2026-04-13T01:33:22Z",
         "public_repos": 2,
         "total_repos": 2
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "SecKatie/pi-permission": {
       "full_name": "SecKatie/pi-permission",
@@ -1425,7 +1425,7 @@
         "public_repos": 64,
         "total_repos": 64
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ShpetimA/pi-fff": {
       "full_name": "ShpetimA/pi-fff",
@@ -1448,7 +1448,7 @@
         "public_repos": 27,
         "total_repos": 27
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Thinkscape/agent-smart-fetch": {
       "full_name": "Thinkscape/agent-smart-fetch",
@@ -1456,7 +1456,7 @@
       "name": "agent-smart-fetch",
       "source_url": "git+https://github.com/Thinkscape/agent-smart-fetch.git",
       "stars": 14,
-      "forks": 4,
+      "forks": 3,
       "watches": 0,
       "releases_count": 2,
       "commits_count": 89,
@@ -1471,7 +1471,7 @@
         "public_repos": 86,
         "total_repos": 86
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "VandeeFeng/pi-mcp-adapter": {
       "full_name": "VandeeFeng/pi-mcp-adapter",
@@ -1483,7 +1483,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 35,
-      "age_days": 72,
+      "age_days": 71,
       "created_at": "2026-02-13T07:42:06Z",
       "owner_metadata": {
         "login": "VandeeFeng",
@@ -1494,7 +1494,7 @@
         "public_repos": 158,
         "total_repos": 158
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "VandeeFeng/pi-memory-md": {
       "full_name": "VandeeFeng/pi-memory-md",
@@ -1502,11 +1502,11 @@
       "name": "pi-memory-md",
       "source_url": "git+https://github.com/VandeeFeng/pi-memory-md.git",
       "stars": 37,
-      "forks": 8,
+      "forks": 7,
       "watches": 0,
       "releases_count": 0,
-      "commits_count": 64,
-      "age_days": 69,
+      "commits_count": 61,
+      "age_days": 68,
       "created_at": "2026-02-16T05:33:15Z",
       "owner_metadata": {
         "login": "VandeeFeng",
@@ -1517,7 +1517,7 @@
         "public_repos": 158,
         "total_repos": 158
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "VenTheZone/picord": {
       "full_name": "VenTheZone/picord",
@@ -1540,7 +1540,7 @@
         "public_repos": 15,
         "total_repos": 15
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Whamp/pi-brain": {
       "full_name": "Whamp/pi-brain",
@@ -1558,12 +1558,12 @@
         "login": "Whamp",
         "type": "user",
         "followers": 17,
-        "age_days": 5312,
+        "age_days": 5311,
         "created_at": "2011-10-10T06:06:35Z",
-        "public_repos": 120,
-        "total_repos": 120
+        "public_repos": 119,
+        "total_repos": 119
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "Whamp/pi-read-map": {
       "full_name": "Whamp/pi-read-map",
@@ -1581,12 +1581,12 @@
         "login": "Whamp",
         "type": "user",
         "followers": 17,
-        "age_days": 5312,
+        "age_days": 5311,
         "created_at": "2011-10-10T06:06:35Z",
-        "public_repos": 120,
-        "total_repos": 120
+        "public_repos": 119,
+        "total_repos": 119
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "YHM404/pi-skill-smart-read": {
       "full_name": "YHM404/pi-skill-smart-read",
@@ -1598,18 +1598,18 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 12,
-      "age_days": 33,
+      "age_days": 32,
       "created_at": "2026-03-24T09:36:45Z",
       "owner_metadata": {
         "login": "YHM404",
         "type": "user",
-        "followers": 16,
-        "age_days": 2353,
+        "followers": 15,
+        "age_days": 2352,
         "created_at": "2019-11-16T08:45:18Z",
         "public_repos": 41,
         "total_repos": 41
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ZGltYQ/agent-mode": {
       "full_name": "ZGltYQ/agent-mode",
@@ -1632,16 +1632,39 @@
         "public_repos": 43,
         "total_repos": 43
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
+    },
+    "a-canary/pi-upskill": {
+      "full_name": "a-canary/pi-upskill",
+      "owner": "a-canary",
+      "name": "pi-upskill",
+      "source_url": "git+https://github.com/a-canary/pi-upskill.git",
+      "stars": 2,
+      "forks": 0,
+      "watches": 0,
+      "releases_count": 0,
+      "commits_count": 5,
+      "age_days": 43,
+      "created_at": "2026-03-13T02:14:16Z",
+      "owner_metadata": {
+        "login": "a-canary",
+        "type": "user",
+        "followers": 0,
+        "age_days": 3395,
+        "created_at": "2017-01-07T21:37:23Z",
+        "public_repos": 14,
+        "total_repos": 14
+      },
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "a5c-ai/babysitter": {
       "full_name": "a5c-ai/babysitter",
       "owner": "a5c-ai",
       "name": "babysitter",
       "source_url": "git+https://github.com/a5c-ai/babysitter.git",
-      "stars": 663,
+      "stars": 660,
       "forks": 39,
-      "watches": 7,
+      "watches": 6,
       "releases_count": 109,
       "commits_count": 1339,
       "age_days": 110,
@@ -1650,12 +1673,12 @@
         "login": "a5c-ai",
         "type": "organization",
         "followers": 27,
-        "age_days": 445,
+        "age_days": 444,
         "created_at": "2025-02-05T07:46:11Z",
         "public_repos": 22,
         "total_repos": 22
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "acarerdinc/pi-secret-guard": {
       "full_name": "acarerdinc/pi-secret-guard",
@@ -1667,7 +1690,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 38,
-      "age_days": 52,
+      "age_days": 51,
       "created_at": "2026-03-05T04:23:07Z",
       "owner_metadata": {
         "login": "acarerdinc",
@@ -1678,7 +1701,7 @@
         "public_repos": 19,
         "total_repos": 19
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "acsezen/pi-memory-honcho": {
       "full_name": "acsezen/pi-memory-honcho",
@@ -1701,30 +1724,7 @@
         "public_repos": 113,
         "total_repos": 113
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
-    },
-    "aedge-io/typed-clone": {
-      "full_name": "aedge-io/typed-clone",
-      "owner": "aedge-io",
-      "name": "typed-clone",
-      "source_url": "git+https://github.com/aedge-io/typed-clone.git",
-      "stars": 3,
-      "forks": 0,
-      "watches": 0,
-      "releases_count": 2,
-      "commits_count": 13,
-      "age_days": 23,
-      "created_at": "2026-04-03T02:05:50Z",
-      "owner_metadata": {
-        "login": "aedge-io",
-        "type": "organization",
-        "followers": 0,
-        "age_days": 802,
-        "created_at": "2024-02-13T15:38:42Z",
-        "public_repos": 3,
-        "total_repos": 3
-      },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "agneym/pi-honcho-memory": {
       "full_name": "agneym/pi-honcho-memory",
@@ -1747,7 +1747,7 @@
         "public_repos": 140,
         "total_repos": 140
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ahkohd/yagami": {
       "full_name": "ahkohd/yagami",
@@ -1764,13 +1764,13 @@
       "owner_metadata": {
         "login": "ahkohd",
         "type": "user",
-        "followers": 519,
+        "followers": 518,
         "age_days": 3958,
         "created_at": "2015-06-25T00:39:28Z",
-        "public_repos": 85,
-        "total_repos": 85
+        "public_repos": 86,
+        "total_repos": 86
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ajarellanod/pi-usage-bars": {
       "full_name": "ajarellanod/pi-usage-bars",
@@ -1793,7 +1793,7 @@
         "public_repos": 3,
         "total_repos": 3
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "alasano/house-of-pi": {
       "full_name": "alasano/house-of-pi",
@@ -1816,7 +1816,7 @@
         "public_repos": 34,
         "total_repos": 34
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "alexgorbatchev/pi-env": {
       "full_name": "alexgorbatchev/pi-env",
@@ -1828,7 +1828,7 @@
       "watches": 0,
       "releases_count": 3,
       "commits_count": 8,
-      "age_days": 18,
+      "age_days": 17,
       "created_at": "2026-04-08T03:58:01Z",
       "owner_metadata": {
         "login": "alexgorbatchev",
@@ -1839,7 +1839,7 @@
         "public_repos": 291,
         "total_repos": 291
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "alexgorbatchev/pi-skill-library": {
       "full_name": "alexgorbatchev/pi-skill-library",
@@ -1862,7 +1862,7 @@
         "public_repos": 291,
         "total_repos": 291
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "alexleekt/pi-pkg-guard": {
       "full_name": "alexleekt/pi-pkg-guard",
@@ -1874,18 +1874,18 @@
       "watches": 0,
       "releases_count": 12,
       "commits_count": 52,
-      "age_days": 15,
+      "age_days": 14,
       "created_at": "2026-04-11T06:25:04Z",
       "owner_metadata": {
         "login": "alexleekt",
         "type": "user",
         "followers": 4,
-        "age_days": 5528,
+        "age_days": 5527,
         "created_at": "2011-03-08T07:56:41Z",
         "public_repos": 17,
         "total_repos": 17
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "aliou/pi-dev-kit": {
       "full_name": "aliou/pi-dev-kit",
@@ -1903,19 +1903,19 @@
         "login": "aliou",
         "type": "user",
         "followers": 143,
-        "age_days": 5368,
+        "age_days": 5367,
         "created_at": "2011-08-15T05:46:42Z",
         "public_repos": 51,
         "total_repos": 51
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "aliou/pi-guardrails": {
       "full_name": "aliou/pi-guardrails",
       "owner": "aliou",
       "name": "pi-guardrails",
       "source_url": "git+https://github.com/aliou/pi-guardrails.git",
-      "stars": 63,
+      "stars": 60,
       "forks": 11,
       "watches": 1,
       "releases_count": 22,
@@ -1926,12 +1926,12 @@
         "login": "aliou",
         "type": "user",
         "followers": 143,
-        "age_days": 5368,
+        "age_days": 5367,
         "created_at": "2011-08-15T05:46:42Z",
         "public_repos": 51,
         "total_repos": 51
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "aliou/pi-linkup": {
       "full_name": "aliou/pi-linkup",
@@ -1949,12 +1949,12 @@
         "login": "aliou",
         "type": "user",
         "followers": 143,
-        "age_days": 5368,
+        "age_days": 5367,
         "created_at": "2011-08-15T05:46:42Z",
         "public_repos": 51,
         "total_repos": 51
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "aliou/pi-neuralwatt": {
       "full_name": "aliou/pi-neuralwatt",
@@ -1972,12 +1972,12 @@
         "login": "aliou",
         "type": "user",
         "followers": 143,
-        "age_days": 5368,
+        "age_days": 5367,
         "created_at": "2011-08-15T05:46:42Z",
         "public_repos": 51,
         "total_repos": 51
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "aliou/pi-processes": {
       "full_name": "aliou/pi-processes",
@@ -1995,12 +1995,12 @@
         "login": "aliou",
         "type": "user",
         "followers": 143,
-        "age_days": 5368,
+        "age_days": 5367,
         "created_at": "2011-08-15T05:46:42Z",
         "public_repos": 51,
         "total_repos": 51
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "aliou/pi-synthetic": {
       "full_name": "aliou/pi-synthetic",
@@ -2018,12 +2018,12 @@
         "login": "aliou",
         "type": "user",
         "followers": 143,
-        "age_days": 5368,
+        "age_days": 5367,
         "created_at": "2011-08-15T05:46:42Z",
         "public_repos": 51,
         "total_repos": 51
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "aliou/pi-toolchain": {
       "full_name": "aliou/pi-toolchain",
@@ -2041,19 +2041,19 @@
         "login": "aliou",
         "type": "user",
         "followers": 143,
-        "age_days": 5368,
+        "age_days": 5367,
         "created_at": "2011-08-15T05:46:42Z",
         "public_repos": 51,
         "total_repos": 51
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "aliou/pi-ts-aperture": {
       "full_name": "aliou/pi-ts-aperture",
       "owner": "aliou",
       "name": "pi-ts-aperture",
       "source_url": "git+https://github.com/aliou/pi-ts-aperture.git",
-      "stars": 16,
+      "stars": 15,
       "forks": 0,
       "watches": 1,
       "releases_count": 12,
@@ -2064,12 +2064,12 @@
         "login": "aliou",
         "type": "user",
         "followers": 143,
-        "age_days": 5368,
+        "age_days": 5367,
         "created_at": "2011-08-15T05:46:42Z",
         "public_repos": 51,
         "total_repos": 51
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "alvivar/pi-link": {
       "full_name": "alvivar/pi-link",
@@ -2080,19 +2080,19 @@
       "forks": 1,
       "watches": 0,
       "releases_count": 0,
-      "commits_count": 26,
-      "age_days": 34,
+      "commits_count": 25,
+      "age_days": 33,
       "created_at": "2026-03-23T05:16:44Z",
       "owner_metadata": {
         "login": "alvivar",
         "type": "user",
         "followers": 44,
-        "age_days": 5926,
+        "age_days": 5925,
         "created_at": "2010-02-03T01:19:27Z",
         "public_repos": 60,
         "total_repos": 60
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ameno-/pi-minimax-mcp": {
       "full_name": "ameno-/pi-minimax-mcp",
@@ -2115,7 +2115,7 @@
         "public_repos": 76,
         "total_repos": 76
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "anh-chu/pi-subagents": {
       "full_name": "anh-chu/pi-subagents",
@@ -2133,12 +2133,12 @@
         "login": "anh-chu",
         "type": "user",
         "followers": 1,
-        "age_days": 3038,
+        "age_days": 3037,
         "created_at": "2017-12-31T01:06:28Z",
         "public_repos": 40,
         "total_repos": 40
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "apmantza/GreedySearch-pi": {
       "full_name": "apmantza/GreedySearch-pi",
@@ -2161,18 +2161,18 @@
         "public_repos": 13,
         "total_repos": 13
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "apmantza/pi-free": {
       "full_name": "apmantza/pi-free",
       "owner": "apmantza",
       "name": "pi-free",
       "source_url": "git+https://github.com/apmantza/pi-free.git",
-      "stars": 23,
+      "stars": 22,
       "forks": 2,
       "watches": 0,
       "releases_count": 0,
-      "commits_count": 324,
+      "commits_count": 323,
       "age_days": 38,
       "created_at": "2026-03-18T19:53:32Z",
       "owner_metadata": {
@@ -2184,18 +2184,18 @@
         "public_repos": 13,
         "total_repos": 13
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "apmantza/pi-lens": {
       "full_name": "apmantza/pi-lens",
       "owner": "apmantza",
       "name": "pi-lens",
       "source_url": "git+https://github.com/apmantza/pi-lens.git",
-      "stars": 53,
+      "stars": 52,
       "forks": 10,
       "watches": 0,
       "releases_count": 14,
-      "commits_count": 1035,
+      "commits_count": 1033,
       "age_days": 34,
       "created_at": "2026-03-22T22:35:38Z",
       "owner_metadata": {
@@ -2207,7 +2207,7 @@
         "public_repos": 13,
         "total_repos": 13
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "apmantza/pi-models": {
       "full_name": "apmantza/pi-models",
@@ -2230,7 +2230,7 @@
         "public_repos": 13,
         "total_repos": 13
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "apolosan/unified_process_pi_extension": {
       "full_name": "apolosan/unified_process_pi_extension",
@@ -2253,7 +2253,7 @@
         "public_repos": 45,
         "total_repos": 45
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "aretw0/agents-lab": {
       "full_name": "aretw0/agents-lab",
@@ -2270,13 +2270,13 @@
       "owner_metadata": {
         "login": "aretw0",
         "type": "user",
-        "followers": 48,
+        "followers": 47,
         "age_days": 3890,
         "created_at": "2015-08-31T13:12:27Z",
         "public_repos": 161,
         "total_repos": 161
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "arpagon/pi-rewind": {
       "full_name": "arpagon/pi-rewind",
@@ -2299,7 +2299,30 @@
         "public_repos": 80,
         "total_repos": 80
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
+    },
+    "axnic/pi-aks-user-question": {
+      "full_name": "axnic/pi-aks-user-question",
+      "owner": "axnic",
+      "name": "pi-aks-user-question",
+      "source_url": "git+https://github.com/axnic/pi-aks-user-question.git",
+      "stars": 0,
+      "forks": 0,
+      "watches": 0,
+      "releases_count": 7,
+      "commits_count": 67,
+      "age_days": 7,
+      "created_at": "2026-04-18T13:21:07Z",
+      "owner_metadata": {
+        "login": "axnic",
+        "type": "organization",
+        "followers": 0,
+        "age_days": 14,
+        "created_at": "2026-04-11T11:32:12Z",
+        "public_repos": 3,
+        "total_repos": 3
+      },
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "axnic/pi-extension-settings": {
       "full_name": "axnic/pi-extension-settings",
@@ -2322,7 +2345,7 @@
         "public_repos": 3,
         "total_repos": 3
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ayagmar/pi-codex-web-search": {
       "full_name": "ayagmar/pi-codex-web-search",
@@ -2345,7 +2368,7 @@
         "public_repos": 48,
         "total_repos": 48
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ayagmar/pi-extmgr": {
       "full_name": "ayagmar/pi-extmgr",
@@ -2368,30 +2391,30 @@
         "public_repos": 48,
         "total_repos": 48
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "backnotprop/plannotator": {
       "full_name": "backnotprop/plannotator",
       "owner": "backnotprop",
       "name": "plannotator",
       "source_url": "git+https://github.com/backnotprop/plannotator.git",
-      "stars": 4605,
+      "stars": 4594,
       "forks": 321,
       "watches": 14,
       "releases_count": 87,
       "commits_count": 525,
-      "age_days": 119,
+      "age_days": 118,
       "created_at": "2025-12-28T02:09:40Z",
       "owner_metadata": {
         "login": "backnotprop",
         "type": "user",
-        "followers": 516,
+        "followers": 515,
         "age_days": 4399,
         "created_at": "2014-04-09T22:34:05Z",
-        "public_repos": 140,
-        "total_repos": 140
+        "public_repos": 138,
+        "total_repos": 138
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "baochunli/pi-collaborating-agents": {
       "full_name": "baochunli/pi-collaborating-agents",
@@ -2403,18 +2426,18 @@
       "watches": 0,
       "releases_count": 4,
       "commits_count": 39,
-      "age_days": 67,
+      "age_days": 66,
       "created_at": "2026-02-18T02:54:19Z",
       "owner_metadata": {
         "login": "baochunli",
         "type": "user",
         "followers": 105,
-        "age_days": 3468,
+        "age_days": 3467,
         "created_at": "2016-10-27T03:02:59Z",
         "public_repos": 10,
         "total_repos": 10
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "bdsqqq/dots": {
       "full_name": "bdsqqq/dots",
@@ -2425,7 +2448,7 @@
       "forks": 5,
       "watches": 0,
       "releases_count": 0,
-      "commits_count": 1682,
+      "commits_count": 1679,
       "age_days": 308,
       "created_at": "2025-06-21T15:45:58Z",
       "owner_metadata": {
@@ -2437,14 +2460,14 @@
         "public_repos": 158,
         "total_repos": 158
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ben-vargas/pi-packages": {
       "full_name": "ben-vargas/pi-packages",
       "owner": "ben-vargas",
       "name": "pi-packages",
       "source_url": "git+https://github.com/ben-vargas/pi-packages.git",
-      "stars": 60,
+      "stars": 59,
       "forks": 5,
       "watches": 1,
       "releases_count": 3,
@@ -2460,30 +2483,30 @@
         "public_repos": 97,
         "total_repos": 97
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "benvinegar/termdraw": {
       "full_name": "benvinegar/termdraw",
       "owner": "benvinegar",
       "name": "termdraw",
       "source_url": "git+https://github.com/benvinegar/termdraw.git",
-      "stars": 67,
-      "forks": 5,
+      "stars": 44,
+      "forks": 4,
       "watches": 0,
-      "releases_count": 3,
-      "commits_count": 65,
-      "age_days": 17,
+      "releases_count": 0,
+      "commits_count": 61,
+      "age_days": 16,
       "created_at": "2026-04-09T02:36:49Z",
       "owner_metadata": {
         "login": "benvinegar",
         "type": "user",
-        "followers": 727,
+        "followers": 723,
         "age_days": 6626,
         "created_at": "2008-03-04T17:04:00Z",
         "public_repos": 44,
         "total_repos": 44
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "brainopia/pi-ultrathink": {
       "full_name": "brainopia/pi-ultrathink",
@@ -2495,7 +2518,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 28,
-      "age_days": 45,
+      "age_days": 44,
       "created_at": "2026-03-12T03:51:46Z",
       "owner_metadata": {
         "login": "brainopia",
@@ -2506,7 +2529,7 @@
         "public_repos": 73,
         "total_repos": 73
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "braintrustdata/braintrust-pi-extension": {
       "full_name": "braintrustdata/braintrust-pi-extension",
@@ -2529,7 +2552,7 @@
         "public_repos": 90,
         "total_repos": 90
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "buddingnewinsights/pi-diff": {
       "full_name": "buddingnewinsights/pi-diff",
@@ -2547,12 +2570,12 @@
         "login": "buddingnewinsights",
         "type": "user",
         "followers": 2,
-        "age_days": 75,
+        "age_days": 74,
         "created_at": "2026-02-10T08:38:07Z",
         "public_repos": 7,
         "total_repos": 7
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "buddingnewinsights/pi-pretty": {
       "full_name": "buddingnewinsights/pi-pretty",
@@ -2570,12 +2593,12 @@
         "login": "buddingnewinsights",
         "type": "user",
         "followers": 2,
-        "age_days": 75,
+        "age_days": 74,
         "created_at": "2026-02-10T08:38:07Z",
         "public_repos": 7,
         "total_repos": 7
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "buddingnewinsights/pi-search": {
       "full_name": "buddingnewinsights/pi-search",
@@ -2587,18 +2610,18 @@
       "watches": 0,
       "releases_count": 4,
       "commits_count": 7,
-      "age_days": 12,
+      "age_days": 11,
       "created_at": "2026-04-14T01:31:59Z",
       "owner_metadata": {
         "login": "buddingnewinsights",
         "type": "user",
         "followers": 2,
-        "age_days": 75,
+        "age_days": 74,
         "created_at": "2026-02-10T08:38:07Z",
         "public_repos": 7,
         "total_repos": 7
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "burggraf/pi-teams": {
       "full_name": "burggraf/pi-teams",
@@ -2621,7 +2644,7 @@
         "public_repos": 175,
         "total_repos": 175
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "burneikis/pi-fzfp": {
       "full_name": "burneikis/pi-fzfp",
@@ -2629,22 +2652,22 @@
       "name": "pi-fzfp",
       "source_url": "git+https://github.com/burneikis/pi-fzfp.git",
       "stars": 4,
-      "forks": 2,
+      "forks": 1,
       "watches": 0,
       "releases_count": 0,
       "commits_count": 21,
-      "age_days": 31,
+      "age_days": 30,
       "created_at": "2026-03-26T08:52:50Z",
       "owner_metadata": {
         "login": "burneikis",
         "type": "user",
         "followers": 17,
-        "age_days": 1746,
+        "age_days": 1745,
         "created_at": "2021-07-15T02:17:29Z",
         "public_repos": 86,
         "total_repos": 86
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "burneikis/pi-vim": {
       "full_name": "burneikis/pi-vim",
@@ -2656,18 +2679,18 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 33,
-      "age_days": 36,
+      "age_days": 35,
       "created_at": "2026-03-21T01:34:47Z",
       "owner_metadata": {
         "login": "burneikis",
         "type": "user",
         "followers": 17,
-        "age_days": 1746,
+        "age_days": 1745,
         "created_at": "2021-07-15T02:17:29Z",
         "public_repos": 86,
         "total_repos": 86
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "c99e/shopq": {
       "full_name": "c99e/shopq",
@@ -2690,7 +2713,7 @@
         "public_repos": 4,
         "total_repos": 4
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "cadenzadesigns/pi-copy-response": {
       "full_name": "cadenzadesigns/pi-copy-response",
@@ -2713,14 +2736,14 @@
         "public_repos": 5,
         "total_repos": 5
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "carderne/pi-sandbox": {
       "full_name": "carderne/pi-sandbox",
       "owner": "carderne",
       "name": "pi-sandbox",
       "source_url": "git+https://github.com/carderne/pi-sandbox.git",
-      "stars": 57,
+      "stars": 56,
       "forks": 9,
       "watches": 1,
       "releases_count": 11,
@@ -2736,7 +2759,7 @@
         "public_repos": 151,
         "total_repos": 151
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "casualjim/pi-taskplane-planner": {
       "full_name": "casualjim/pi-taskplane-planner",
@@ -2759,7 +2782,7 @@
         "public_repos": 270,
         "total_repos": 270
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "claaslange/pi-progress-bar": {
       "full_name": "claaslange/pi-progress-bar",
@@ -2782,7 +2805,7 @@
         "public_repos": 40,
         "total_repos": 40
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "coctostan/pi-agent-browser": {
       "full_name": "coctostan/pi-agent-browser",
@@ -2794,7 +2817,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 5,
-      "age_days": 76,
+      "age_days": 75,
       "created_at": "2026-02-09T03:39:30Z",
       "owner_metadata": {
         "login": "coctostan",
@@ -2805,7 +2828,7 @@
         "public_repos": 28,
         "total_repos": 28
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "coctostan/pi-hashline-readmap": {
       "full_name": "coctostan/pi-hashline-readmap",
@@ -2828,7 +2851,7 @@
         "public_repos": 28,
         "total_repos": 28
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "coctostan/pi-superpowers-plus": {
       "full_name": "coctostan/pi-superpowers-plus",
@@ -2851,7 +2874,7 @@
         "public_repos": 28,
         "total_repos": 28
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "codersbrew/pi-tools": {
       "full_name": "codersbrew/pi-tools",
@@ -2874,7 +2897,7 @@
         "public_repos": 18,
         "total_repos": 18
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "codexstar69/pi-listen": {
       "full_name": "codexstar69/pi-listen",
@@ -2886,18 +2909,18 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 82,
-      "age_days": 45,
+      "age_days": 44,
       "created_at": "2026-03-12T00:59:59Z",
       "owner_metadata": {
         "login": "codexstar69",
         "type": "user",
-        "followers": 37,
+        "followers": 36,
         "age_days": 413,
         "created_at": "2025-03-08T11:43:43Z",
         "public_repos": 21,
         "total_repos": 21
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "codexstar69/pi-pompom": {
       "full_name": "codexstar69/pi-pompom",
@@ -2914,13 +2937,13 @@
       "owner_metadata": {
         "login": "codexstar69",
         "type": "user",
-        "followers": 37,
+        "followers": 36,
         "age_days": 413,
         "created_at": "2025-03-08T11:43:43Z",
         "public_repos": 21,
         "total_repos": 21
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "codingCoffee/pi-readonly-ssh": {
       "full_name": "codingCoffee/pi-readonly-ssh",
@@ -2943,7 +2966,7 @@
         "public_repos": 84,
         "total_repos": 84
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "complexthings/pi-dynamic-context-pruning": {
       "full_name": "complexthings/pi-dynamic-context-pruning",
@@ -2961,19 +2984,19 @@
         "login": "complexthings",
         "type": "user",
         "followers": 22,
-        "age_days": 5170,
+        "age_days": 5169,
         "created_at": "2012-02-29T05:02:10Z",
         "public_repos": 13,
         "total_repos": 13
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "corespeed-io/wechatbot": {
       "full_name": "corespeed-io/wechatbot",
       "owner": "corespeed-io",
       "name": "wechatbot",
       "source_url": "git+https://github.com/corespeed-io/wechatbot.git",
-      "stars": 376,
+      "stars": 375,
       "forks": 45,
       "watches": 0,
       "releases_count": 0,
@@ -2989,7 +3012,7 @@
         "public_repos": 40,
         "total_repos": 40
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "counterposition/pi": {
       "full_name": "counterposition/pi",
@@ -3012,7 +3035,7 @@
         "public_repos": 28,
         "total_repos": 28
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "czhiming-maker/pi-deep-research": {
       "full_name": "czhiming-maker/pi-deep-research",
@@ -3024,18 +3047,18 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 9,
-      "age_days": 37,
+      "age_days": 36,
       "created_at": "2026-03-20T05:52:36Z",
       "owner_metadata": {
         "login": "czhiming-maker",
         "type": "user",
         "followers": 0,
-        "age_days": 464,
+        "age_days": 463,
         "created_at": "2025-01-17T03:35:19Z",
         "public_repos": 3,
         "total_repos": 3
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "danchamorro/pi-agent-toolkit": {
       "full_name": "danchamorro/pi-agent-toolkit",
@@ -3058,7 +3081,7 @@
         "public_repos": 22,
         "total_repos": 22
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "dantetekanem/friday": {
       "full_name": "dantetekanem/friday",
@@ -3081,7 +3104,7 @@
         "public_repos": 47,
         "total_repos": 47
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "davidorex/pi-custom-compactor": {
       "full_name": "davidorex/pi-custom-compactor",
@@ -3093,7 +3116,7 @@
       "watches": 0,
       "releases_count": 5,
       "commits_count": 28,
-      "age_days": 43,
+      "age_days": 42,
       "created_at": "2026-03-14T03:30:22Z",
       "owner_metadata": {
         "login": "davidorex",
@@ -3104,7 +3127,7 @@
         "public_repos": 40,
         "total_repos": 40
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "davidorex/pi-project-workflows": {
       "full_name": "davidorex/pi-project-workflows",
@@ -3116,7 +3139,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 434,
-      "age_days": 44,
+      "age_days": 43,
       "created_at": "2026-03-13T03:02:07Z",
       "owner_metadata": {
         "login": "davidorex",
@@ -3127,7 +3150,7 @@
         "public_repos": 40,
         "total_repos": 40
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "dbachelder/pi-btw": {
       "full_name": "dbachelder/pi-btw",
@@ -3139,7 +3162,7 @@
       "watches": 0,
       "releases_count": 2,
       "commits_count": 22,
-      "age_days": 46,
+      "age_days": 45,
       "created_at": "2026-03-11T02:41:11Z",
       "owner_metadata": {
         "login": "dbachelder",
@@ -3150,7 +3173,7 @@
         "public_repos": 27,
         "total_repos": 27
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "deanh/rad-pi": {
       "full_name": "deanh/rad-pi",
@@ -3173,7 +3196,7 @@
         "public_repos": 62,
         "total_repos": 62
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "default-anton/pi-finder": {
       "full_name": "default-anton/pi-finder",
@@ -3190,13 +3213,13 @@
       "owner_metadata": {
         "login": "default-anton",
         "type": "user",
-        "followers": 56,
-        "age_days": 5045,
+        "followers": 55,
+        "age_days": 5044,
         "created_at": "2012-07-03T08:03:44Z",
         "public_repos": 39,
         "total_repos": 39
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "default-anton/pi-librarian": {
       "full_name": "default-anton/pi-librarian",
@@ -3208,18 +3231,18 @@
       "watches": 0,
       "releases_count": 20,
       "commits_count": 36,
-      "age_days": 77,
+      "age_days": 76,
       "created_at": "2026-02-08T04:34:55Z",
       "owner_metadata": {
         "login": "default-anton",
         "type": "user",
-        "followers": 56,
-        "age_days": 5045,
+        "followers": 55,
+        "age_days": 5044,
         "created_at": "2012-07-03T08:03:44Z",
         "public_repos": 39,
         "total_repos": 39
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "default-anton/pi-moonshot": {
       "full_name": "default-anton/pi-moonshot",
@@ -3236,20 +3259,20 @@
       "owner_metadata": {
         "login": "default-anton",
         "type": "user",
-        "followers": 56,
-        "age_days": 5045,
+        "followers": 55,
+        "age_days": 5044,
         "created_at": "2012-07-03T08:03:44Z",
         "public_repos": 39,
         "total_repos": 39
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "default-anton/pi-subdir-context": {
       "full_name": "default-anton/pi-subdir-context",
       "owner": "default-anton",
       "name": "pi-subdir-context",
       "source_url": "git+https://github.com/default-anton/pi-subdir-context.git",
-      "stars": 20,
+      "stars": 19,
       "forks": 0,
       "watches": 0,
       "releases_count": 10,
@@ -3259,13 +3282,13 @@
       "owner_metadata": {
         "login": "default-anton",
         "type": "user",
-        "followers": 56,
-        "age_days": 5045,
+        "followers": 55,
+        "age_days": 5044,
         "created_at": "2012-07-03T08:03:44Z",
         "public_repos": 39,
         "total_repos": 39
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "default-anton/pi-tmux-window-name": {
       "full_name": "default-anton/pi-tmux-window-name",
@@ -3282,13 +3305,13 @@
       "owner_metadata": {
         "login": "default-anton",
         "type": "user",
-        "followers": 56,
-        "age_days": 5045,
+        "followers": 55,
+        "age_days": 5044,
         "created_at": "2012-07-03T08:03:44Z",
         "public_repos": 39,
         "total_repos": 39
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "deflating/tau": {
       "full_name": "deflating/tau",
@@ -3311,7 +3334,7 @@
         "public_repos": 9,
         "total_repos": 9
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "denniseijpe/pi-fizzy": {
       "full_name": "denniseijpe/pi-fizzy",
@@ -3334,7 +3357,7 @@
         "public_repos": 39,
         "total_repos": 39
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "devkade/pi-ask-tool": {
       "full_name": "devkade/pi-ask-tool",
@@ -3357,7 +3380,7 @@
         "public_repos": 71,
         "total_repos": 71
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "diegopetrucci/pi-extensions": {
       "full_name": "diegopetrucci/pi-extensions",
@@ -3380,7 +3403,7 @@
         "public_repos": 36,
         "total_repos": 36
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "djdembeck/pi-comment-checker": {
       "full_name": "djdembeck/pi-comment-checker",
@@ -3392,7 +3415,7 @@
       "watches": 0,
       "releases_count": 6,
       "commits_count": 56,
-      "age_days": 21,
+      "age_days": 20,
       "created_at": "2026-04-05T07:48:44Z",
       "owner_metadata": {
         "login": "djdembeck",
@@ -3403,7 +3426,7 @@
         "public_repos": 31,
         "total_repos": 31
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "dkmnx/pi-clarify": {
       "full_name": "dkmnx/pi-clarify",
@@ -3426,7 +3449,7 @@
         "public_repos": 21,
         "total_repos": 21
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "dkod-io/pi-extension": {
       "full_name": "dkod-io/pi-extension",
@@ -3438,25 +3461,25 @@
       "watches": 0,
       "releases_count": 7,
       "commits_count": 18,
-      "age_days": 18,
+      "age_days": 17,
       "created_at": "2026-04-08T07:22:48Z",
       "owner_metadata": {
         "login": "dkod-io",
         "type": "organization",
         "followers": 1,
-        "age_days": 57,
+        "age_days": 56,
         "created_at": "2026-02-28T07:28:30Z",
         "public_repos": 5,
         "total_repos": 5
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "dmtrKovalenko/fff.nvim": {
       "full_name": "dmtrKovalenko/fff.nvim",
       "owner": "dmtrKovalenko",
       "name": "fff.nvim",
       "source_url": "git+https://github.com/dmtrKovalenko/fff.nvim.git",
-      "stars": 5452,
+      "stars": 5446,
       "forks": 244,
       "watches": 9,
       "releases_count": 485,
@@ -3466,13 +3489,13 @@
       "owner_metadata": {
         "login": "dmtrKovalenko",
         "type": "user",
-        "followers": 1526,
+        "followers": 1525,
         "age_days": 3741,
         "created_at": "2016-01-27T19:57:58Z",
         "public_repos": 159,
         "total_repos": 159
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "dreki-gg/pi-extensions": {
       "full_name": "dreki-gg/pi-extensions",
@@ -3495,7 +3518,7 @@
         "public_repos": 2,
         "total_repos": 2
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "dtmirizzi/pi-governance": {
       "full_name": "dtmirizzi/pi-governance",
@@ -3518,7 +3541,7 @@
         "public_repos": 45,
         "total_repos": 45
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "dustinbyrne/kb": {
       "full_name": "dustinbyrne/kb",
@@ -3541,7 +3564,7 @@
         "public_repos": 9,
         "total_repos": 9
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "edgyarmati/Omni-Pi": {
       "full_name": "edgyarmati/Omni-Pi",
@@ -3564,7 +3587,7 @@
         "public_repos": 8,
         "total_repos": 8
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "edlsh/pi-ask-user": {
       "full_name": "edlsh/pi-ask-user",
@@ -3587,7 +3610,7 @@
         "public_repos": 13,
         "total_repos": 13
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "eforge-build/eforge": {
       "full_name": "eforge-build/eforge",
@@ -3597,8 +3620,8 @@
       "stars": 63,
       "forks": 4,
       "watches": 1,
-      "releases_count": 34,
-      "commits_count": 1836,
+      "releases_count": 32,
+      "commits_count": 1740,
       "age_days": 41,
       "created_at": "2026-03-15T14:47:16Z",
       "owner_metadata": {
@@ -3610,7 +3633,7 @@
         "public_repos": 3,
         "total_repos": 3
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "eko24ive/pi-ask": {
       "full_name": "eko24ive/pi-ask",
@@ -3633,30 +3656,30 @@
         "public_repos": 12,
         "total_repos": 12
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "elidickinson/pi-claude-bridge": {
       "full_name": "elidickinson/pi-claude-bridge",
       "owner": "elidickinson",
       "name": "pi-claude-bridge",
       "source_url": "git+https://github.com/elidickinson/pi-claude-bridge.git",
-      "stars": 70,
+      "stars": 67,
       "forks": 9,
       "watches": 3,
       "releases_count": 0,
       "commits_count": 231,
-      "age_days": 32,
+      "age_days": 31,
       "created_at": "2026-03-25T01:05:57Z",
       "owner_metadata": {
         "login": "elidickinson",
         "type": "user",
         "followers": 34,
-        "age_days": 6318,
+        "age_days": 6317,
         "created_at": "2009-01-07T05:16:51Z",
         "public_repos": 63,
         "total_repos": 63
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "elpapi42/pi-observational-memory": {
       "full_name": "elpapi42/pi-observational-memory",
@@ -3679,7 +3702,7 @@
         "public_repos": 65,
         "total_repos": 65
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "emanuelcasco/pi-mono-extensions": {
       "full_name": "emanuelcasco/pi-mono-extensions",
@@ -3697,12 +3720,12 @@
         "login": "emanuelcasco",
         "type": "user",
         "followers": 42,
-        "age_days": 4699,
+        "age_days": 4698,
         "created_at": "2013-06-14T08:02:34Z",
         "public_repos": 44,
         "total_repos": 44
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "feniix/pi-extensions": {
       "full_name": "feniix/pi-extensions",
@@ -3714,7 +3737,7 @@
       "watches": 0,
       "releases_count": 21,
       "commits_count": 343,
-      "age_days": 20,
+      "age_days": 19,
       "created_at": "2026-04-06T03:12:02Z",
       "owner_metadata": {
         "login": "feniix",
@@ -3725,7 +3748,7 @@
         "public_repos": 76,
         "total_repos": 76
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ferologics/pi-notify": {
       "full_name": "ferologics/pi-notify",
@@ -3748,7 +3771,7 @@
         "public_repos": 100,
         "total_repos": 100
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ferologics/pi-shit": {
       "full_name": "ferologics/pi-shit",
@@ -3760,7 +3783,7 @@
       "watches": 0,
       "releases_count": 13,
       "commits_count": 191,
-      "age_days": 76,
+      "age_days": 75,
       "created_at": "2026-02-09T01:07:55Z",
       "owner_metadata": {
         "login": "ferologics",
@@ -3771,7 +3794,7 @@
         "public_repos": 100,
         "total_repos": 100
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "fink-andreas/pi-linear-tools": {
       "full_name": "fink-andreas/pi-linear-tools",
@@ -3783,7 +3806,7 @@
       "watches": 0,
       "releases_count": 11,
       "commits_count": 132,
-      "age_days": 61,
+      "age_days": 60,
       "created_at": "2026-02-24T09:13:54Z",
       "owner_metadata": {
         "login": "fink-andreas",
@@ -3794,7 +3817,7 @@
         "public_repos": 13,
         "total_repos": 13
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "fitchmultz/pi-agent-browser-native": {
       "full_name": "fitchmultz/pi-agent-browser-native",
@@ -3817,7 +3840,7 @@
         "public_repos": 24,
         "total_repos": 24
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "fitchmultz/pi-copy-user-message": {
       "full_name": "fitchmultz/pi-copy-user-message",
@@ -3840,7 +3863,7 @@
         "public_repos": 24,
         "total_repos": 24
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "fitchmultz/pi-edit-session-in-place": {
       "full_name": "fitchmultz/pi-edit-session-in-place",
@@ -3863,7 +3886,7 @@
         "public_repos": 24,
         "total_repos": 24
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "fitchmultz/pi-ephemeral": {
       "full_name": "fitchmultz/pi-ephemeral",
@@ -3886,7 +3909,7 @@
         "public_repos": 24,
         "total_repos": 24
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "fitchmultz/pi-local-agents-only": {
       "full_name": "fitchmultz/pi-local-agents-only",
@@ -3909,7 +3932,7 @@
         "public_repos": 24,
         "total_repos": 24
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "fitchmultz/pi-oracle": {
       "full_name": "fitchmultz/pi-oracle",
@@ -3932,7 +3955,7 @@
         "public_repos": 24,
         "total_repos": 24
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "fitchmultz/pi-stash": {
       "full_name": "fitchmultz/pi-stash",
@@ -3955,30 +3978,7 @@
         "public_repos": 24,
         "total_repos": 24
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
-    },
-    "fluxgear/pi-thinking-steps": {
-      "full_name": "fluxgear/pi-thinking-steps",
-      "owner": "fluxgear",
-      "name": "pi-thinking-steps",
-      "source_url": "git+https://github.com/fluxgear/pi-thinking-steps.git",
-      "stars": 54,
-      "forks": 3,
-      "watches": 0,
-      "releases_count": 0,
-      "commits_count": 22,
-      "age_days": 6,
-      "created_at": "2026-04-19T15:44:23Z",
-      "owner_metadata": {
-        "login": "fluxgear",
-        "type": "user",
-        "followers": 2,
-        "age_days": 1522,
-        "created_at": "2022-02-23T21:04:42Z",
-        "public_repos": 8,
-        "total_repos": 8
-      },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "forjd/pi-todo-md": {
       "full_name": "forjd/pi-todo-md",
@@ -4001,7 +4001,7 @@
         "public_repos": 14,
         "total_repos": 14
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "fulgidus/pi-depo": {
       "full_name": "fulgidus/pi-depo",
@@ -4024,7 +4024,7 @@
         "public_repos": 34,
         "total_repos": 34
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "fulgidus/pi-gsd": {
       "full_name": "fulgidus/pi-gsd",
@@ -4036,7 +4036,7 @@
       "watches": 0,
       "releases_count": 71,
       "commits_count": 196,
-      "age_days": 23,
+      "age_days": 22,
       "created_at": "2026-04-03T08:43:56Z",
       "owner_metadata": {
         "login": "fulgidus",
@@ -4047,7 +4047,7 @@
         "public_repos": 34,
         "total_repos": 34
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "gee666/pi-mcp-adapter": {
       "full_name": "gee666/pi-mcp-adapter",
@@ -4070,7 +4070,7 @@
         "public_repos": 21,
         "total_repos": 21
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "gee666/pi-subagent": {
       "full_name": "gee666/pi-subagent",
@@ -4081,7 +4081,7 @@
       "forks": 0,
       "watches": 0,
       "releases_count": 0,
-      "commits_count": 75,
+      "commits_count": 72,
       "age_days": 47,
       "created_at": "2026-03-09T15:50:27Z",
       "owner_metadata": {
@@ -4093,7 +4093,7 @@
         "public_repos": 21,
         "total_repos": 21
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "geminixiang/pi-simplify": {
       "full_name": "geminixiang/pi-simplify",
@@ -4105,7 +4105,7 @@
       "watches": 0,
       "releases_count": 4,
       "commits_count": 18,
-      "age_days": 18,
+      "age_days": 17,
       "created_at": "2026-04-08T07:39:49Z",
       "owner_metadata": {
         "login": "geminixiang",
@@ -4116,7 +4116,7 @@
         "public_repos": 105,
         "total_repos": 105
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "getbeatly/beatly": {
       "full_name": "getbeatly/beatly",
@@ -4128,26 +4128,26 @@
       "watches": 0,
       "releases_count": 12,
       "commits_count": 46,
-      "age_days": 8,
+      "age_days": 7,
       "created_at": "2026-04-18T07:44:10Z",
       "owner_metadata": {
         "login": "getbeatly",
         "type": "organization",
         "followers": 0,
-        "age_days": 8,
+        "age_days": 7,
         "created_at": "2026-04-18T07:04:01Z",
         "public_repos": 4,
         "total_repos": 4
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "getcompanion-ai/feynman": {
       "full_name": "getcompanion-ai/feynman",
       "owner": "getcompanion-ai",
       "name": "feynman",
       "source_url": "git+https://github.com/getcompanion-ai/feynman.git",
-      "stars": 5880,
-      "forks": 727,
+      "stars": 5871,
+      "forks": 726,
       "watches": 28,
       "releases_count": 29,
       "commits_count": 157,
@@ -4157,12 +4157,12 @@
         "login": "getcompanion-ai",
         "type": "organization",
         "followers": 84,
-        "age_days": 227,
+        "age_days": 226,
         "created_at": "2025-09-11T07:25:05Z",
         "public_repos": 12,
         "total_repos": 12
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "guanyilun/pi-ads": {
       "full_name": "guanyilun/pi-ads",
@@ -4174,7 +4174,7 @@
       "watches": 1,
       "releases_count": 0,
       "commits_count": 10,
-      "age_days": 25,
+      "age_days": 24,
       "created_at": "2026-04-01T06:20:26Z",
       "owner_metadata": {
         "login": "guanyilun",
@@ -4185,7 +4185,7 @@
         "public_repos": 105,
         "total_repos": 105
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "guwidoe/pi-playwright": {
       "full_name": "guwidoe/pi-playwright",
@@ -4197,18 +4197,18 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 2,
-      "age_days": 49,
+      "age_days": 48,
       "created_at": "2026-03-08T08:15:24Z",
       "owner_metadata": {
         "login": "guwidoe",
         "type": "user",
         "followers": 36,
-        "age_days": 1951,
+        "age_days": 1950,
         "created_at": "2020-12-22T03:31:13Z",
         "public_repos": 20,
         "total_repos": 20
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "guwidoe/pi-prompt-suggester": {
       "full_name": "guwidoe/pi-prompt-suggester",
@@ -4226,12 +4226,12 @@
         "login": "guwidoe",
         "type": "user",
         "followers": 36,
-        "age_days": 1951,
+        "age_days": 1950,
         "created_at": "2020-12-22T03:31:13Z",
         "public_repos": 20,
         "total_repos": 20
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "harrisiirak/pi-codexbar": {
       "full_name": "harrisiirak/pi-codexbar",
@@ -4254,7 +4254,7 @@
         "public_repos": 37,
         "total_repos": 37
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "hisea/pi-deck": {
       "full_name": "hisea/pi-deck",
@@ -4266,7 +4266,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 20,
-      "age_days": 32,
+      "age_days": 31,
       "created_at": "2026-03-25T03:40:41Z",
       "owner_metadata": {
         "login": "hisea",
@@ -4277,14 +4277,14 @@
         "public_repos": 103,
         "total_repos": 103
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "hjanuschka/pi-multi-pass": {
       "full_name": "hjanuschka/pi-multi-pass",
       "owner": "hjanuschka",
       "name": "pi-multi-pass",
       "source_url": "git+https://github.com/hjanuschka/pi-multi-pass.git",
-      "stars": 324,
+      "stars": 323,
       "forks": 21,
       "watches": 0,
       "releases_count": 0,
@@ -4294,20 +4294,20 @@
       "owner_metadata": {
         "login": "hjanuschka",
         "type": "user",
-        "followers": 216,
+        "followers": 215,
         "age_days": 4898,
         "created_at": "2012-11-26T12:01:33Z",
         "public_repos": 340,
         "total_repos": 340
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "hk-vk/pi-connect": {
       "full_name": "hk-vk/pi-connect",
       "owner": "hk-vk",
       "name": "pi-connect",
       "source_url": "git+https://github.com/hk-vk/pi-connect.git",
-      "stars": 10,
+      "stars": 9,
       "forks": 1,
       "watches": 0,
       "releases_count": 0,
@@ -4323,7 +4323,7 @@
         "public_repos": 35,
         "total_repos": 35
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "huang-x-h/pi-dingtalkbot": {
       "full_name": "huang-x-h/pi-dingtalkbot",
@@ -4335,7 +4335,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 48,
-      "age_days": 9,
+      "age_days": 8,
       "created_at": "2026-04-17T06:31:19Z",
       "owner_metadata": {
         "login": "huang-x-h",
@@ -4346,7 +4346,7 @@
         "public_repos": 131,
         "total_repos": 131
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "huang-x-h/pi-wecombot": {
       "full_name": "huang-x-h/pi-wecombot",
@@ -4358,7 +4358,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 41,
-      "age_days": 14,
+      "age_days": 13,
       "created_at": "2026-04-12T04:09:57Z",
       "owner_metadata": {
         "login": "huang-x-h",
@@ -4369,7 +4369,7 @@
         "public_repos": 131,
         "total_repos": 131
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "iamtouchskyer/memex": {
       "full_name": "iamtouchskyer/memex",
@@ -4377,22 +4377,22 @@
       "name": "memex",
       "source_url": "git+https://github.com/iamtouchskyer/memex.git",
       "stars": 188,
-      "forks": 41,
+      "forks": 40,
       "watches": 7,
       "releases_count": 3,
       "commits_count": 228,
-      "age_days": 37,
+      "age_days": 36,
       "created_at": "2026-03-20T03:06:21Z",
       "owner_metadata": {
         "login": "iamtouchskyer",
         "type": "user",
         "followers": 73,
-        "age_days": 3881,
+        "age_days": 3880,
         "created_at": "2015-09-10T06:10:24Z",
         "public_repos": 21,
         "total_repos": 21
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ibitato/std-c99-proj-skill": {
       "full_name": "ibitato/std-c99-proj-skill",
@@ -4410,24 +4410,24 @@
         "login": "ibitato",
         "type": "user",
         "followers": 0,
-        "age_days": 3588,
+        "age_days": 3587,
         "created_at": "2016-06-29T07:19:08Z",
         "public_repos": 7,
         "total_repos": 7
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ifiokjr/oh-pi": {
       "full_name": "ifiokjr/oh-pi",
       "owner": "ifiokjr",
       "name": "oh-pi",
       "source_url": "git+https://github.com/ifiokjr/oh-pi.git",
-      "stars": 73,
+      "stars": 71,
       "forks": 11,
       "watches": 0,
       "releases_count": 28,
-      "commits_count": 477,
-      "age_days": 49,
+      "commits_count": 473,
+      "age_days": 48,
       "created_at": "2026-03-08T08:33:14Z",
       "owner_metadata": {
         "login": "ifiokjr",
@@ -4438,7 +4438,7 @@
         "public_repos": 217,
         "total_repos": 217
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "imbue-ai/latchkey": {
       "full_name": "imbue-ai/latchkey",
@@ -4461,7 +4461,7 @@
         "public_repos": 46,
         "total_repos": 46
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "imsus/pi-extension-minimax-coding-plan-mcp": {
       "full_name": "imsus/pi-extension-minimax-coding-plan-mcp",
@@ -4484,7 +4484,7 @@
         "public_repos": 79,
         "total_repos": 79
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ineersa/my-pi": {
       "full_name": "ineersa/my-pi",
@@ -4495,7 +4495,7 @@
       "forks": 0,
       "watches": 0,
       "releases_count": 0,
-      "commits_count": 30,
+      "commits_count": 29,
       "age_days": 11,
       "created_at": "2026-04-14T15:24:25Z",
       "owner_metadata": {
@@ -4507,15 +4507,15 @@
         "public_repos": 65,
         "total_repos": 65
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "injaneity/pi-computer-use": {
       "full_name": "injaneity/pi-computer-use",
       "owner": "injaneity",
       "name": "pi-computer-use",
       "source_url": "git+https://github.com/injaneity/pi-computer-use.git",
-      "stars": 388,
-      "forks": 27,
+      "stars": 377,
+      "forks": 24,
       "watches": 3,
       "releases_count": 9,
       "commits_count": 70,
@@ -4530,7 +4530,7 @@
         "public_repos": 29,
         "total_repos": 29
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "itisbryan/pi-add-dir": {
       "full_name": "itisbryan/pi-add-dir",
@@ -4542,7 +4542,7 @@
       "watches": 0,
       "releases_count": 6,
       "commits_count": 19,
-      "age_days": 27,
+      "age_days": 26,
       "created_at": "2026-03-30T04:21:14Z",
       "owner_metadata": {
         "login": "itisbryan",
@@ -4553,7 +4553,7 @@
         "public_repos": 60,
         "total_repos": 60
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "itisbryan/pi-missions": {
       "full_name": "itisbryan/pi-missions",
@@ -4565,7 +4565,7 @@
       "watches": 0,
       "releases_count": 4,
       "commits_count": 14,
-      "age_days": 23,
+      "age_days": 22,
       "created_at": "2026-04-03T04:33:18Z",
       "owner_metadata": {
         "login": "itisbryan",
@@ -4576,7 +4576,7 @@
         "public_repos": 60,
         "total_repos": 60
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "jadzeino/betterctx-client": {
       "full_name": "jadzeino/betterctx-client",
@@ -4599,7 +4599,7 @@
         "public_repos": 50,
         "total_repos": 50
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "jayshah5696/pi-agent-extensions": {
       "full_name": "jayshah5696/pi-agent-extensions",
@@ -4610,19 +4610,19 @@
       "forks": 2,
       "watches": 1,
       "releases_count": 0,
-      "commits_count": 54,
-      "age_days": 79,
+      "commits_count": 53,
+      "age_days": 78,
       "created_at": "2026-02-06T05:17:51Z",
       "owner_metadata": {
         "login": "jayshah5696",
         "type": "user",
         "followers": 43,
-        "age_days": 3298,
+        "age_days": 3297,
         "created_at": "2017-04-15T07:45:19Z",
         "public_repos": 51,
         "total_repos": 51
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "jayzeng/pi-memory": {
       "full_name": "jayzeng/pi-memory",
@@ -4630,7 +4630,7 @@
       "name": "pi-memory",
       "source_url": "git+https://github.com/jayzeng/pi-memory.git",
       "stars": 35,
-      "forks": 5,
+      "forks": 4,
       "watches": 0,
       "releases_count": 0,
       "commits_count": 28,
@@ -4645,7 +4645,7 @@
         "public_repos": 107,
         "total_repos": 107
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "jdiamond/pi-guard": {
       "full_name": "jdiamond/pi-guard",
@@ -4657,18 +4657,18 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 41,
-      "age_days": 29,
+      "age_days": 28,
       "created_at": "2026-03-28T03:55:16Z",
       "owner_metadata": {
         "login": "jdiamond",
         "type": "user",
         "followers": 115,
-        "age_days": 6113,
+        "age_days": 6112,
         "created_at": "2009-07-31T06:59:24Z",
         "public_repos": 96,
         "total_repos": 96
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "jeremyosih/pi-executor": {
       "full_name": "jeremyosih/pi-executor",
@@ -4686,19 +4686,19 @@
         "login": "jeremyosih",
         "type": "user",
         "followers": 18,
-        "age_days": 3099,
+        "age_days": 3098,
         "created_at": "2017-10-31T05:36:10Z",
         "public_repos": 17,
         "total_repos": 17
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "jonjonrankin/pi-caveman": {
       "full_name": "jonjonrankin/pi-caveman",
       "owner": "jonjonrankin",
       "name": "pi-caveman",
       "source_url": "git+https://github.com/jonjonrankin/pi-caveman.git",
-      "stars": 27,
+      "stars": 26,
       "forks": 3,
       "watches": 1,
       "releases_count": 0,
@@ -4709,12 +4709,12 @@
         "login": "jonjonrankin",
         "type": "user",
         "followers": 3,
-        "age_days": 3682,
+        "age_days": 3681,
         "created_at": "2016-03-27T05:18:04Z",
         "public_repos": 3,
         "total_repos": 3
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "jpstrikesback/pi-rlm": {
       "full_name": "jpstrikesback/pi-rlm",
@@ -4737,7 +4737,7 @@
         "public_repos": 90,
         "total_repos": 90
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "juanibiapina/pi-extension-settings": {
       "full_name": "juanibiapina/pi-extension-settings",
@@ -4760,7 +4760,7 @@
         "public_repos": 50,
         "total_repos": 50
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "juanibiapina/pi-powerbar": {
       "full_name": "juanibiapina/pi-powerbar",
@@ -4783,7 +4783,7 @@
         "public_repos": 50,
         "total_repos": 50
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "juhas96/graphify-pi": {
       "full_name": "juhas96/graphify-pi",
@@ -4795,7 +4795,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 5,
-      "age_days": 10,
+      "age_days": 9,
       "created_at": "2026-04-16T06:37:42Z",
       "owner_metadata": {
         "login": "juhas96",
@@ -4806,7 +4806,7 @@
         "public_repos": 35,
         "total_repos": 35
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "juhas96/mempalace-pi": {
       "full_name": "juhas96/mempalace-pi",
@@ -4829,7 +4829,7 @@
         "public_repos": 35,
         "total_repos": 35
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "juhas96/omo-slim-pi": {
       "full_name": "juhas96/omo-slim-pi",
@@ -4852,7 +4852,7 @@
         "public_repos": 35,
         "total_repos": 35
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "juicesharp/rpiv-mono": {
       "full_name": "juicesharp/rpiv-mono",
@@ -4863,19 +4863,19 @@
       "forks": 1,
       "watches": 0,
       "releases_count": 0,
-      "commits_count": 139,
+      "commits_count": 135,
       "age_days": 7,
       "created_at": "2026-04-18T15:26:12Z",
       "owner_metadata": {
         "login": "juicesharp",
         "type": "user",
         "followers": 1,
-        "age_days": 4365,
+        "age_days": 4364,
         "created_at": "2014-05-14T01:02:44Z",
         "public_repos": 8,
         "total_repos": 8
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "kaiserlich-dev/pi-session-search": {
       "full_name": "kaiserlich-dev/pi-session-search",
@@ -4898,7 +4898,7 @@
         "public_repos": 8,
         "total_repos": 8
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "kalindudc/pi-minions": {
       "full_name": "kalindudc/pi-minions",
@@ -4916,12 +4916,12 @@
         "login": "kalindudc",
         "type": "user",
         "followers": 32,
-        "age_days": 4298,
+        "age_days": 4297,
         "created_at": "2014-07-20T03:00:35Z",
         "public_repos": 38,
         "total_repos": 38
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "kalindudc/pi-quests": {
       "full_name": "kalindudc/pi-quests",
@@ -4933,18 +4933,18 @@
       "watches": 0,
       "releases_count": 9,
       "commits_count": 39,
-      "age_days": 16,
+      "age_days": 15,
       "created_at": "2026-04-10T02:16:30Z",
       "owner_metadata": {
         "login": "kalindudc",
         "type": "user",
         "followers": 32,
-        "age_days": 4298,
+        "age_days": 4297,
         "created_at": "2014-07-20T03:00:35Z",
         "public_repos": 38,
         "total_repos": 38
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "kingkillery/pk-pi-hermes-evolve": {
       "full_name": "kingkillery/pk-pi-hermes-evolve",
@@ -4962,12 +4962,12 @@
         "login": "kingkillery",
         "type": "user",
         "followers": 5,
-        "age_days": 425,
+        "age_days": 424,
         "created_at": "2025-02-25T06:46:14Z",
-        "public_repos": 272,
-        "total_repos": 272
+        "public_repos": 270,
+        "total_repos": 270
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "kotarac/pi-fetch": {
       "full_name": "kotarac/pi-fetch",
@@ -4990,7 +4990,7 @@
         "public_repos": 33,
         "total_repos": 33
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "kylebrodeur/1password-ssh-setup": {
       "full_name": "kylebrodeur/1password-ssh-setup",
@@ -5008,12 +5008,12 @@
         "login": "kylebrodeur",
         "type": "user",
         "followers": 51,
-        "age_days": 5449,
+        "age_days": 5448,
         "created_at": "2011-05-26T01:55:33Z",
         "public_repos": 26,
         "total_repos": 26
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "kylebrodeur/pi-qmd-ledger": {
       "full_name": "kylebrodeur/pi-qmd-ledger",
@@ -5023,20 +5023,20 @@
       "stars": 0,
       "forks": 0,
       "watches": 0,
-      "releases_count": 4,
-      "commits_count": 51,
-      "age_days": 4,
+      "releases_count": 0,
+      "commits_count": 39,
+      "age_days": 3,
       "created_at": "2026-04-22T07:30:23Z",
       "owner_metadata": {
         "login": "kylebrodeur",
         "type": "user",
         "followers": 51,
-        "age_days": 5449,
+        "age_days": 5448,
         "created_at": "2011-05-26T01:55:33Z",
         "public_repos": 26,
         "total_repos": 26
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "lajarre/pi-vim": {
       "full_name": "lajarre/pi-vim",
@@ -5048,7 +5048,7 @@
       "watches": 1,
       "releases_count": 4,
       "commits_count": 109,
-      "age_days": 54,
+      "age_days": 53,
       "created_at": "2026-03-03T01:19:24Z",
       "owner_metadata": {
         "login": "lajarre",
@@ -5059,7 +5059,7 @@
         "public_repos": 72,
         "total_repos": 72
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "latent-variable/pi-terminal-bench": {
       "full_name": "latent-variable/pi-terminal-bench",
@@ -5082,7 +5082,7 @@
         "public_repos": 67,
         "total_repos": 67
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "leing2021/super-pi": {
       "full_name": "leing2021/super-pi",
@@ -5105,7 +5105,7 @@
         "public_repos": 185,
         "total_repos": 185
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "lienminhquang/claude-grammar": {
       "full_name": "lienminhquang/claude-grammar",
@@ -5117,7 +5117,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 21,
-      "age_days": 30,
+      "age_days": 29,
       "created_at": "2026-03-27T05:23:48Z",
       "owner_metadata": {
         "login": "lienminhquang",
@@ -5128,7 +5128,7 @@
         "public_repos": 74,
         "total_repos": 74
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "llblab/pi-telegram": {
       "full_name": "llblab/pi-telegram",
@@ -5151,7 +5151,7 @@
         "public_repos": 14,
         "total_repos": 14
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "lnilluv/eslint-plugin-lookup-table": {
       "full_name": "lnilluv/eslint-plugin-lookup-table",
@@ -5174,7 +5174,7 @@
         "public_repos": 26,
         "total_repos": 26
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "lnilluv/pi-opencode-go-rotation": {
       "full_name": "lnilluv/pi-opencode-go-rotation",
@@ -5197,7 +5197,7 @@
         "public_repos": 26,
         "total_repos": 26
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "lnilluv/pi-ralph-loop": {
       "full_name": "lnilluv/pi-ralph-loop",
@@ -5220,7 +5220,7 @@
         "public_repos": 26,
         "total_repos": 26
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "lucasmeijer/pi-bash-live-view": {
       "full_name": "lucasmeijer/pi-bash-live-view",
@@ -5232,7 +5232,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 4,
-      "age_days": 37,
+      "age_days": 36,
       "created_at": "2026-03-20T08:59:25Z",
       "owner_metadata": {
         "login": "lucasmeijer",
@@ -5243,7 +5243,7 @@
         "public_repos": 50,
         "total_repos": 50
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "lucaspiritogit/pi-diffloop": {
       "full_name": "lucaspiritogit/pi-diffloop",
@@ -5255,7 +5255,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 62,
-      "age_days": 20,
+      "age_days": 19,
       "created_at": "2026-04-06T02:19:00Z",
       "owner_metadata": {
         "login": "lucaspiritogit",
@@ -5266,7 +5266,7 @@
         "public_repos": 24,
         "total_repos": 24
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "lukaskawerau/pi-share-redacted-gist": {
       "full_name": "lukaskawerau/pi-share-redacted-gist",
@@ -5289,7 +5289,7 @@
         "public_repos": 38,
         "total_repos": 38
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "marcfargas/pi-test-harness": {
       "full_name": "marcfargas/pi-test-harness",
@@ -5312,7 +5312,7 @@
         "public_repos": 47,
         "total_repos": 47
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "mario-gc/pi-gotify-notifier": {
       "full_name": "mario-gc/pi-gotify-notifier",
@@ -5335,7 +5335,7 @@
         "public_repos": 8,
         "total_repos": 8
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "markoonakic/pi-working-line": {
       "full_name": "markoonakic/pi-working-line",
@@ -5347,7 +5347,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 10,
-      "age_days": 15,
+      "age_days": 14,
       "created_at": "2026-04-11T05:03:55Z",
       "owner_metadata": {
         "login": "markoonakic",
@@ -5358,7 +5358,7 @@
         "public_repos": 26,
         "total_repos": 26
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "mavam/pi-fancy-footer": {
       "full_name": "mavam/pi-fancy-footer",
@@ -5381,7 +5381,7 @@
         "public_repos": 34,
         "total_repos": 34
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "mavam/pi-terminal-theme": {
       "full_name": "mavam/pi-terminal-theme",
@@ -5404,7 +5404,7 @@
         "public_repos": 34,
         "total_repos": 34
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "mavam/pi-web-providers": {
       "full_name": "mavam/pi-web-providers",
@@ -5416,7 +5416,7 @@
       "watches": 0,
       "releases_count": 12,
       "commits_count": 111,
-      "age_days": 48,
+      "age_days": 47,
       "created_at": "2026-03-09T08:17:35Z",
       "owner_metadata": {
         "login": "mavam",
@@ -5427,7 +5427,7 @@
         "public_repos": 34,
         "total_repos": 34
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "maxedapps/pi-docparser": {
       "full_name": "maxedapps/pi-docparser",
@@ -5445,12 +5445,12 @@
         "login": "maxedapps",
         "type": "user",
         "followers": 0,
-        "age_days": 312,
+        "age_days": 311,
         "created_at": "2025-06-18T08:31:26Z",
         "public_repos": 2,
         "total_repos": 2
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "maxpetretta/pi-alert": {
       "full_name": "maxpetretta/pi-alert",
@@ -5462,7 +5462,7 @@
       "watches": 0,
       "releases_count": 3,
       "commits_count": 3,
-      "age_days": 37,
+      "age_days": 36,
       "created_at": "2026-03-20T02:39:46Z",
       "owner_metadata": {
         "login": "maxpetretta",
@@ -5473,7 +5473,7 @@
         "public_repos": 30,
         "total_repos": 30
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "maxpetretta/pi-upgrade": {
       "full_name": "maxpetretta/pi-upgrade",
@@ -5485,7 +5485,7 @@
       "watches": 0,
       "releases_count": 4,
       "commits_count": 4,
-      "age_days": 37,
+      "age_days": 36,
       "created_at": "2026-03-20T02:39:15Z",
       "owner_metadata": {
         "login": "maxpetretta",
@@ -5496,7 +5496,7 @@
         "public_repos": 30,
         "total_repos": 30
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "mgabor3141/yapp": {
       "full_name": "mgabor3141/yapp",
@@ -5514,19 +5514,42 @@
         "login": "mgabor3141",
         "type": "user",
         "followers": 6,
-        "age_days": 4219,
+        "age_days": 4218,
         "created_at": "2014-10-07T07:51:35Z",
         "public_repos": 52,
         "total_repos": 52
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
+    },
+    "mikeyobrien/rho": {
+      "full_name": "mikeyobrien/rho",
+      "owner": "mikeyobrien",
+      "name": "rho",
+      "source_url": "git+https://github.com/mikeyobrien/rho.git",
+      "stars": 352,
+      "forks": 28,
+      "watches": 1,
+      "releases_count": 14,
+      "commits_count": 458,
+      "age_days": 81,
+      "created_at": "2026-02-03T03:39:05Z",
+      "owner_metadata": {
+        "login": "mikeyobrien",
+        "type": "user",
+        "followers": 127,
+        "age_days": 4039,
+        "created_at": "2015-04-04T00:47:32Z",
+        "public_repos": 106,
+        "total_repos": 106
+      },
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "mitsuhiko/agent-stuff": {
       "full_name": "mitsuhiko/agent-stuff",
       "owner": "mitsuhiko",
       "name": "agent-stuff",
       "source_url": "git+https://github.com/mitsuhiko/agent-stuff.git",
-      "stars": 2155,
+      "stars": 2150,
       "forks": 154,
       "watches": 30,
       "releases_count": 0,
@@ -5536,13 +5559,13 @@
       "owner_metadata": {
         "login": "mitsuhiko",
         "type": "user",
-        "followers": 24384,
+        "followers": 24378,
         "age_days": 6584,
         "created_at": "2008-04-15T10:03:57Z",
-        "public_repos": 335,
-        "total_repos": 335
+        "public_repos": 334,
+        "total_repos": 334
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "mjakl/pi-subagent": {
       "full_name": "mjakl/pi-subagent",
@@ -5565,30 +5588,30 @@
         "public_repos": 17,
         "total_repos": 17
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "mksglu/context-mode": {
       "full_name": "mksglu/context-mode",
       "owner": "mksglu",
       "name": "context-mode",
       "source_url": "git+https://github.com/mksglu/context-mode.git",
-      "stars": 10207,
-      "forks": 704,
+      "stars": 10101,
+      "forks": 696,
       "watches": 67,
       "releases_count": 121,
-      "commits_count": 992,
-      "age_days": 62,
+      "commits_count": 989,
+      "age_days": 61,
       "created_at": "2026-02-23T05:56:28Z",
       "owner_metadata": {
         "login": "mksglu",
         "type": "user",
-        "followers": 369,
+        "followers": 366,
         "age_days": 4530,
         "created_at": "2013-11-29T15:36:03Z",
-        "public_repos": 72,
-        "total_repos": 72
+        "public_repos": 73,
+        "total_repos": 73
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "monotykamary/pi-messenger-swarm": {
       "full_name": "monotykamary/pi-messenger-swarm",
@@ -5596,11 +5619,11 @@
       "name": "pi-messenger-swarm",
       "source_url": "git+https://github.com/monotykamary/pi-messenger-swarm.git",
       "stars": 19,
-      "forks": 5,
+      "forks": 4,
       "watches": 0,
       "releases_count": 0,
-      "commits_count": 206,
-      "age_days": 62,
+      "commits_count": 203,
+      "age_days": 61,
       "created_at": "2026-02-23T06:55:32Z",
       "owner_metadata": {
         "login": "monotykamary",
@@ -5608,10 +5631,10 @@
         "followers": 69,
         "age_days": 5306,
         "created_at": "2011-10-15T15:21:53Z",
-        "public_repos": 213,
-        "total_repos": 213
+        "public_repos": 212,
+        "total_repos": 212
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ndraiman/pi-cursor-provider": {
       "full_name": "ndraiman/pi-cursor-provider",
@@ -5623,7 +5646,7 @@
       "watches": 0,
       "releases_count": 3,
       "commits_count": 58,
-      "age_days": 20,
+      "age_days": 19,
       "created_at": "2026-04-06T07:22:07Z",
       "owner_metadata": {
         "login": "ndraiman",
@@ -5634,7 +5657,7 @@
         "public_repos": 46,
         "total_repos": 46
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "nelsonPires5/pi-mission-control": {
       "full_name": "nelsonPires5/pi-mission-control",
@@ -5657,7 +5680,7 @@
         "public_repos": 8,
         "total_repos": 8
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "nicehiro/dotfiles": {
       "full_name": "nicehiro/dotfiles",
@@ -5668,7 +5691,7 @@
       "forks": 0,
       "watches": 1,
       "releases_count": 0,
-      "commits_count": 54,
+      "commits_count": 53,
       "age_days": 528,
       "created_at": "2024-11-13T11:19:08Z",
       "owner_metadata": {
@@ -5680,7 +5703,7 @@
         "public_repos": 56,
         "total_repos": 56
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "nicobailon/pi-annotate": {
       "full_name": "nicobailon/pi-annotate",
@@ -5692,18 +5715,18 @@
       "watches": 2,
       "releases_count": 14,
       "commits_count": 31,
-      "age_days": 93,
+      "age_days": 92,
       "created_at": "2026-01-23T07:58:58Z",
       "owner_metadata": {
         "login": "nicobailon",
         "type": "user",
-        "followers": 1104,
-        "age_days": 4891,
+        "followers": 1101,
+        "age_days": 4890,
         "created_at": "2012-12-04T04:29:28Z",
         "public_repos": 129,
         "total_repos": 129
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "nicobailon/pi-custom-compaction": {
       "full_name": "nicobailon/pi-custom-compaction",
@@ -5715,41 +5738,41 @@
       "watches": 0,
       "releases_count": 5,
       "commits_count": 7,
-      "age_days": 35,
+      "age_days": 34,
       "created_at": "2026-03-22T06:17:38Z",
       "owner_metadata": {
         "login": "nicobailon",
         "type": "user",
-        "followers": 1104,
-        "age_days": 4891,
+        "followers": 1101,
+        "age_days": 4890,
         "created_at": "2012-12-04T04:29:28Z",
         "public_repos": 129,
         "total_repos": 129
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "nicobailon/pi-interactive-shell": {
       "full_name": "nicobailon/pi-interactive-shell",
       "owner": "nicobailon",
       "name": "pi-interactive-shell",
       "source_url": "git+https://github.com/nicobailon/pi-interactive-shell.git",
-      "stars": 445,
+      "stars": 444,
       "forks": 30,
       "watches": 1,
       "releases_count": 26,
       "commits_count": 66,
-      "age_days": 98,
+      "age_days": 97,
       "created_at": "2026-01-18T01:28:58Z",
       "owner_metadata": {
         "login": "nicobailon",
         "type": "user",
-        "followers": 1104,
-        "age_days": 4891,
+        "followers": 1101,
+        "age_days": 4890,
         "created_at": "2012-12-04T04:29:28Z",
         "public_repos": 129,
         "total_repos": 129
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "nicobailon/pi-interview-tool": {
       "full_name": "nicobailon/pi-interview-tool",
@@ -5761,25 +5784,25 @@
       "watches": 0,
       "releases_count": 22,
       "commits_count": 80,
-      "age_days": 114,
+      "age_days": 113,
       "created_at": "2026-01-02T08:26:37Z",
       "owner_metadata": {
         "login": "nicobailon",
         "type": "user",
-        "followers": 1104,
-        "age_days": 4891,
+        "followers": 1101,
+        "age_days": 4890,
         "created_at": "2012-12-04T04:29:28Z",
         "public_repos": 129,
         "total_repos": 129
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "nicobailon/pi-mcp-adapter": {
       "full_name": "nicobailon/pi-mcp-adapter",
       "owner": "nicobailon",
       "name": "pi-mcp-adapter",
       "source_url": "git+https://github.com/nicobailon/pi-mcp-adapter.git",
-      "stars": 496,
+      "stars": 488,
       "forks": 84,
       "watches": 3,
       "releases_count": 26,
@@ -5789,13 +5812,13 @@
       "owner_metadata": {
         "login": "nicobailon",
         "type": "user",
-        "followers": 1104,
-        "age_days": 4891,
+        "followers": 1101,
+        "age_days": 4890,
         "created_at": "2012-12-04T04:29:28Z",
         "public_repos": 129,
         "total_repos": 129
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "nicobailon/pi-messenger": {
       "full_name": "nicobailon/pi-messenger",
@@ -5812,20 +5835,20 @@
       "owner_metadata": {
         "login": "nicobailon",
         "type": "user",
-        "followers": 1104,
-        "age_days": 4891,
+        "followers": 1101,
+        "age_days": 4890,
         "created_at": "2012-12-04T04:29:28Z",
         "public_repos": 129,
         "total_repos": 129
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "nicobailon/pi-powerline-footer": {
       "full_name": "nicobailon/pi-powerline-footer",
       "owner": "nicobailon",
       "name": "pi-powerline-footer",
       "source_url": "git+https://github.com/nicobailon/pi-powerline-footer.git",
-      "stars": 163,
+      "stars": 160,
       "forks": 36,
       "watches": 1,
       "releases_count": 36,
@@ -5835,36 +5858,36 @@
       "owner_metadata": {
         "login": "nicobailon",
         "type": "user",
-        "followers": 1104,
-        "age_days": 4891,
+        "followers": 1101,
+        "age_days": 4890,
         "created_at": "2012-12-04T04:29:28Z",
         "public_repos": 129,
         "total_repos": 129
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "nicobailon/pi-prompt-template-model": {
       "full_name": "nicobailon/pi-prompt-template-model",
       "owner": "nicobailon",
       "name": "pi-prompt-template-model",
       "source_url": "git+https://github.com/nicobailon/pi-prompt-template-model.git",
-      "stars": 220,
-      "forks": 13,
+      "stars": 219,
+      "forks": 12,
       "watches": 1,
-      "releases_count": 24,
-      "commits_count": 37,
+      "releases_count": 23,
+      "commits_count": 36,
       "age_days": 103,
       "created_at": "2026-01-12T22:23:43Z",
       "owner_metadata": {
         "login": "nicobailon",
         "type": "user",
-        "followers": 1104,
-        "age_days": 4891,
+        "followers": 1101,
+        "age_days": 4890,
         "created_at": "2012-12-04T04:29:28Z",
         "public_repos": 129,
         "total_repos": 129
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "nicobailon/pi-review-loop": {
       "full_name": "nicobailon/pi-review-loop",
@@ -5881,13 +5904,13 @@
       "owner_metadata": {
         "login": "nicobailon",
         "type": "user",
-        "followers": 1104,
-        "age_days": 4891,
+        "followers": 1101,
+        "age_days": 4890,
         "created_at": "2012-12-04T04:29:28Z",
         "public_repos": 129,
         "total_repos": 129
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "nicobailon/pi-rewind-hook": {
       "full_name": "nicobailon/pi-rewind-hook",
@@ -5904,43 +5927,43 @@
       "owner_metadata": {
         "login": "nicobailon",
         "type": "user",
-        "followers": 1104,
-        "age_days": 4891,
+        "followers": 1101,
+        "age_days": 4890,
         "created_at": "2012-12-04T04:29:28Z",
         "public_repos": 129,
         "total_repos": 129
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "nicobailon/pi-subagents": {
       "full_name": "nicobailon/pi-subagents",
       "owner": "nicobailon",
       "name": "pi-subagents",
       "source_url": "git+https://github.com/nicobailon/pi-subagents.git",
-      "stars": 962,
-      "forks": 124,
+      "stars": 958,
+      "forks": 121,
       "watches": 1,
-      "releases_count": 55,
-      "commits_count": 179,
+      "releases_count": 54,
+      "commits_count": 173,
       "age_days": 109,
       "created_at": "2026-01-07T00:01:57Z",
       "owner_metadata": {
         "login": "nicobailon",
         "type": "user",
-        "followers": 1104,
-        "age_days": 4891,
+        "followers": 1101,
+        "age_days": 4890,
         "created_at": "2012-12-04T04:29:28Z",
         "public_repos": 129,
         "total_repos": 129
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "nicobailon/pi-web-access": {
       "full_name": "nicobailon/pi-web-access",
       "owner": "nicobailon",
       "name": "pi-web-access",
       "source_url": "git+https://github.com/nicobailon/pi-web-access.git",
-      "stars": 376,
+      "stars": 373,
       "forks": 49,
       "watches": 0,
       "releases_count": 20,
@@ -5950,13 +5973,13 @@
       "owner_metadata": {
         "login": "nicobailon",
         "type": "user",
-        "followers": 1104,
-        "age_days": 4891,
+        "followers": 1101,
+        "age_days": 4890,
         "created_at": "2012-12-04T04:29:28Z",
         "public_repos": 129,
         "total_repos": 129
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "noahsaso/pi-remote": {
       "full_name": "noahsaso/pi-remote",
@@ -5979,7 +6002,7 @@
         "public_repos": 136,
         "total_repos": 136
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "noel-debug/pi-gatekeeper": {
       "full_name": "noel-debug/pi-gatekeeper",
@@ -6002,7 +6025,7 @@
         "public_repos": 4,
         "total_repos": 4
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ogulcancelik/pi-extensions": {
       "full_name": "ogulcancelik/pi-extensions",
@@ -6025,7 +6048,7 @@
         "public_repos": 30,
         "total_repos": 30
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "olixis/pi-openrouter-plus": {
       "full_name": "olixis/pi-openrouter-plus",
@@ -6043,12 +6066,12 @@
         "login": "olixis",
         "type": "user",
         "followers": 17,
-        "age_days": 4419,
+        "age_days": 4418,
         "created_at": "2014-03-21T01:28:45Z",
         "public_repos": 69,
         "total_repos": 69
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "omaclaren/pi-markdown-preview": {
       "full_name": "omaclaren/pi-markdown-preview",
@@ -6060,7 +6083,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 64,
-      "age_days": 67,
+      "age_days": 66,
       "created_at": "2026-02-18T02:02:59Z",
       "owner_metadata": {
         "login": "omaclaren",
@@ -6071,7 +6094,7 @@
         "public_repos": 18,
         "total_repos": 18
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "omaclaren/pi-quiz": {
       "full_name": "omaclaren/pi-quiz",
@@ -6094,19 +6117,19 @@
         "public_repos": 18,
         "total_repos": 18
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "omaclaren/pi-studio": {
       "full_name": "omaclaren/pi-studio",
       "owner": "omaclaren",
       "name": "pi-studio",
       "source_url": "git+https://github.com/omaclaren/pi-studio.git",
-      "stars": 98,
+      "stars": 97,
       "forks": 2,
       "watches": 0,
       "releases_count": 2,
       "commits_count": 223,
-      "age_days": 59,
+      "age_days": 58,
       "created_at": "2026-02-26T03:50:45Z",
       "owner_metadata": {
         "login": "omaclaren",
@@ -6117,7 +6140,7 @@
         "public_repos": 18,
         "total_repos": 18
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ondrej-svec/heart-of-gold-toolkit": {
       "full_name": "ondrej-svec/heart-of-gold-toolkit",
@@ -6140,19 +6163,19 @@
         "public_repos": 8,
         "total_repos": 8
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "owengretzinger/constellagent": {
       "full_name": "owengretzinger/constellagent",
       "owner": "owengretzinger",
       "name": "constellagent",
       "source_url": "git+https://github.com/owengretzinger/constellagent.git",
-      "stars": 198,
+      "stars": 197,
       "forks": 14,
       "watches": 1,
       "releases_count": 0,
       "commits_count": 74,
-      "age_days": 75,
+      "age_days": 74,
       "created_at": "2026-02-10T03:52:03Z",
       "owner_metadata": {
         "login": "owengretzinger",
@@ -6163,14 +6186,14 @@
         "public_repos": 45,
         "total_repos": 45
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "pasky/pi-amplike": {
       "full_name": "pasky/pi-amplike",
       "owner": "pasky",
       "name": "pi-amplike",
       "source_url": "git+https://github.com/pasky/pi-amplike.git",
-      "stars": 189,
+      "stars": 188,
       "forks": 8,
       "watches": 1,
       "releases_count": 9,
@@ -6186,14 +6209,14 @@
         "public_repos": 74,
         "total_repos": 74
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "phun333/pi-island": {
       "full_name": "phun333/pi-island",
       "owner": "phun333",
       "name": "pi-island",
       "source_url": "git+https://github.com/phun333/pi-island.git",
-      "stars": 15,
+      "stars": 14,
       "forks": 2,
       "watches": 0,
       "releases_count": 4,
@@ -6204,35 +6227,35 @@
         "login": "phun333",
         "type": "user",
         "followers": 41,
-        "age_days": 905,
+        "age_days": 904,
         "created_at": "2023-11-03T06:51:23Z",
         "public_repos": 42,
         "total_repos": 42
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "pithings/voipi": {
       "full_name": "pithings/voipi",
       "owner": "pithings",
       "name": "voipi",
       "source_url": "git+https://github.com/pithings/voipi.git",
-      "stars": 125,
-      "forks": 6,
+      "stars": 117,
+      "forks": 4,
       "watches": 0,
-      "releases_count": 8,
-      "commits_count": 68,
+      "releases_count": 7,
+      "commits_count": 63,
       "age_days": 25,
       "created_at": "2026-03-31T09:42:20Z",
       "owner_metadata": {
         "login": "pithings",
         "type": "organization",
-        "followers": 40,
-        "age_days": 63,
+        "followers": 39,
+        "age_days": 62,
         "created_at": "2026-02-22T08:06:49Z",
         "public_repos": 7,
         "total_repos": 7
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "qmx/pi-git-guard": {
       "full_name": "qmx/pi-git-guard",
@@ -6244,7 +6267,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 11,
-      "age_days": 22,
+      "age_days": 21,
       "created_at": "2026-04-04T03:17:03Z",
       "owner_metadata": {
         "login": "qmx",
@@ -6255,7 +6278,7 @@
         "public_repos": 336,
         "total_repos": 336
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "qmx/pi-plan-mode": {
       "full_name": "qmx/pi-plan-mode",
@@ -6267,7 +6290,7 @@
       "watches": 1,
       "releases_count": 0,
       "commits_count": 53,
-      "age_days": 63,
+      "age_days": 62,
       "created_at": "2026-02-22T05:17:36Z",
       "owner_metadata": {
         "login": "qmx",
@@ -6278,7 +6301,7 @@
         "public_repos": 336,
         "total_repos": 336
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "rahulmutt/pi-ralph": {
       "full_name": "rahulmutt/pi-ralph",
@@ -6296,12 +6319,12 @@
         "login": "rahulmutt",
         "type": "user",
         "followers": 221,
-        "age_days": 4317,
+        "age_days": 4316,
         "created_at": "2014-07-01T08:39:30Z",
         "public_repos": 117,
         "total_repos": 117
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ramarivera/pi-kimi-for-coding": {
       "full_name": "ramarivera/pi-kimi-for-coding",
@@ -6319,12 +6342,12 @@
         "login": "ramarivera",
         "type": "user",
         "followers": 29,
-        "age_days": 4368,
+        "age_days": 4367,
         "created_at": "2014-05-11T09:22:24Z",
-        "public_repos": 153,
-        "total_repos": 153
+        "public_repos": 152,
+        "total_repos": 152
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ramarivera/pi-ts-aperture-provider": {
       "full_name": "ramarivera/pi-ts-aperture-provider",
@@ -6336,18 +6359,18 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 38,
-      "age_days": 19,
+      "age_days": 18,
       "created_at": "2026-04-07T04:11:15Z",
       "owner_metadata": {
         "login": "ramarivera",
         "type": "user",
         "followers": 29,
-        "age_days": 4368,
+        "age_days": 4367,
         "created_at": "2014-05-11T09:22:24Z",
-        "public_repos": 153,
-        "total_repos": 153
+        "public_repos": 152,
+        "total_repos": 152
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ravshansbox/vscode-pi-companion": {
       "full_name": "ravshansbox/vscode-pi-companion",
@@ -6359,7 +6382,7 @@
       "watches": 1,
       "releases_count": 15,
       "commits_count": 78,
-      "age_days": 36,
+      "age_days": 35,
       "created_at": "2026-03-21T01:31:36Z",
       "owner_metadata": {
         "login": "ravshansbox",
@@ -6370,7 +6393,7 @@
         "public_repos": 35,
         "total_repos": 35
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "rhnvrm/pi-bash-readonly": {
       "full_name": "rhnvrm/pi-bash-readonly",
@@ -6382,7 +6405,7 @@
       "watches": 0,
       "releases_count": 2,
       "commits_count": 6,
-      "age_days": 34,
+      "age_days": 33,
       "created_at": "2026-03-23T09:02:15Z",
       "owner_metadata": {
         "login": "rhnvrm",
@@ -6393,7 +6416,7 @@
         "public_repos": 220,
         "total_repos": 220
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ross-jill-ws/pi-claude-plugins": {
       "full_name": "ross-jill-ws/pi-claude-plugins",
@@ -6411,12 +6434,12 @@
         "login": "ross-jill-ws",
         "type": "user",
         "followers": 0,
-        "age_days": 271,
+        "age_days": 270,
         "created_at": "2025-07-29T04:18:46Z",
         "public_repos": 18,
         "total_repos": 18
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ross-jill-ws/pi-command-history": {
       "full_name": "ross-jill-ws/pi-command-history",
@@ -6428,18 +6451,18 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 3,
-      "age_days": 28,
+      "age_days": 27,
       "created_at": "2026-03-29T07:00:46Z",
       "owner_metadata": {
         "login": "ross-jill-ws",
         "type": "user",
         "followers": 0,
-        "age_days": 271,
+        "age_days": 270,
         "created_at": "2025-07-29T04:18:46Z",
         "public_repos": 18,
         "total_repos": 18
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ross-jill-ws/pi-file-permissions": {
       "full_name": "ross-jill-ws/pi-file-permissions",
@@ -6451,18 +6474,18 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 12,
-      "age_days": 23,
+      "age_days": 22,
       "created_at": "2026-04-03T04:44:56Z",
       "owner_metadata": {
         "login": "ross-jill-ws",
         "type": "user",
         "followers": 0,
-        "age_days": 271,
+        "age_days": 270,
         "created_at": "2025-07-29T04:18:46Z",
         "public_repos": 18,
         "total_repos": 18
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ross-jill-ws/pi-subagent-in-memory": {
       "full_name": "ross-jill-ws/pi-subagent-in-memory",
@@ -6474,18 +6497,18 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 12,
-      "age_days": 26,
+      "age_days": 25,
       "created_at": "2026-03-31T07:17:05Z",
       "owner_metadata": {
         "login": "ross-jill-ws",
         "type": "user",
         "followers": 0,
-        "age_days": 271,
+        "age_days": 270,
         "created_at": "2025-07-29T04:18:46Z",
         "public_repos": 18,
         "total_repos": 18
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ross-jill-ws/pi-teammate": {
       "full_name": "ross-jill-ws/pi-teammate",
@@ -6503,12 +6526,12 @@
         "login": "ross-jill-ws",
         "type": "user",
         "followers": 0,
-        "age_days": 271,
+        "age_days": 270,
         "created_at": "2025-07-29T04:18:46Z",
         "public_repos": 18,
         "total_repos": 18
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ross-jill-ws/pi-zai-glm": {
       "full_name": "ross-jill-ws/pi-zai-glm",
@@ -6526,12 +6549,12 @@
         "login": "ross-jill-ws",
         "type": "user",
         "followers": 0,
-        "age_days": 271,
+        "age_days": 270,
         "created_at": "2025-07-29T04:18:46Z",
         "public_repos": 18,
         "total_repos": 18
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ruminaider/agent-clis": {
       "full_name": "ruminaider/agent-clis",
@@ -6554,7 +6577,7 @@
         "public_repos": 16,
         "total_repos": 16
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "samfoy/pi-essentials": {
       "full_name": "samfoy/pi-essentials",
@@ -6572,12 +6595,12 @@
         "login": "samfoy",
         "type": "user",
         "followers": 23,
-        "age_days": 5565,
+        "age_days": 5564,
         "created_at": "2011-01-30T07:03:00Z",
         "public_repos": 29,
         "total_repos": 29
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "samfoy/pi-memory": {
       "full_name": "samfoy/pi-memory",
@@ -6595,12 +6618,12 @@
         "login": "samfoy",
         "type": "user",
         "followers": 23,
-        "age_days": 5565,
+        "age_days": 5564,
         "created_at": "2011-01-30T07:03:00Z",
         "public_repos": 29,
         "total_repos": 29
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "samfoy/pi-skill-evolution": {
       "full_name": "samfoy/pi-skill-evolution",
@@ -6618,12 +6641,12 @@
         "login": "samfoy",
         "type": "user",
         "followers": 23,
-        "age_days": 5565,
+        "age_days": 5564,
         "created_at": "2011-01-30T07:03:00Z",
         "public_repos": 29,
         "total_repos": 29
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "shaftoe/pi-freestyle-sandbox": {
       "full_name": "shaftoe/pi-freestyle-sandbox",
@@ -6646,7 +6669,7 @@
         "public_repos": 54,
         "total_repos": 54
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "shaftoe/pi-loaded-tools": {
       "full_name": "shaftoe/pi-loaded-tools",
@@ -6669,7 +6692,7 @@
         "public_repos": 54,
         "total_repos": 54
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "shaftoe/pi-tavily-tools": {
       "full_name": "shaftoe/pi-tavily-tools",
@@ -6681,7 +6704,7 @@
       "watches": 0,
       "releases_count": 11,
       "commits_count": 49,
-      "age_days": 21,
+      "age_days": 20,
       "created_at": "2026-04-05T02:53:46Z",
       "owner_metadata": {
         "login": "shaftoe",
@@ -6692,7 +6715,7 @@
         "public_repos": 54,
         "total_repos": 54
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "shaftoe/pi-token-usage": {
       "full_name": "shaftoe/pi-token-usage",
@@ -6715,7 +6738,7 @@
         "public_repos": 54,
         "total_repos": 54
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "shaftoe/pi-zai-usage": {
       "full_name": "shaftoe/pi-zai-usage",
@@ -6738,7 +6761,7 @@
         "public_repos": 54,
         "total_repos": 54
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "sids/pi-extensions": {
       "full_name": "sids/pi-extensions",
@@ -6750,18 +6773,18 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 81,
-      "age_days": 81,
+      "age_days": 80,
       "created_at": "2026-02-04T06:45:51Z",
       "owner_metadata": {
         "login": "sids",
         "type": "user",
         "followers": 83,
-        "age_days": 6496,
+        "age_days": 6495,
         "created_at": "2008-07-13T05:42:02Z",
         "public_repos": 17,
         "total_repos": 17
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "sinamtz/pi-mempalace": {
       "full_name": "sinamtz/pi-mempalace",
@@ -6784,7 +6807,7 @@
         "public_repos": 28,
         "total_repos": 28
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "sinamtz/pi-minimax-provider": {
       "full_name": "sinamtz/pi-minimax-provider",
@@ -6796,7 +6819,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 38,
-      "age_days": 32,
+      "age_days": 31,
       "created_at": "2026-03-25T02:52:15Z",
       "owner_metadata": {
         "login": "sinamtz",
@@ -6807,7 +6830,7 @@
         "public_repos": 28,
         "total_repos": 28
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "sodie2323/pi-resource-center": {
       "full_name": "sodie2323/pi-resource-center",
@@ -6819,18 +6842,18 @@
       "watches": 0,
       "releases_count": 10,
       "commits_count": 55,
-      "age_days": 26,
+      "age_days": 25,
       "created_at": "2026-03-31T08:15:09Z",
       "owner_metadata": {
         "login": "sodie2323",
         "type": "user",
         "followers": 1,
-        "age_days": 910,
+        "age_days": 909,
         "created_at": "2023-10-29T07:37:26Z",
         "public_repos": 4,
         "total_repos": 4
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "spences10/my-pi": {
       "full_name": "spences10/my-pi",
@@ -6848,12 +6871,12 @@
         "login": "spences10",
         "type": "user",
         "followers": 953,
-        "age_days": 5869,
+        "age_days": 5868,
         "created_at": "2010-04-01T05:52:38Z",
         "public_repos": 282,
         "total_repos": 282
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "sting8k/pi-augment": {
       "full_name": "sting8k/pi-augment",
@@ -6865,18 +6888,18 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 35,
-      "age_days": 44,
+      "age_days": 43,
       "created_at": "2026-03-13T09:18:41Z",
       "owner_metadata": {
         "login": "sting8k",
         "type": "user",
         "followers": 137,
-        "age_days": 4082,
+        "age_days": 4081,
         "created_at": "2015-02-21T06:51:11Z",
-        "public_repos": 28,
-        "total_repos": 28
+        "public_repos": 27,
+        "total_repos": 27
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "sting8k/pi-tilth": {
       "full_name": "sting8k/pi-tilth",
@@ -6894,12 +6917,12 @@
         "login": "sting8k",
         "type": "user",
         "followers": 137,
-        "age_days": 4082,
+        "age_days": 4081,
         "created_at": "2015-02-21T06:51:11Z",
-        "public_repos": 28,
-        "total_repos": 28
+        "public_repos": 27,
+        "total_repos": 27
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "sting8k/pi-vcc": {
       "full_name": "sting8k/pi-vcc",
@@ -6910,19 +6933,19 @@
       "forks": 4,
       "watches": 0,
       "releases_count": 8,
-      "commits_count": 84,
-      "age_days": 24,
+      "commits_count": 82,
+      "age_days": 23,
       "created_at": "2026-04-02T05:28:31Z",
       "owner_metadata": {
         "login": "sting8k",
         "type": "user",
         "followers": 137,
-        "age_days": 4082,
+        "age_days": 4081,
         "created_at": "2015-02-21T06:51:11Z",
-        "public_repos": 28,
-        "total_repos": 28
+        "public_repos": 27,
+        "total_repos": 27
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "sudosubin/pi-frontier": {
       "full_name": "sudosubin/pi-frontier",
@@ -6940,24 +6963,24 @@
         "login": "sudosubin",
         "type": "user",
         "followers": 183,
-        "age_days": 3127,
+        "age_days": 3126,
         "created_at": "2017-10-03T07:44:58Z",
         "public_repos": 68,
         "total_repos": 68
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "sysid/pi-extensions": {
       "full_name": "sysid/pi-extensions",
       "owner": "sysid",
       "name": "pi-extensions",
       "source_url": "git+https://github.com/sysid/pi-extensions.git",
-      "stars": 7,
+      "stars": 6,
       "forks": 3,
       "watches": 0,
       "releases_count": 12,
       "commits_count": 35,
-      "age_days": 53,
+      "age_days": 52,
       "created_at": "2026-03-04T09:27:41Z",
       "owner_metadata": {
         "login": "sysid",
@@ -6968,7 +6991,7 @@
         "public_repos": 68,
         "total_repos": 68
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "tarsgate/awto-pi-lot": {
       "full_name": "tarsgate/awto-pi-lot",
@@ -6991,7 +7014,7 @@
         "public_repos": 5,
         "total_repos": 5
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "teelicht/pi-superagents": {
       "full_name": "teelicht/pi-superagents",
@@ -7014,7 +7037,7 @@
         "public_repos": 17,
         "total_repos": 17
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "tenzir/pi-formatter": {
       "full_name": "tenzir/pi-formatter",
@@ -7037,7 +7060,7 @@
         "public_repos": 55,
         "total_repos": 55
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "tintinweb/pi-gitnexus": {
       "full_name": "tintinweb/pi-gitnexus",
@@ -7060,7 +7083,7 @@
         "public_repos": 111,
         "total_repos": 111
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "tintinweb/pi-schedule-prompt": {
       "full_name": "tintinweb/pi-schedule-prompt",
@@ -7083,15 +7106,15 @@
         "public_repos": 111,
         "total_repos": 111
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "tintinweb/pi-subagents": {
       "full_name": "tintinweb/pi-subagents",
       "owner": "tintinweb",
       "name": "pi-subagents",
       "source_url": "git+https://github.com/tintinweb/pi-subagents.git",
-      "stars": 197,
-      "forks": 44,
+      "stars": 196,
+      "forks": 43,
       "watches": 0,
       "releases_count": 23,
       "commits_count": 85,
@@ -7106,7 +7129,7 @@
         "public_repos": 111,
         "total_repos": 111
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "tintinweb/pi-tasks": {
       "full_name": "tintinweb/pi-tasks",
@@ -7114,7 +7137,7 @@
       "name": "pi-tasks",
       "source_url": "git+https://github.com/tintinweb/pi-tasks.git",
       "stars": 56,
-      "forks": 13,
+      "forks": 12,
       "watches": 0,
       "releases_count": 9,
       "commits_count": 23,
@@ -7129,14 +7152,14 @@
         "public_repos": 111,
         "total_repos": 111
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "tmustier/pi-agent-teams": {
       "full_name": "tmustier/pi-agent-teams",
       "owner": "tmustier",
       "name": "pi-agent-teams",
       "source_url": "git+https://github.com/tmustier/pi-agent-teams.git",
-      "stars": 57,
+      "stars": 56,
       "forks": 12,
       "watches": 0,
       "releases_count": 16,
@@ -7147,19 +7170,19 @@
         "login": "tmustier",
         "type": "user",
         "followers": 71,
-        "age_days": 4493,
+        "age_days": 4492,
         "created_at": "2014-01-06T02:50:53Z",
         "public_repos": 44,
         "total_repos": 44
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "tmustier/pi-extensions": {
       "full_name": "tmustier/pi-extensions",
       "owner": "tmustier",
       "name": "pi-extensions",
       "source_url": "git+https://github.com/tmustier/pi-extensions.git",
-      "stars": 243,
+      "stars": 241,
       "forks": 14,
       "watches": 0,
       "releases_count": 33,
@@ -7170,12 +7193,12 @@
         "login": "tmustier",
         "type": "user",
         "followers": 71,
-        "age_days": 4493,
+        "age_days": 4492,
         "created_at": "2014-01-06T02:50:53Z",
         "public_repos": 44,
         "total_repos": 44
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "tmustier/pi-nes": {
       "full_name": "tmustier/pi-nes",
@@ -7193,12 +7216,12 @@
         "login": "tmustier",
         "type": "user",
         "followers": 71,
-        "age_days": 4493,
+        "age_days": 4492,
         "created_at": "2014-01-06T02:50:53Z",
         "public_repos": 44,
         "total_repos": 44
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "tonze/pi-updater": {
       "full_name": "tonze/pi-updater",
@@ -7221,7 +7244,7 @@
         "public_repos": 2,
         "total_repos": 2
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ttttmr/pi-context": {
       "full_name": "ttttmr/pi-context",
@@ -7233,18 +7256,18 @@
       "watches": 1,
       "releases_count": 0,
       "commits_count": 18,
-      "age_days": 77,
+      "age_days": 76,
       "created_at": "2026-02-08T06:38:15Z",
       "owner_metadata": {
         "login": "ttttmr",
         "type": "user",
-        "followers": 313,
-        "age_days": 3114,
+        "followers": 312,
+        "age_days": 3113,
         "created_at": "2017-10-16T00:54:28Z",
         "public_repos": 87,
         "total_repos": 87
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "tuansondinh/pi-fast-subagent": {
       "full_name": "tuansondinh/pi-fast-subagent",
@@ -7255,7 +7278,7 @@
       "forks": 3,
       "watches": 0,
       "releases_count": 0,
-      "commits_count": 33,
+      "commits_count": 32,
       "age_days": 4,
       "created_at": "2026-04-21T18:10:52Z",
       "owner_metadata": {
@@ -7267,7 +7290,7 @@
         "public_repos": 35,
         "total_repos": 35
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "tungthedev/pi-extensions": {
       "full_name": "tungthedev/pi-extensions",
@@ -7279,7 +7302,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 128,
-      "age_days": 38,
+      "age_days": 37,
       "created_at": "2026-03-19T07:59:55Z",
       "owner_metadata": {
         "login": "tungthedev",
@@ -7290,7 +7313,7 @@
         "public_repos": 17,
         "total_repos": 17
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "tunnckoCore/pi-venice": {
       "full_name": "tunnckoCore/pi-venice",
@@ -7302,18 +7325,18 @@
       "watches": 1,
       "releases_count": 0,
       "commits_count": 11,
-      "age_days": 17,
+      "age_days": 16,
       "created_at": "2026-04-09T08:01:53Z",
       "owner_metadata": {
         "login": "tunnckoCore",
         "type": "user",
         "followers": 512,
-        "age_days": 4665,
+        "age_days": 4664,
         "created_at": "2013-07-18T09:15:18Z",
         "public_repos": 482,
         "total_repos": 482
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "tuxevil/pi-antigravity-rotator": {
       "full_name": "tuxevil/pi-antigravity-rotator",
@@ -7325,7 +7348,7 @@
       "watches": 0,
       "releases_count": 4,
       "commits_count": 60,
-      "age_days": 4,
+      "age_days": 3,
       "created_at": "2026-04-22T01:33:34Z",
       "owner_metadata": {
         "login": "tuxevil",
@@ -7336,7 +7359,7 @@
         "public_repos": 40,
         "total_repos": 40
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ulusoyomer/pi-xiaomi-mimo-provider": {
       "full_name": "ulusoyomer/pi-xiaomi-mimo-provider",
@@ -7356,10 +7379,10 @@
         "followers": 12,
         "age_days": 2757,
         "created_at": "2018-10-07T19:56:48Z",
-        "public_repos": 32,
-        "total_repos": 32
+        "public_repos": 31,
+        "total_repos": 31
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "ulusoyomer/pi-zai-tools": {
       "full_name": "ulusoyomer/pi-zai-tools",
@@ -7371,7 +7394,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 6,
-      "age_days": 44,
+      "age_days": 43,
       "created_at": "2026-03-13T08:15:53Z",
       "owner_metadata": {
         "login": "ulusoyomer",
@@ -7379,10 +7402,10 @@
         "followers": 12,
         "age_days": 2757,
         "created_at": "2018-10-07T19:56:48Z",
-        "public_repos": 32,
-        "total_repos": 32
+        "public_repos": 31,
+        "total_repos": 31
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "vaayne/agent-kit": {
       "full_name": "vaayne/agent-kit",
@@ -7394,7 +7417,7 @@
       "watches": 0,
       "releases_count": 4,
       "commits_count": 234,
-      "age_days": 185,
+      "age_days": 184,
       "created_at": "2025-10-23T05:45:42Z",
       "owner_metadata": {
         "login": "vaayne",
@@ -7405,7 +7428,7 @@
         "public_repos": 37,
         "total_repos": 37
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "vadimcomanescu/pi-teams": {
       "full_name": "vadimcomanescu/pi-teams",
@@ -7428,7 +7451,7 @@
         "public_repos": 44,
         "total_repos": 44
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "vahidkowsari/pi-local-rag": {
       "full_name": "vahidkowsari/pi-local-rag",
@@ -7451,7 +7474,7 @@
         "public_repos": 8,
         "total_repos": 8
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "victor-software-house/pi-auto-rename": {
       "full_name": "victor-software-house/pi-auto-rename",
@@ -7474,7 +7497,7 @@
         "public_repos": 66,
         "total_repos": 66
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "victor-software-house/pi-cmux-theme-picker": {
       "full_name": "victor-software-house/pi-cmux-theme-picker",
@@ -7497,7 +7520,7 @@
         "public_repos": 66,
         "total_repos": 66
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "victor-software-house/pi-extension-manager": {
       "full_name": "victor-software-house/pi-extension-manager",
@@ -7520,7 +7543,7 @@
         "public_repos": 66,
         "total_repos": 66
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "victor-software-house/pi-multicodex": {
       "full_name": "victor-software-house/pi-multicodex",
@@ -7543,7 +7566,7 @@
         "public_repos": 66,
         "total_repos": 66
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "victor-software-house/pi-openai-proxy": {
       "full_name": "victor-software-house/pi-openai-proxy",
@@ -7555,7 +7578,7 @@
       "watches": 0,
       "releases_count": 44,
       "commits_count": 145,
-      "age_days": 34,
+      "age_days": 33,
       "created_at": "2026-03-23T04:52:30Z",
       "owner_metadata": {
         "login": "victor-software-house",
@@ -7566,7 +7589,7 @@
         "public_repos": 66,
         "total_repos": 66
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "victor-software-house/pi-prompt-composer": {
       "full_name": "victor-software-house/pi-prompt-composer",
@@ -7578,7 +7601,7 @@
       "watches": 0,
       "releases_count": 16,
       "commits_count": 110,
-      "age_days": 27,
+      "age_days": 26,
       "created_at": "2026-03-30T05:41:23Z",
       "owner_metadata": {
         "login": "victor-software-house",
@@ -7589,7 +7612,7 @@
         "public_repos": 66,
         "total_repos": 66
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "victor-software-house/pi-provider-utils": {
       "full_name": "victor-software-house/pi-provider-utils",
@@ -7612,7 +7635,7 @@
         "public_repos": 66,
         "total_repos": 66
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "vurihuang/pi-hodor": {
       "full_name": "vurihuang/pi-hodor",
@@ -7624,7 +7647,7 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 8,
-      "age_days": 14,
+      "age_days": 13,
       "created_at": "2026-04-12T04:44:27Z",
       "owner_metadata": {
         "login": "vurihuang",
@@ -7635,7 +7658,7 @@
         "public_repos": 32,
         "total_repos": 32
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "w-winter/dot314": {
       "full_name": "w-winter/dot314",
@@ -7658,7 +7681,7 @@
         "public_repos": 24,
         "total_repos": 24
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "walodayeet/hindsight-pi": {
       "full_name": "walodayeet/hindsight-pi",
@@ -7681,7 +7704,7 @@
         "public_repos": 17,
         "total_repos": 17
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "walterra/agent-tools": {
       "full_name": "walterra/agent-tools",
@@ -7704,7 +7727,7 @@
         "public_repos": 62,
         "total_repos": 62
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "wiebekaai/browser-annotations": {
       "full_name": "wiebekaai/browser-annotations",
@@ -7727,7 +7750,7 @@
         "public_repos": 4,
         "total_repos": 4
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "woxQAQ/pi-web": {
       "full_name": "woxQAQ/pi-web",
@@ -7750,7 +7773,7 @@
         "public_repos": 65,
         "total_repos": 65
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "xRyul/pi-show-diffs": {
       "full_name": "xRyul/pi-show-diffs",
@@ -7773,7 +7796,7 @@
         "public_repos": 37,
         "total_repos": 37
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "yinloo-ola/pi-workflow-kit": {
       "full_name": "yinloo-ola/pi-workflow-kit",
@@ -7785,29 +7808,29 @@
       "watches": 0,
       "releases_count": 0,
       "commits_count": 237,
-      "age_days": 22,
+      "age_days": 21,
       "created_at": "2026-04-04T03:25:48Z",
       "owner_metadata": {
         "login": "yinloo-ola",
         "type": "user",
         "followers": 1,
-        "age_days": 1665,
+        "age_days": 1664,
         "created_at": "2021-10-04T04:37:50Z",
         "public_repos": 29,
         "total_repos": 29
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "yvgude/lean-ctx": {
       "full_name": "yvgude/lean-ctx",
       "owner": "yvgude",
       "name": "lean-ctx",
       "source_url": "git+https://github.com/yvgude/lean-ctx.git",
-      "stars": 853,
-      "forks": 101,
+      "stars": 841,
+      "forks": 100,
       "watches": 9,
-      "releases_count": 141,
-      "commits_count": 1100,
+      "releases_count": 140,
+      "commits_count": 1097,
       "age_days": 33,
       "created_at": "2026-03-23T19:48:59Z",
       "owner_metadata": {
@@ -7819,7 +7842,7 @@
         "public_repos": 5,
         "total_repos": 5
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "zenobi-us/pi-worktrees": {
       "full_name": "zenobi-us/pi-worktrees",
@@ -7831,18 +7854,18 @@
       "watches": 0,
       "releases_count": 7,
       "commits_count": 75,
-      "age_days": 82,
+      "age_days": 81,
       "created_at": "2026-02-03T04:31:23Z",
       "owner_metadata": {
         "login": "zenobi-us",
         "type": "organization",
         "followers": 13,
-        "age_days": 806,
+        "age_days": 805,
         "created_at": "2024-02-10T02:31:19Z",
         "public_repos": 41,
         "total_repos": 41
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     },
     "zonko-ai/pi-gigaplan": {
       "full_name": "zonko-ai/pi-gigaplan",
@@ -7865,7 +7888,7 @@
         "public_repos": 8,
         "total_repos": 8
       },
-      "fetched_at": "2026-04-26T09:37:20.6539817Z"
+      "fetched_at": "2026-04-26T00:45:10.419396354Z"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-02",
-  "updated_at": "2026-11-02T04:47:27.293940534Z",
+  "date": "2026-11-03",
+  "updated_at": "2026-11-03T05:38:35.160297196Z",
   "definitions": {
     "broken_trust_link_surface_critical": {
       "id": "broken_trust_link_surface_critical",
@@ -262,6 +262,30 @@
     }
   },
   "packages": {
+    "@1aboveio/app-dev-skills": {
+      "alert_ids": [
+        "missing_github_repository_metadata",
+        "single_maintainer"
+      ]
+    },
+    "@1aboveio/cicd-skills": {
+      "alert_ids": [
+        "missing_github_repository_metadata",
+        "single_maintainer"
+      ]
+    },
+    "@1aboveio/engineering-skills": {
+      "alert_ids": [
+        "missing_github_repository_metadata",
+        "single_maintainer"
+      ]
+    },
+    "@1aboveio/risk-compliance-skills": {
+      "alert_ids": [
+        "missing_github_repository_metadata",
+        "single_maintainer"
+      ]
+    },
     "@a-t-h-i/bot-lobby": {
       "alert_ids": [
         "very_new_repository_medium",
@@ -281,51 +305,43 @@
         "low_watches"
       ]
     },
+    "@adeildo/pi-harness": {
+      "alert_ids": [
+        "very_new_repository_medium",
+        "single_maintainer",
+        "low_watches"
+      ]
+    },
     "@adeildo/pi-look": {
       "alert_ids": [
-        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
-        "low_stars_low",
-        "low_watches",
-        "download_spike_high"
-      ]
-    },
-    "@adeildo/pi-providers": {
-      "alert_ids": [
-        "very_new_package_high",
-        "very_new_repository_medium",
-        "single_maintainer",
-        "low_stars_low",
-        "low_watches",
-        "download_spike_high"
-      ]
-    },
-    "@adityaaria/spark": {
-      "alert_ids": [
-        "missing_github_repository_metadata",
-        "single_maintainer",
-        "no_license",
-        "broken_trust_link_surface_medium",
-        "broken_trust_link_surface_critical"
+        "low_watches"
       ]
     },
     "@agent-sh/computer-use-linux": {
       "alert_ids": [
+        "very_new_package_high",
         "single_maintainer",
-        "new_owner_account_medium"
+        "new_owner_account_medium",
+        "download_spike_high",
+        "download_spike_critical"
+      ]
+    },
+    "@agentapprove/pi": {
+      "alert_ids": [
+        "missing_github_repository_metadata",
+        "very_new_package_medium",
+        "single_maintainer"
       ]
     },
     "@agentskit/doc-bridge": {
       "alert_ids": [
-        "very_new_package_high",
         "single_maintainer",
         "low_owner_reputation_medium",
         "new_owner_account_medium",
         "low_watches",
-        "low_owner_track_record_low",
-        "download_spike_high",
-        "download_spike_critical"
+        "low_owner_track_record_low"
       ]
     },
     "@agimon-ai/doompi": {
@@ -657,17 +673,7 @@
         "download_spike_critical"
       ]
     },
-    "@agimon-ai/doompi-runner-rmux-darwin-arm64": {
-      "alert_ids": [
-        "very_new_package_high",
-        "very_new_repository_medium",
-        "single_maintainer",
-        "no_releases",
-        "low_watches",
-        "download_spike_high"
-      ]
-    },
-    "@agimon-ai/doompi-runner-rmux-darwin-x64": {
+    "@agimon-ai/doompi-runner-rmux-linux-arm64": {
       "alert_ids": [
         "very_new_package_high",
         "very_new_repository_medium",
@@ -687,7 +693,7 @@
         "download_spike_high"
       ]
     },
-    "@agimon-ai/doompi-runner-rtk-linux-x64": {
+    "@agimon-ai/doompi-runner-rtk-darwin-arm64": {
       "alert_ids": [
         "very_new_package_high",
         "very_new_repository_medium",
@@ -1225,15 +1231,6 @@
         "download_spike_critical"
       ]
     },
-    "@agntn/puzzles": {
-      "alert_ids": [
-        "very_new_package_high",
-        "single_maintainer",
-        "low_owner_reputation_medium",
-        "new_owner_account_high",
-        "download_spike_high"
-      ]
-    },
     "@agntn/web": {
       "alert_ids": [
         "very_new_package_high",
@@ -1241,15 +1238,17 @@
         "low_owner_reputation_medium",
         "new_owner_account_high",
         "low_watches",
-        "download_spike_high",
-        "download_spike_critical"
+        "download_spike_high"
       ]
     },
     "@akagilnc/pi-workflow-roles": {
       "alert_ids": [
+        "very_new_package_high",
         "single_maintainer",
         "no_releases",
-        "low_watches"
+        "low_watches",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "@aliou/pi-guardrails": {
@@ -1266,108 +1265,118 @@
         "download_spike_high"
       ]
     },
-    "@amaster.ai/pi-attachments": {
-      "alert_ids": [
-        "low_owner_reputation_low",
-        "new_owner_account_medium",
-        "low_watches",
-        "low_owner_track_record_low"
-      ]
-    },
     "@amaster.ai/pi-browser-use": {
       "alert_ids": [
+        "very_new_package_high",
         "low_owner_reputation_low",
         "new_owner_account_medium",
         "low_watches",
-        "low_owner_track_record_low"
-      ]
-    },
-    "@amaster.ai/pi-channels": {
-      "alert_ids": [
-        "low_owner_reputation_low",
-        "new_owner_account_medium",
-        "low_watches",
-        "low_owner_track_record_low"
+        "low_owner_track_record_low",
+        "download_spike_high"
       ]
     },
     "@amaster.ai/pi-computer-use": {
       "alert_ids": [
+        "very_new_package_high",
         "low_owner_reputation_low",
         "new_owner_account_medium",
         "low_watches",
-        "low_owner_track_record_low"
+        "low_owner_track_record_low",
+        "download_spike_high",
+        "download_spike_critical"
+      ]
+    },
+    "@amaster.ai/pi-goal": {
+      "alert_ids": [
+        "very_new_package_high",
+        "low_owner_reputation_low",
+        "new_owner_account_medium",
+        "low_watches",
+        "low_owner_track_record_low",
+        "download_spike_high"
       ]
     },
     "@amaster.ai/pi-image-gen": {
       "alert_ids": [
+        "very_new_package_high",
         "low_owner_reputation_low",
         "new_owner_account_medium",
         "low_watches",
-        "low_owner_track_record_low"
+        "low_owner_track_record_low",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "@amaster.ai/pi-lark": {
       "alert_ids": [
+        "very_new_package_high",
         "low_owner_reputation_low",
         "new_owner_account_medium",
         "low_watches",
-        "low_owner_track_record_low"
-      ]
-    },
-    "@amaster.ai/pi-memory": {
-      "alert_ids": [
-        "low_owner_reputation_low",
-        "new_owner_account_medium",
-        "low_watches",
-        "low_owner_track_record_low"
+        "low_owner_track_record_low",
+        "download_spike_high"
       ]
     },
     "@amaster.ai/pi-memory-mem0": {
       "alert_ids": [
+        "very_new_package_high",
         "low_owner_reputation_low",
         "new_owner_account_medium",
         "low_watches",
-        "low_owner_track_record_low"
+        "low_owner_track_record_low",
+        "download_spike_high"
+      ]
+    },
+    "@amaster.ai/pi-security": {
+      "alert_ids": [
+        "very_new_package_high",
+        "low_owner_reputation_low",
+        "new_owner_account_medium",
+        "low_watches",
+        "low_owner_track_record_low",
+        "download_spike_high"
       ]
     },
     "@amaster.ai/pi-task-scheduler": {
       "alert_ids": [
+        "very_new_package_high",
         "low_owner_reputation_low",
         "new_owner_account_medium",
         "low_watches",
-        "low_owner_track_record_low"
+        "low_owner_track_record_low",
+        "download_spike_high"
       ]
     },
     "@amaster.ai/pi-telemetry": {
       "alert_ids": [
+        "very_new_package_high",
         "low_owner_reputation_low",
         "new_owner_account_medium",
         "low_watches",
-        "low_owner_track_record_low"
-      ]
-    },
-    "@amaster.ai/pi-video-gen": {
-      "alert_ids": [
-        "low_owner_reputation_low",
-        "new_owner_account_medium",
-        "low_watches",
-        "low_owner_track_record_low"
+        "low_owner_track_record_low",
+        "download_spike_high"
       ]
     },
     "@amaster.ai/pi-web-access": {
       "alert_ids": [
+        "very_new_package_high",
         "low_owner_reputation_low",
         "new_owner_account_medium",
         "low_watches",
-        "low_owner_track_record_low"
+        "low_owner_track_record_low",
+        "download_spike_high"
       ]
     },
-    "@amaster.ai/pi-wecom": {
+    "@andares/pi-toolkits": {
       "alert_ids": [
-        "low_owner_reputation_low",
-        "new_owner_account_medium",
+        "very_new_package_high",
+        "very_new_repository_medium",
+        "single_maintainer",
+        "low_stars_low",
+        "low_forks_low",
         "low_watches",
-        "low_owner_track_record_low"
+        "download_spike_high",
+        "broken_trust_link_surface_medium"
       ]
     },
     "@artil-ai/pi": {
@@ -1388,7 +1397,9 @@
     "@astrofoundry/pi-astro": {
       "alert_ids": [
         "missing_github_repository_metadata",
-        "single_maintainer"
+        "very_new_package_high",
+        "single_maintainer",
+        "download_spike_high"
       ]
     },
     "@astrosheep/keiyaku": {
@@ -1411,15 +1422,12 @@
     },
     "@awebai/oats-pi": {
       "alert_ids": [
-        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
         "low_owner_reputation_low",
         "new_owner_account_medium",
         "low_stars_low",
-        "low_watches",
-        "download_spike_high",
-        "download_spike_critical"
+        "low_watches"
       ]
     },
     "@awebai/pi": {
@@ -1442,12 +1450,14 @@
     },
     "@bismawy/pi-arnative": {
       "alert_ids": [
+        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
         "low_owner_reputation_low",
         "low_stars_low",
         "low_forks_low",
-        "low_watches"
+        "low_watches",
+        "download_spike_high"
       ]
     },
     "@blackbelt-technology/pi-anthropic-messages": {
@@ -1456,13 +1466,6 @@
         "tiny_commit_history_medium",
         "no_releases",
         "low_stars_low",
-        "low_watches",
-        "download_spike_high"
-      ]
-    },
-    "@blackbelt-technology/pi-flows": {
-      "alert_ids": [
-        "very_new_package_high",
         "low_watches",
         "download_spike_high"
       ]
@@ -1506,30 +1509,14 @@
         "low_forks_low"
       ]
     },
-    "@brushes/schema-to-view": {
-      "alert_ids": [
-        "missing_github_repository_metadata",
-        "no_license",
-        "broken_trust_link_surface_medium",
-        "broken_trust_link_surface_critical"
-      ]
-    },
-    "@bunshin-cc/bunshin": {
-      "alert_ids": [
-        "missing_github_repository_metadata",
-        "very_new_package_high",
-        "single_maintainer",
-        "download_spike_high",
-        "download_spike_critical"
-      ]
-    },
     "@cad0p/pi-subagents-tintinweb": {
       "alert_ids": [
         "very_new_package_high",
         "single_maintainer",
         "low_stars_low",
         "low_forks_low",
-        "download_spike_high"
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "@carlosgtrz/pi-codex-aliases": {
@@ -1546,11 +1533,8 @@
     "@cgh567/agent": {
       "alert_ids": [
         "missing_github_repository_metadata",
-        "very_new_package_high",
         "single_maintainer",
-        "no_license",
-        "download_spike_high",
-        "download_spike_critical"
+        "no_license"
       ]
     },
     "@chankov/agent-fleet": {
@@ -1573,10 +1557,11 @@
         "download_spike_critical"
       ]
     },
-    "@cortexkit/pi-antigravity-auth": {
+    "@cortexkit/pi-anthropic-auth": {
       "alert_ids": [
         "single_maintainer",
-        "new_owner_account_medium"
+        "new_owner_account_medium",
+        "no_license"
       ]
     },
     "@cortexkit/pi-openai-auth": {
@@ -1630,23 +1615,18 @@
     },
     "@deathbeam/pi-delegate": {
       "alert_ids": [
-        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
         "no_releases",
         "low_stars_low",
         "low_forks_low",
-        "low_watches",
-        "download_spike_high",
-        "download_spike_critical"
+        "low_watches"
       ]
     },
     "@devflow-tools/claude-code-plugin": {
       "alert_ids": [
         "missing_github_repository_metadata",
-        "very_new_package_high",
-        "single_maintainer",
-        "download_spike_high"
+        "single_maintainer"
       ]
     },
     "@dietrichgebert/ponytail": {
@@ -1658,11 +1638,13 @@
         "download_spike_critical"
       ]
     },
-    "@drix10/agent-flow": {
+    "@dorokuma/herdsman-pi": {
       "alert_ids": [
         "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
+        "low_owner_reputation_medium",
+        "low_stars_medium",
         "low_forks_low",
         "low_watches",
         "download_spike_high"
@@ -1683,11 +1665,9 @@
     },
     "@estebanforge/pi-antigravity-bridge": {
       "alert_ids": [
-        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
-        "no_releases",
-        "download_spike_high"
+        "no_releases"
       ]
     },
     "@explyt/ai-agent": {
@@ -1701,27 +1681,13 @@
         "broken_trust_link_surface_critical"
       ]
     },
-    "@fadhilp/pylon": {
-      "alert_ids": [
-        "very_new_package_high",
-        "single_maintainer",
-        "low_owner_reputation_medium",
-        "low_stars_low",
-        "low_forks_low",
-        "low_watches",
-        "low_owner_track_record_low",
-        "download_spike_high"
-      ]
-    },
     "@ferris1225/pi-subagents": {
       "alert_ids": [
-        "very_new_package_high",
         "single_maintainer",
         "low_owner_reputation_high",
         "low_stars_medium",
         "low_forks_low",
-        "low_watches",
-        "download_spike_high"
+        "low_watches"
       ]
     },
     "@ff-labs/pi-fff": {
@@ -1732,22 +1698,11 @@
         "download_spike_critical"
       ]
     },
-    "@fiale-plus/pi-rogue": {
+    "@firstpick/pi-extension-workbook": {
       "alert_ids": [
         "very_new_package_medium",
         "single_maintainer",
-        "low_owner_reputation_high",
-        "low_watches",
-        "download_spike_critical"
-      ]
-    },
-    "@firstpick/pi-package-webui": {
-      "alert_ids": [
-        "very_new_package_high",
-        "single_maintainer",
-        "no_releases",
-        "download_spike_high",
-        "download_spike_critical"
+        "no_releases"
       ]
     },
     "@fitchmultz/pi-subagents": {
@@ -1757,12 +1712,19 @@
         "low_watches"
       ]
     },
-    "@fro.bot/systematic": {
+    "@french-castle/jev-code": {
       "alert_ids": [
         "very_new_package_high",
+        "very_new_repository_medium",
+        "single_maintainer",
+        "tiny_commit_history_low",
         "low_watches",
-        "download_spike_high",
-        "download_spike_critical"
+        "download_spike_high"
+      ]
+    },
+    "@fro.bot/systematic": {
+      "alert_ids": [
+        "low_watches"
       ]
     },
     "@gang-of-beads/pi-web": {
@@ -1776,23 +1738,15 @@
         "download_spike_high"
       ]
     },
-    "@gavin-hu/my-pi-agent": {
-      "alert_ids": [
-        "very_new_package_high",
-        "very_new_repository_high",
-        "single_maintainer",
-        "low_stars_medium",
-        "low_forks_low",
-        "low_watches",
-        "download_spike_high"
-      ]
-    },
     "@geohar/un-bien": {
       "alert_ids": [
+        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
         "low_owner_reputation_low",
-        "low_watches"
+        "low_watches",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "@getpipher/vision": {
@@ -1807,7 +1761,10 @@
     },
     "@gotgenes/pi-anthropic-auth": {
       "alert_ids": [
-        "single_maintainer"
+        "very_new_package_high",
+        "single_maintainer",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "@gotgenes/pi-permission-system": {
@@ -1828,13 +1785,11 @@
         "download_spike_critical"
       ]
     },
-    "@gtrabanco/pi-agentic-workflow": {
+    "@gtrabanco/pi-nan-provider": {
       "alert_ids": [
-        "very_new_package_high",
+        "very_new_repository_medium",
         "single_maintainer",
-        "no_releases",
-        "low_watches",
-        "download_spike_high"
+        "no_releases"
       ]
     },
     "@gyoungwe/pi-core": {
@@ -1906,7 +1861,7 @@
         "download_spike_critical"
       ]
     },
-    "@henryqw/pi-add-dir": {
+    "@henryqw/pi-ask-question": {
       "alert_ids": [
         "very_new_package_high",
         "very_new_repository_medium",
@@ -1927,44 +1882,20 @@
         "download_spike_critical"
       ]
     },
-    "@henryqw/pi-footer": {
-      "alert_ids": [
-        "very_new_package_high",
-        "very_new_repository_medium",
-        "single_maintainer",
-        "no_releases",
-        "low_watches",
-        "download_spike_high"
-      ]
-    },
     "@henryqw/pi-herdr-tools": {
       "alert_ids": [
-        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
         "no_releases",
-        "low_watches",
-        "download_spike_high"
-      ]
-    },
-    "@henryqw/pi-memory": {
-      "alert_ids": [
-        "very_new_package_high",
-        "very_new_repository_medium",
-        "single_maintainer",
-        "no_releases",
-        "low_watches",
-        "download_spike_high"
+        "low_watches"
       ]
     },
     "@henryqw/pi-multi-codex": {
       "alert_ids": [
-        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
         "no_releases",
-        "low_watches",
-        "download_spike_high"
+        "low_watches"
       ]
     },
     "@henryqw/pi-pr": {
@@ -2013,23 +1944,16 @@
         "download_spike_critical"
       ]
     },
-    "@herbertgao/pi-extensions": {
+    "@heyhuynhgiabuu/pi-pretty": {
       "alert_ids": [
-        "very_new_repository_medium",
         "single_maintainer",
-        "low_owner_reputation_medium",
-        "low_stars_low",
-        "low_forks_low",
         "low_watches"
       ]
     },
-    "@heyhuynhgiabuu/pi-pretty": {
+    "@heyhuynhgiabuu/pi-task": {
       "alert_ids": [
-        "very_new_package_high",
         "single_maintainer",
-        "low_watches",
-        "download_spike_high",
-        "download_spike_critical"
+        "low_watches"
       ]
     },
     "@howaboua/pi-codex-conversion": {
@@ -2057,14 +1981,6 @@
         "download_spike_high"
       ]
     },
-    "@howaboua/pi-stuff": {
-      "alert_ids": [
-        "very_new_package_high",
-        "single_maintainer",
-        "low_watches",
-        "download_spike_high"
-      ]
-    },
     "@hypabolic/pi-hypa": {
       "alert_ids": [
         "very_new_package_high",
@@ -2075,6 +1991,12 @@
         "low_owner_track_record_low",
         "download_spike_high",
         "download_spike_critical"
+      ]
+    },
+    "@hyperdreamer/pi-webui": {
+      "alert_ids": [
+        "single_maintainer",
+        "low_owner_reputation_medium"
       ]
     },
     "@injaneity/pi-computer-use": {
@@ -2171,15 +2093,6 @@
         "download_spike_high"
       ]
     },
-    "@juicesharp/rpiv-warp": {
-      "alert_ids": [
-        "very_new_package_high",
-        "single_maintainer",
-        "no_releases",
-        "low_owner_track_record_low",
-        "download_spike_high"
-      ]
-    },
     "@juicesharp/rpiv-web-tools": {
       "alert_ids": [
         "very_new_package_high",
@@ -2202,25 +2115,35 @@
     },
     "@jwilger/pi-development-system": {
       "alert_ids": [
+        "very_new_package_high",
         "very_new_repository_high",
         "single_maintainer",
         "low_stars_medium",
         "low_forks_low",
-        "low_watches"
+        "low_watches",
+        "download_spike_high",
+        "download_spike_critical"
+      ]
+    },
+    "@kimchi-dev/kimchi-workflows": {
+      "alert_ids": [
+        "very_new_package_high",
+        "new_owner_account_medium",
+        "low_stars_low",
+        "low_forks_low",
+        "low_watches",
+        "download_spike_high"
       ]
     },
     "@kontextmind/kxm": {
       "alert_ids": [
-        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
         "low_owner_reputation_high",
         "new_owner_account_high",
         "low_stars_low",
         "low_forks_low",
-        "low_watches",
-        "download_spike_high",
-        "download_spike_critical"
+        "low_watches"
       ]
     },
     "@krtclcdy/tersio": {
@@ -2284,18 +2207,13 @@
     },
     "@llblab/pi-kit": {
       "alert_ids": [
-        "very_new_repository_medium",
-        "single_maintainer",
-        "low_stars_low",
-        "low_forks_low"
-      ]
-    },
-    "@llblab/pi-state-flow": {
-      "alert_ids": [
         "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
-        "download_spike_high"
+        "low_stars_low",
+        "low_forks_low",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "@llblab/pi-telegram": {
@@ -2324,28 +2242,23 @@
     },
     "@maxiaochao/pi-herdr-subagents": {
       "alert_ids": [
-        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
         "no_releases",
         "no_license",
         "low_stars_low",
         "low_forks_low",
-        "low_watches",
-        "download_spike_high"
+        "low_watches"
       ]
     },
     "@maxiaochao/pi-toolkit": {
       "alert_ids": [
-        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
         "no_releases",
         "low_stars_low",
         "low_forks_low",
-        "low_watches",
-        "download_spike_high",
-        "download_spike_critical"
+        "low_watches"
       ]
     },
     "@mjasnikovs/pi-task": {
@@ -2359,7 +2272,46 @@
         "download_spike_critical"
       ]
     },
+    "@monotykamary/pi-better-openai": {
+      "alert_ids": [
+        "single_maintainer",
+        "no_releases",
+        "low_watches"
+      ]
+    },
+    "@mrclrchtr/supi-bash-timeout": {
+      "alert_ids": [
+        "very_new_package_high",
+        "single_maintainer",
+        "low_watches",
+        "download_spike_high"
+      ]
+    },
+    "@mrclrchtr/supi-code-intelligence": {
+      "alert_ids": [
+        "very_new_package_high",
+        "single_maintainer",
+        "low_watches",
+        "download_spike_high"
+      ]
+    },
     "@mrclrchtr/supi-context": {
+      "alert_ids": [
+        "very_new_package_high",
+        "single_maintainer",
+        "low_watches",
+        "download_spike_high"
+      ]
+    },
+    "@mrclrchtr/supi-insights": {
+      "alert_ids": [
+        "very_new_package_high",
+        "single_maintainer",
+        "low_watches",
+        "download_spike_high"
+      ]
+    },
+    "@mrclrchtr/supi-settings": {
       "alert_ids": [
         "very_new_package_high",
         "single_maintainer",
@@ -2402,12 +2354,16 @@
         "download_spike_critical"
       ]
     },
-    "@narumitw/pi-goal": {
+    "@narumitw/pi-codex-compact": {
       "alert_ids": [
         "very_new_package_high",
         "single_maintainer",
-        "download_spike_high",
-        "download_spike_critical"
+        "download_spike_high"
+      ]
+    },
+    "@narumitw/pi-goal": {
+      "alert_ids": [
+        "single_maintainer"
       ]
     },
     "@narumitw/pi-lsp": {
@@ -2420,10 +2376,7 @@
     },
     "@narumitw/pi-plan-mode": {
       "alert_ids": [
-        "very_new_package_high",
-        "single_maintainer",
-        "download_spike_high",
-        "download_spike_critical"
+        "single_maintainer"
       ]
     },
     "@narumitw/pi-sync": {
@@ -2433,20 +2386,7 @@
     },
     "@narumitw/pi-usage": {
       "alert_ids": [
-        "very_new_package_high",
-        "single_maintainer",
-        "download_spike_high",
-        "download_spike_critical"
-      ]
-    },
-    "@nguyenquangthai/pi-omp-theme": {
-      "alert_ids": [
-        "very_new_package_high",
-        "very_new_repository_medium",
-        "single_maintainer",
-        "low_owner_reputation_low",
-        "low_watches",
-        "download_spike_high"
+        "single_maintainer"
       ]
     },
     "@nitra/cursor": {
@@ -2490,7 +2430,8 @@
         "low_stars_medium",
         "low_forks_low",
         "low_watches",
-        "download_spike_high"
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "@nredd/pi-preset": {
@@ -2554,7 +2495,8 @@
         "low_stars_medium",
         "low_forks_low",
         "low_watches",
-        "download_spike_high"
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "@ollama/pi-web-search": {
@@ -2574,10 +2516,15 @@
     },
     "@opengsd/gsd-core": {
       "alert_ids": [
+        "new_owner_account_medium"
+      ]
+    },
+    "@parcha/agentrun-pi": {
+      "alert_ids": [
         "very_new_package_high",
-        "new_owner_account_medium",
-        "download_spike_high",
-        "download_spike_critical"
+        "very_new_repository_medium",
+        "no_releases",
+        "download_spike_high"
       ]
     },
     "@pi-archimedes/core": {
@@ -2827,35 +2774,44 @@
     },
     "@ravshansbox/pi-anthropic": {
       "alert_ids": [
+        "very_new_package_high",
         "single_maintainer",
         "low_stars_low",
         "low_forks_low",
-        "low_watches"
+        "low_watches",
+        "download_spike_high"
       ]
     },
     "@ravshansbox/pi-prompt-history": {
       "alert_ids": [
+        "very_new_package_high",
         "single_maintainer",
         "low_stars_low",
-        "low_forks_low",
-        "low_watches"
+        "low_watches",
+        "download_spike_high"
       ]
     },
     "@ravshansbox/pi-quota": {
       "alert_ids": [
+        "very_new_package_high",
         "single_maintainer",
         "low_stars_low",
         "low_forks_low",
-        "low_watches"
+        "low_watches",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "@ravshansbox/pi-statusline": {
       "alert_ids": [
+        "very_new_package_high",
         "very_new_repository_high",
         "single_maintainer",
         "low_stars_medium",
         "low_forks_low",
-        "low_watches"
+        "low_watches",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "@realvendex/pi-token-router": {
@@ -2885,6 +2841,14 @@
         "very_new_package_medium",
         "single_maintainer",
         "low_watches",
+        "download_spike_critical"
+      ]
+    },
+    "@router-for-me/pi-cliproxyapi-provider": {
+      "alert_ids": [
+        "very_new_package_high",
+        "low_watches",
+        "download_spike_high",
         "download_spike_critical"
       ]
     },
@@ -2926,8 +2890,11 @@
     "@selesai/code": {
       "alert_ids": [
         "missing_github_repository_metadata",
+        "very_new_package_high",
         "single_maintainer",
-        "no_license"
+        "no_license",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "@shanepadgett/tau-agent": {
@@ -2962,7 +2929,7 @@
         "download_spike_critical"
       ]
     },
-    "@sreetej510/pi-usage": {
+    "@sreetej510/pi-prompt-manager": {
       "alert_ids": [
         "single_maintainer",
         "low_owner_reputation_medium",
@@ -2979,24 +2946,6 @@
         "download_spike_critical"
       ]
     },
-    "@talex-touch/pi-powerline-footer": {
-      "alert_ids": [
-        "missing_github_repository_metadata",
-        "very_new_package_medium",
-        "single_maintainer",
-        "broken_trust_link_surface_medium",
-        "broken_trust_link_surface_critical"
-      ]
-    },
-    "@talex-touch/touch-pie": {
-      "alert_ids": [
-        "missing_github_repository_metadata",
-        "very_new_package_medium",
-        "single_maintainer",
-        "broken_trust_link_surface_medium",
-        "broken_trust_link_surface_critical"
-      ]
-    },
     "@tangle-network/tcloud-agent": {
       "alert_ids": [
         "very_new_package_high",
@@ -3009,14 +2958,25 @@
         "download_spike_critical"
       ]
     },
+    "@the-librarian/pi-extension": {
+      "alert_ids": [
+        "single_maintainer",
+        "low_owner_reputation_high",
+        "new_owner_account_medium",
+        "low_watches",
+        "low_owner_track_record_low"
+      ]
+    },
     "@tiagojct/subsub": {
       "alert_ids": [
+        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
         "low_owner_reputation_low",
         "low_stars_low",
         "low_forks_low",
-        "low_watches"
+        "low_watches",
+        "download_spike_high"
       ]
     },
     "@tintinweb/pi-subagents": {
@@ -3025,6 +2985,20 @@
         "single_maintainer",
         "download_spike_high",
         "download_spike_critical"
+      ]
+    },
+    "@tintinweb/pi-tasks": {
+      "alert_ids": [
+        "very_new_package_high",
+        "single_maintainer",
+        "low_watches",
+        "download_spike_high"
+      ]
+    },
+    "@tmustier/pi-ralph-wiggum": {
+      "alert_ids": [
+        "very_new_package_medium",
+        "single_maintainer"
       ]
     },
     "@tmustier/pi-usage-extension": {
@@ -3063,33 +3037,76 @@
         "download_spike_critical"
       ]
     },
-    "@vigolium/piolium": {
+    "@veai-ru/ai-agent": {
+      "alert_ids": [
+        "missing_github_repository_metadata",
+        "very_new_package_high",
+        "single_maintainer",
+        "download_spike_high",
+        "broken_trust_link_surface_medium",
+        "broken_trust_link_surface_critical"
+      ]
+    },
+    "@wyattjoh/demur": {
       "alert_ids": [
         "very_new_package_medium",
+        "very_new_repository_medium",
         "single_maintainer",
-        "new_owner_account_medium",
-        "tiny_commit_history_medium",
-        "no_releases",
-        "low_watches",
-        "download_spike_critical"
+        "tiny_commit_history_low",
+        "low_weekly_downloads_low",
+        "low_stars_medium",
+        "low_forks_low",
+        "low_watches"
       ]
     },
     "@xynogen/pix-core": {
       "alert_ids": [
+        "very_new_package_high",
         "single_maintainer",
-        "no_releases"
+        "no_releases",
+        "download_spike_high"
+      ]
+    },
+    "@xynogen/pix-data": {
+      "alert_ids": [
+        "very_new_package_high",
+        "single_maintainer",
+        "no_releases",
+        "download_spike_high"
       ]
     },
     "@xynogen/pix-pretty": {
       "alert_ids": [
+        "very_new_package_high",
         "single_maintainer",
-        "no_releases"
+        "no_releases",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "@xynogen/pix-runtime": {
       "alert_ids": [
+        "very_new_package_high",
         "single_maintainer",
-        "no_releases"
+        "no_releases",
+        "download_spike_high",
+        "download_spike_critical"
+      ]
+    },
+    "@xynogen/pix-subagent": {
+      "alert_ids": [
+        "very_new_package_high",
+        "single_maintainer",
+        "no_releases",
+        "download_spike_high"
+      ]
+    },
+    "@yandy0725/pi-sandbox": {
+      "alert_ids": [
+        "very_new_package_high",
+        "single_maintainer",
+        "low_watches",
+        "download_spike_high"
       ]
     },
     "@yunazgr/pi-companion": {
@@ -3106,40 +3123,16 @@
     },
     "@yusukeshib/pi-babysit": {
       "alert_ids": [
-        "very_new_package_high",
         "single_maintainer",
         "no_releases",
         "low_stars_low",
-        "low_watches",
-        "download_spike_high"
+        "low_watches"
       ]
     },
-    "@zeerke/ascet-copilot": {
+    "@zhushanwen/pi-session-manager": {
       "alert_ids": [
         "missing_github_repository_metadata",
-        "very_new_package_medium",
         "single_maintainer",
-        "broken_trust_link_surface_medium",
-        "broken_trust_link_surface_critical"
-      ]
-    },
-    "@zhachory1/mewrite-markdown-preview": {
-      "alert_ids": [
-        "very_new_package_high",
-        "single_maintainer",
-        "low_owner_reputation_low",
-        "low_stars_low",
-        "low_forks_low",
-        "low_watches",
-        "download_spike_high"
-      ]
-    },
-    "@zhushanwen/pi-subagent-workflow": {
-      "alert_ids": [
-        "missing_github_repository_metadata",
-        "very_new_package_high",
-        "single_maintainer",
-        "download_spike_high",
         "broken_trust_link_surface_medium",
         "broken_trust_link_surface_critical"
       ]
@@ -3158,13 +3151,6 @@
         "download_spike_critical"
       ]
     },
-    "agent-qa": {
-      "alert_ids": [
-        "low_owner_reputation_low",
-        "new_owner_account_medium",
-        "low_owner_track_record_low"
-      ]
-    },
     "agent-simple-english": {
       "alert_ids": [
         "very_new_package_high",
@@ -3173,6 +3159,18 @@
         "low_owner_track_record_low",
         "download_spike_high",
         "download_spike_critical"
+      ]
+    },
+    "agents-cron": {
+      "alert_ids": [
+        "very_new_package_high",
+        "very_new_repository_medium",
+        "single_maintainer",
+        "low_owner_reputation_high",
+        "no_releases",
+        "low_stars_low",
+        "low_forks_low",
+        "download_spike_high"
       ]
     },
     "arcmira": {
@@ -3190,19 +3188,32 @@
     "atlas-project-harness": {
       "alert_ids": [
         "missing_github_repository_metadata",
+        "very_new_package_high",
         "single_maintainer",
+        "download_spike_high",
+        "download_spike_critical",
         "broken_trust_link_surface_medium",
         "broken_trust_link_surface_critical"
       ]
     },
     "awesome-pi-themes": {
       "alert_ids": [
-        "very_new_package_high",
+        "very_new_package_medium",
         "single_maintainer",
         "low_owner_reputation_low",
         "no_releases",
-        "low_watches",
-        "download_spike_high"
+        "low_watches"
+      ]
+    },
+    "bermudis-pi-goodies": {
+      "alert_ids": [
+        "single_maintainer",
+        "low_owner_reputation_low",
+        "no_releases",
+        "no_license",
+        "low_stars_medium",
+        "low_forks_low",
+        "low_watches"
       ]
     },
     "bestony-pi-preset": {
@@ -3211,12 +3222,21 @@
         "low_watches"
       ]
     },
-    "bigpowers": {
+    "betterwright": {
       "alert_ids": [
         "very_new_package_high",
         "single_maintainer",
+        "low_owner_reputation_low",
+        "new_owner_account_medium",
+        "low_watches",
+        "low_owner_track_record_medium",
         "download_spike_high",
         "download_spike_critical"
+      ]
+    },
+    "bigpowers": {
+      "alert_ids": [
+        "single_maintainer"
       ]
     },
     "billion-context": {
@@ -3242,7 +3262,10 @@
     },
     "cc-safety-net": {
       "alert_ids": [
-        "single_maintainer"
+        "very_new_package_high",
+        "single_maintainer",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "confluence-cli": {
@@ -3258,14 +3281,6 @@
     "context-mode": {
       "alert_ids": [
         "single_maintainer"
-      ]
-    },
-    "dev-loops": {
-      "alert_ids": [
-        "very_new_package_high",
-        "single_maintainer",
-        "low_watches",
-        "download_spike_high"
       ]
     },
     "donsetch": {
@@ -3306,41 +3321,13 @@
         "single_maintainer"
       ]
     },
-    "jorgex-pi": {
+    "immune-brain": {
       "alert_ids": [
-        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
-        "low_owner_reputation_low",
-        "no_releases",
-        "low_stars_medium",
-        "low_forks_low",
-        "low_watches",
-        "download_spike_high"
-      ]
-    },
-    "kankaku": {
-      "alert_ids": [
-        "very_new_package_medium",
-        "very_new_repository_medium",
-        "single_maintainer",
-        "low_owner_reputation_high",
-        "no_releases",
-        "low_weekly_downloads_low",
         "low_stars_low",
-        "low_watches",
-        "low_owner_track_record_low"
-      ]
-    },
-    "kifaru": {
-      "alert_ids": [
-        "missing_github_repository_metadata",
-        "very_new_package_medium",
-        "single_maintainer",
-        "low_weekly_downloads_low",
-        "download_spike_critical",
-        "broken_trust_link_surface_medium",
-        "broken_trust_link_surface_critical"
+        "low_forks_low",
+        "low_watches"
       ]
     },
     "latchkey": {
@@ -3375,6 +3362,17 @@
         "download_spike_critical"
       ]
     },
+    "not-enough-retry": {
+      "alert_ids": [
+        "very_new_package_medium",
+        "very_new_repository_medium",
+        "single_maintainer",
+        "low_owner_reputation_medium",
+        "tiny_commit_history_low",
+        "low_stars_low",
+        "low_watches"
+      ]
+    },
     "notesoup": {
       "alert_ids": [
         "very_new_repository_medium",
@@ -3383,25 +3381,16 @@
         "low_watches"
       ]
     },
-    "ohmyjev": {
-      "alert_ids": [
-        "very_new_package_high",
-        "very_new_repository_high",
-        "single_maintainer",
-        "low_owner_reputation_high",
-        "low_stars_low",
-        "low_watches",
-        "low_owner_track_record_medium",
-        "download_spike_high"
-      ]
-    },
     "om-memory-system": {
       "alert_ids": [
+        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
         "low_stars_medium",
         "low_forks_low",
-        "low_watches"
+        "low_watches",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "open-codebase-index": {
@@ -3449,6 +3438,7 @@
     },
     "opensec-pi-subagents": {
       "alert_ids": [
+        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
         "low_owner_reputation_low",
@@ -3457,23 +3447,23 @@
         "low_stars_low",
         "low_forks_low",
         "low_watches",
-        "low_owner_track_record_low"
+        "low_owner_track_record_low",
+        "download_spike_high"
       ]
     },
     "openwiki": {
-      "alert_ids": [
-        "very_new_package_high",
-        "download_spike_high",
-        "download_spike_critical"
-      ]
+      "alert_ids": []
     },
     "osdy-pi": {
       "alert_ids": [
+        "very_new_package_high",
         "single_maintainer",
         "low_owner_reputation_medium",
         "low_stars_low",
         "low_watches",
-        "low_owner_track_record_low"
+        "low_owner_track_record_low",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "pi-advisor-flow": {
@@ -3490,9 +3480,26 @@
       ]
     },
     "pi-agents": {
+      "alert_ids": []
+    },
+    "pi-aimail": {
       "alert_ids": [
         "very_new_package_high",
-        "download_spike_high"
+        "single_maintainer",
+        "low_stars_medium",
+        "low_forks_low",
+        "low_watches",
+        "download_spike_high",
+        "download_spike_critical"
+      ]
+    },
+    "pi-alibaba-bailian": {
+      "alert_ids": [
+        "missing_github_repository_metadata",
+        "very_new_package_medium",
+        "single_maintainer",
+        "broken_trust_link_surface_medium",
+        "broken_trust_link_surface_critical"
       ]
     },
     "pi-alibaba-models": {
@@ -3504,6 +3511,18 @@
         "no_releases",
         "low_watches",
         "download_spike_critical"
+      ]
+    },
+    "pi-anchor": {
+      "alert_ids": [
+        "very_new_package_high",
+        "very_new_repository_medium",
+        "single_maintainer",
+        "low_owner_reputation_medium",
+        "low_stars_low",
+        "low_forks_low",
+        "low_watches",
+        "download_spike_high"
       ]
     },
     "pi-anthropic-compat": {
@@ -3528,8 +3547,11 @@
     },
     "pi-ask-user": {
       "alert_ids": [
+        "very_new_package_high",
         "single_maintainer",
-        "low_watches"
+        "low_watches",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "pi-autoresearch": {
@@ -3550,23 +3572,33 @@
         "download_spike_critical"
       ]
     },
+    "pi-bansos": {
+      "alert_ids": [
+        "missing_github_repository_metadata",
+        "very_new_package_high",
+        "single_maintainer",
+        "download_spike_high",
+        "broken_trust_link_surface_medium",
+        "broken_trust_link_surface_critical"
+      ]
+    },
     "pi-better-background-tasks": {
       "alert_ids": [
-        "very_new_package_high",
         "single_maintainer",
         "low_owner_reputation_high",
         "new_owner_account_medium",
-        "low_watches",
-        "download_spike_high"
+        "low_watches"
       ]
     },
     "pi-better-edit": {
       "alert_ids": [
+        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
         "low_owner_reputation_low",
         "low_stars_low",
-        "low_watches"
+        "low_watches",
+        "download_spike_high"
       ]
     },
     "pi-better-harness": {
@@ -3585,6 +3617,20 @@
         "low_watches"
       ]
     },
+    "pi-beyin": {
+      "alert_ids": [
+        "very_new_package_high",
+        "very_new_repository_high",
+        "single_maintainer",
+        "low_owner_reputation_low",
+        "tiny_commit_history_low",
+        "no_releases",
+        "low_stars_low",
+        "low_forks_low",
+        "low_watches",
+        "download_spike_high"
+      ]
+    },
     "pi-blackhole": {
       "alert_ids": [
         "very_new_package_high",
@@ -3596,8 +3642,10 @@
     },
     "pi-browser-harness": {
       "alert_ids": [
+        "very_new_package_high",
         "single_maintainer",
-        "low_watches"
+        "low_watches",
+        "download_spike_high"
       ]
     },
     "pi-browser-use": {
@@ -3644,21 +3692,10 @@
     },
     "pi-cc-extensions": {
       "alert_ids": [
-        "very_new_package_high",
         "single_maintainer",
         "low_owner_reputation_low",
         "low_watches",
-        "low_owner_track_record_low",
-        "download_spike_high",
-        "download_spike_critical"
-      ]
-    },
-    "pi-chrome": {
-      "alert_ids": [
-        "very_new_package_medium",
-        "single_maintainer",
-        "no_releases",
-        "download_spike_critical"
+        "low_owner_track_record_low"
       ]
     },
     "pi-claude-bridge": {
@@ -3689,37 +3726,23 @@
     },
     "pi-cliproxyapi-provider": {
       "alert_ids": [
-        "very_new_package_high",
-        "single_maintainer",
-        "low_watches",
-        "download_spike_high",
-        "download_spike_critical"
-      ]
-    },
-    "pi-cloudflare": {
-      "alert_ids": [
-        "very_new_package_high",
-        "very_new_repository_medium",
-        "single_maintainer",
-        "low_stars_low",
-        "low_forks_low",
-        "low_watches",
-        "download_spike_high"
-      ]
-    },
-    "pi-cmux": {
-      "alert_ids": [
         "single_maintainer",
         "low_watches"
       ]
     },
-    "pi-code": {
+    "pi-cmux": {
       "alert_ids": [
         "very_new_package_high",
         "single_maintainer",
         "low_watches",
         "download_spike_high",
         "download_spike_critical"
+      ]
+    },
+    "pi-code": {
+      "alert_ids": [
+        "single_maintainer",
+        "low_watches"
       ]
     },
     "pi-codebuddy-sdk": {
@@ -3738,13 +3761,13 @@
         "single_maintainer"
       ]
     },
-    "pi-codex-image-gen": {
+    "pi-codex-token": {
       "alert_ids": [
-        "very_new_package_high",
+        "missing_github_repository_metadata",
+        "very_new_package_medium",
         "single_maintainer",
-        "low_owner_reputation_low",
-        "low_watches",
-        "download_spike_high"
+        "broken_trust_link_surface_medium",
+        "broken_trust_link_surface_critical"
       ]
     },
     "pi-coding-agent-test": {
@@ -3763,8 +3786,10 @@
     },
     "pi-cohort": {
       "alert_ids": [
+        "very_new_package_high",
         "single_maintainer",
-        "low_owner_track_record_low"
+        "low_owner_track_record_low",
+        "download_spike_high"
       ]
     },
     "pi-commandcode-provider": {
@@ -3773,14 +3798,6 @@
         "single_maintainer",
         "download_spike_high",
         "download_spike_critical"
-      ]
-    },
-    "pi-context": {
-      "alert_ids": [
-        "very_new_package_high",
-        "single_maintainer",
-        "no_releases",
-        "download_spike_high"
       ]
     },
     "pi-context-map": {
@@ -3801,42 +3818,33 @@
         "download_spike_critical"
       ]
     },
-    "pi-coralbricks-provider": {
-      "alert_ids": [
-        "very_new_package_high",
-        "very_new_repository_medium",
-        "low_owner_reputation_low",
-        "no_releases",
-        "low_stars_medium",
-        "low_watches",
-        "download_spike_high",
-        "download_spike_critical"
-      ]
-    },
     "pi-courier": {
       "alert_ids": [
-        "very_new_package_high",
         "single_maintainer",
         "low_owner_reputation_medium",
         "no_releases",
+        "low_watches",
+        "low_owner_track_record_medium"
+      ]
+    },
+    "pi-cowboy": {
+      "alert_ids": [
+        "very_new_package_high",
+        "very_new_repository_high",
+        "single_maintainer",
+        "low_owner_reputation_high",
         "low_watches",
         "low_owner_track_record_medium",
         "download_spike_high"
       ]
     },
-    "pi-cowboy": {
-      "alert_ids": [
-        "very_new_repository_high",
-        "single_maintainer",
-        "low_owner_reputation_high",
-        "low_watches",
-        "low_owner_track_record_medium"
-      ]
-    },
     "pi-crew": {
       "alert_ids": [
+        "very_new_package_high",
         "single_maintainer",
-        "low_owner_reputation_low"
+        "low_owner_reputation_low",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "pi-cursor-sdk": {
@@ -3889,31 +3897,16 @@
     },
     "pi-dev-flow": {
       "alert_ids": [
-        "very_new_package_high",
         "very_new_repository_high",
         "single_maintainer",
         "low_owner_reputation_medium",
         "low_stars_medium",
         "low_forks_low",
-        "low_watches",
-        "download_spike_high",
-        "download_spike_critical"
-      ]
-    },
-    "pi-do-always": {
-      "alert_ids": [
-        "very_new_package_high",
-        "very_new_repository_medium",
-        "single_maintainer",
-        "low_stars_medium",
-        "low_forks_low",
-        "low_watches",
-        "download_spike_high"
+        "low_watches"
       ]
     },
     "pi-docparser": {
       "alert_ids": [
-        "very_new_package_medium",
         "single_maintainer",
         "low_owner_reputation_low",
         "tiny_commit_history_medium",
@@ -3930,6 +3923,19 @@
         "low_watches",
         "download_spike_high",
         "download_spike_critical"
+      ]
+    },
+    "pi-endpoints": {
+      "alert_ids": [
+        "very_new_package_high",
+        "very_new_repository_high",
+        "single_maintainer",
+        "low_owner_reputation_medium",
+        "tiny_commit_history_low",
+        "low_stars_medium",
+        "low_forks_low",
+        "low_watches",
+        "download_spike_high"
       ]
     },
     "pi-extensible-workflows": {
@@ -3963,15 +3969,31 @@
         "low_stars_low"
       ]
     },
-    "pi-fabric": {
+    "pi-extmgr": {
       "alert_ids": [
         "very_new_package_high",
         "single_maintainer",
+        "low_watches",
+        "download_spike_high"
+      ]
+    },
+    "pi-fabric": {
+      "alert_ids": [
+        "single_maintainer",
         "low_owner_reputation_low",
         "new_owner_account_high",
-        "low_owner_track_record_low",
-        "download_spike_high",
-        "download_spike_critical"
+        "low_owner_track_record_low"
+      ]
+    },
+    "pi-famulus": {
+      "alert_ids": [
+        "very_new_package_high",
+        "very_new_repository_medium",
+        "single_maintainer",
+        "low_stars_low",
+        "low_forks_low",
+        "low_watches",
+        "download_spike_high"
       ]
     },
     "pi-fireworks": {
@@ -3998,6 +4020,16 @@
         "download_spike_critical"
       ]
     },
+    "pi-fovea": {
+      "alert_ids": [
+        "very_new_repository_medium",
+        "single_maintainer",
+        "low_owner_reputation_low",
+        "new_owner_account_high",
+        "low_watches",
+        "low_owner_track_record_low"
+      ]
+    },
     "pi-free": {
       "alert_ids": [
         "very_new_package_high",
@@ -4009,12 +4041,9 @@
     },
     "pi-freeflow": {
       "alert_ids": [
-        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
-        "low_watches",
-        "download_spike_high",
-        "download_spike_critical"
+        "low_watches"
       ]
     },
     "pi-gauntlet": {
@@ -4025,8 +4054,11 @@
     },
     "pi-goal-list-loop-audit": {
       "alert_ids": [
+        "very_new_package_high",
         "single_maintainer",
-        "low_watches"
+        "low_watches",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "pi-goal-x": {
@@ -4075,16 +4107,12 @@
     "pi-herdsman": {
       "alert_ids": [
         "very_new_repository_medium",
-        "single_maintainer",
-        "low_owner_reputation_low"
+        "single_maintainer"
       ]
     },
     "pi-hermes-memory": {
       "alert_ids": [
-        "very_new_package_high",
-        "single_maintainer",
-        "download_spike_high",
-        "download_spike_critical"
+        "single_maintainer"
       ]
     },
     "pi-interactive-shell": {
@@ -4114,34 +4142,6 @@
         "download_spike_critical"
       ]
     },
-    "pi-jar": {
-      "alert_ids": [
-        "very_new_package_high",
-        "very_new_repository_medium",
-        "single_maintainer",
-        "low_owner_reputation_low",
-        "no_releases",
-        "low_stars_low",
-        "low_forks_low",
-        "low_watches",
-        "download_spike_high"
-      ]
-    },
-    "pi-jarvis": {
-      "alert_ids": [
-        "missing_github_repository_metadata",
-        "very_new_package_high",
-        "single_maintainer",
-        "download_spike_high"
-      ]
-    },
-    "pi-jev-compaction": {
-      "alert_ids": [
-        "missing_github_repository_metadata",
-        "very_new_package_medium",
-        "single_maintainer"
-      ]
-    },
     "pi-landstrip": {
       "alert_ids": [
         "single_maintainer",
@@ -4151,17 +4151,13 @@
         "low_owner_track_record_low"
       ]
     },
-    "pi-lean-ctx": {
+    "pi-lens": {
       "alert_ids": [
         "very_new_package_high",
         "single_maintainer",
-        "download_spike_high"
-      ]
-    },
-    "pi-lens": {
-      "alert_ids": [
-        "single_maintainer",
-        "new_owner_account_medium"
+        "new_owner_account_medium",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "pi-lingual": {
@@ -4196,19 +4192,6 @@
         "low_owner_track_record_low"
       ]
     },
-    "pi-lore": {
-      "alert_ids": [
-        "very_new_package_medium",
-        "single_maintainer",
-        "low_owner_reputation_medium",
-        "no_license",
-        "low_weekly_downloads_low",
-        "low_stars_medium",
-        "low_forks_low",
-        "low_watches",
-        "download_spike_critical"
-      ]
-    },
     "pi-lsp-adapter": {
       "alert_ids": [
         "single_maintainer",
@@ -4232,11 +4215,8 @@
     },
     "pi-markdown-preview": {
       "alert_ids": [
-        "very_new_package_high",
         "single_maintainer",
-        "low_watches",
-        "download_spike_high",
-        "download_spike_critical"
+        "low_watches"
       ]
     },
     "pi-mcp-adapter": {
@@ -4287,6 +4267,26 @@
         "download_spike_critical"
       ]
     },
+    "pi-nvidia": {
+      "alert_ids": [
+        "very_new_package_medium",
+        "very_new_repository_medium",
+        "single_maintainer",
+        "low_owner_reputation_high",
+        "tiny_commit_history_medium",
+        "no_releases",
+        "low_stars_low",
+        "low_forks_low",
+        "low_watches"
+      ]
+    },
+    "pi-nvidia-nim": {
+      "alert_ids": [
+        "single_maintainer",
+        "no_releases",
+        "low_watches"
+      ]
+    },
     "pi-observational-memory": {
       "alert_ids": [
         "very_new_package_medium",
@@ -4306,13 +4306,10 @@
     },
     "pi-open-tui": {
       "alert_ids": [
-        "very_new_package_high",
         "single_maintainer",
         "low_owner_reputation_low",
         "no_releases",
-        "low_watches",
-        "download_spike_high",
-        "download_spike_critical"
+        "low_watches"
       ]
     },
     "pi-openai-codex-compat": {
@@ -4377,25 +4374,6 @@
         "download_spike_critical"
       ]
     },
-    "pi-pigment": {
-      "alert_ids": [
-        "very_new_package_high",
-        "single_maintainer",
-        "low_stars_low",
-        "low_watches",
-        "download_spike_high",
-        "download_spike_critical"
-      ]
-    },
-    "pi-pokepet": {
-      "alert_ids": [
-        "single_maintainer",
-        "tiny_commit_history_low",
-        "no_releases",
-        "low_stars_low",
-        "low_watches"
-      ]
-    },
     "pi-powerline-footer": {
       "alert_ids": [
         "very_new_package_high",
@@ -4413,18 +4391,37 @@
     },
     "pi-provider-litellm": {
       "alert_ids": [
-        "single_maintainer"
+        "very_new_package_high",
+        "single_maintainer",
+        "download_spike_high",
+        "download_spike_critical"
+      ]
+    },
+    "pi-provider-qoder-cn": {
+      "alert_ids": [
+        "very_new_package_high",
+        "very_new_repository_medium",
+        "single_maintainer",
+        "low_owner_reputation_medium",
+        "no_releases",
+        "low_stars_medium",
+        "low_forks_low",
+        "low_watches",
+        "download_spike_high"
       ]
     },
     "pi-ptc-subagents": {
       "alert_ids": [
+        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
         "low_owner_reputation_high",
         "low_stars_low",
         "low_forks_low",
         "low_watches",
-        "low_owner_track_record_low"
+        "low_owner_track_record_low",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "pi-quiver": {
@@ -4493,22 +4490,25 @@
         "low_watches"
       ]
     },
-    "pi-sessions": {
+    "pi-session-memory": {
       "alert_ids": [
         "very_new_package_high",
+        "very_new_repository_medium",
         "single_maintainer",
         "low_owner_reputation_medium",
+        "tiny_commit_history_low",
         "no_releases",
+        "low_stars_low",
+        "low_watches",
+        "low_owner_track_record_low",
         "download_spike_high"
       ]
     },
-    "pi-shazam": {
+    "pi-sessions": {
       "alert_ids": [
-        "very_new_package_medium",
         "single_maintainer",
-        "low_owner_reputation_low",
-        "low_owner_track_record_medium",
-        "download_spike_critical"
+        "low_owner_reputation_medium",
+        "no_releases"
       ]
     },
     "pi-simplify": {
@@ -4543,22 +4543,23 @@
         "low_watches"
       ]
     },
-    "pi-straw-boss": {
-      "alert_ids": [
-        "very_new_repository_high",
-        "single_maintainer",
-        "no_releases",
-        "low_stars_low",
-        "low_watches"
-      ]
-    },
-    "pi-subagent-manager": {
+    "pi-starline": {
       "alert_ids": [
         "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
-        "download_spike_high",
-        "download_spike_critical"
+        "download_spike_high"
+      ]
+    },
+    "pi-studio": {
+      "alert_ids": [
+        "single_maintainer"
+      ]
+    },
+    "pi-subagent-manager": {
+      "alert_ids": [
+        "very_new_repository_medium",
+        "single_maintainer"
       ]
     },
     "pi-subagents": {
@@ -4586,6 +4587,13 @@
         "download_spike_critical"
       ]
     },
+    "pi-tool-repair": {
+      "alert_ids": [
+        "single_maintainer",
+        "no_releases",
+        "low_watches"
+      ]
+    },
     "pi-tsgw": {
       "alert_ids": [
         "very_new_package_high",
@@ -4601,24 +4609,19 @@
     },
     "pi-typesafe": {
       "alert_ids": [
-        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
-        "low_owner_reputation_low",
-        "download_spike_high",
-        "download_spike_critical"
+        "low_owner_reputation_low"
       ]
     },
     "pi-ui-extension": {
       "alert_ids": [
-        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
         "low_owner_reputation_low",
         "low_stars_low",
         "low_watches",
-        "low_owner_track_record_medium",
-        "download_spike_high"
+        "low_owner_track_record_medium"
       ]
     },
     "pi-until-loop": {
@@ -4635,14 +4638,17 @@
         "download_spike_critical"
       ]
     },
+    "pi-vim": {
+      "alert_ids": [
+        "very_new_package_medium",
+        "single_maintainer"
+      ]
+    },
     "pi-warden": {
       "alert_ids": [
-        "very_new_package_high",
         "very_new_repository_medium",
         "single_maintainer",
-        "low_owner_reputation_low",
-        "download_spike_high",
-        "download_spike_critical"
+        "low_owner_reputation_low"
       ]
     },
     "pi-web-access": {
@@ -4664,9 +4670,11 @@
     },
     "pi-web-ui": {
       "alert_ids": [
-        "very_new_repository_medium",
+        "very_new_package_high",
         "single_maintainer",
-        "low_owner_reputation_low"
+        "low_owner_reputation_low",
+        "download_spike_high",
+        "download_spike_critical"
       ]
     },
     "pi-webapp": {
@@ -4674,7 +4682,6 @@
         "very_new_repository_medium",
         "single_maintainer",
         "low_owner_reputation_medium",
-        "low_stars_low",
         "low_watches",
         "low_owner_track_record_low"
       ]
@@ -4690,17 +4697,6 @@
         "download_spike_high"
       ]
     },
-    "pi-x-ide": {
-      "alert_ids": [
-        "very_new_package_medium",
-        "single_maintainer",
-        "low_owner_reputation_medium",
-        "new_owner_account_medium",
-        "low_watches",
-        "low_owner_track_record_medium",
-        "download_spike_critical"
-      ]
-    },
     "pi-xai-oauth": {
       "alert_ids": [
         "very_new_package_high",
@@ -4710,10 +4706,7 @@
     },
     "pi-zentui": {
       "alert_ids": [
-        "very_new_package_high",
-        "single_maintainer",
-        "download_spike_high",
-        "download_spike_critical"
+        "single_maintainer"
       ]
     },
     "pi-zhipu-usage": {
@@ -4751,13 +4744,10 @@
     },
     "projectops": {
       "alert_ids": [
-        "very_new_package_high",
         "single_maintainer",
         "low_forks_low",
         "low_watches",
-        "package_repo_age_mismatch_low",
-        "download_spike_high",
-        "download_spike_critical"
+        "package_repo_age_mismatch_low"
       ]
     },
     "realontext": {
@@ -4768,23 +4758,7 @@
         "download_spike_high"
       ]
     },
-    "respecpow": {
-      "alert_ids": [
-        "missing_github_repository_metadata",
-        "very_new_package_high",
-        "single_maintainer",
-        "download_spike_high"
-      ]
-    },
     "runline": {
-      "alert_ids": [
-        "very_new_package_high",
-        "single_maintainer",
-        "download_spike_high",
-        "download_spike_critical"
-      ]
-    },
-    "session-orchestrator": {
       "alert_ids": [
         "single_maintainer"
       ]
@@ -4795,17 +4769,6 @@
         "single_maintainer",
         "download_spike_high",
         "download_spike_critical"
-      ]
-    },
-    "tdd-enforcer": {
-      "alert_ids": [
-        "very_new_package_high",
-        "single_maintainer",
-        "low_owner_reputation_high",
-        "no_releases",
-        "low_forks_low",
-        "low_watches",
-        "download_spike_high"
       ]
     },
     "thoth-agents": {
